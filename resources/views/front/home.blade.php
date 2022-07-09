@@ -1,8 +1,4 @@
 @component('layouts.front')
-    @slot('title')
-        Karrot Boilerplate
-    @endslot
-
     @slot('h1')
         Bienvenue
     @endslot

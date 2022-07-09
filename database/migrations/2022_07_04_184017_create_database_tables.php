@@ -27,6 +27,8 @@ class CreateDatabaseTables extends Migration
             $table->foreignId('event_id')->constrained();
             $table->string('lastname')->nullable();
             $table->string('firstname')->nullable();
+            $table->string('email')->nullable();
+            $table->text('message')->nullable();
             $table->nullableTimestamps();
         });
 

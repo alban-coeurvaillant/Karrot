@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('event');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -35,6 +40,13 @@ class EventController extends Controller
     public function store(Request $request)
     {
         return $this->update($request, new Event());
+    }
+
+
+    public function show(Event $event)
+    {
+        $event->load('reservations');
+        return view('admin.event.show', compact('event'));
     }
 
     /**

@@ -11,4 +11,14 @@ class Event extends Model
 
     protected $fillable = ['date', 'place', 'time', 'online'];
 
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
+    }
+
+
+    public function scopeOnline($q)
+    {
+        $q->where('online', true);
+    }
 }

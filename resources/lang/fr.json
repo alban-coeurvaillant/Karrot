@@ -1,0 +1,29 @@
+{
+    "Lastname": "Nom",
+    "Firstname": "Prénom",
+    "Email": "Email",
+    "Message": "Message",
+    "Your message": "Votre message",
+    "Date": "Date",
+    "Place of event": "Lieu de l'événement",
+    "Time": "Horaire",
+    "Online": "En ligne",
+
+    "Event": "Evénement",
+    "Events": "Evénements",
+    "Create a event": "Créer un événement",
+    "No event": "Pas d'événement",
+    "Contact": "Contact",
+    "Contacts": "Contacts",
+    "Create a contact": "Créer un contact",
+    "No contact": "Pas de contact",
+
+    "Reservation": "Réservation",
+    "Show the reservations": "Voir les réservation",
+
+    "Back": "Retour",
+    "Modify": "Modifier",
+    "Delete": "Supprimer",
+    "Validate": "Valider",
+    "Send": "Envoyer"
+}

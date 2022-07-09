@@ -16,11 +16,20 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                @if (config('karrot.event'))
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('admin.event.index')" :active="request()->routeIs('admin.event.*')">
                         {{ __('Events') }}
                     </x-nav-link>
                 </div>
+                @endif
+                @if (config('karrot.contact'))
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('admin.contact.index')" :active="request()->routeIs('admin.contact.*')">
+                            {{ __('Contacts') }}
+                        </x-nav-link>
+                    </div>
+                @endif
             </div>
 
             <!-- Settings Dropdown -->
