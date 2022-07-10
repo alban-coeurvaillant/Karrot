@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Mail\Contact as ContactMailable;
+use App\Rules\ValidHCaptcha;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -21,11 +24,12 @@ class ContactController extends Controller
     {
         $this->validate($request, [
             'email' => 'required|email',
-            'message' => 'required'
+            'message' => 'required',
+            'h-captcha-response' => ['required', new ValidHCaptcha()]
         ]);
 
         $contact = Contact::create($request->all());
-
+        Mail::send(new ContactMailable($contact));
 
         return back()->withConfirmation('Votre demande a bien été envoyée.');
     }

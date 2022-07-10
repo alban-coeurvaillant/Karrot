@@ -10,4 +10,9 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = ['firstname', 'lastname', 'email', 'message'];
+
+    public function getFullnameAttribute()
+    {
+        return join(' ', [$this->firstname, $this->lastname]);
+    }
 }

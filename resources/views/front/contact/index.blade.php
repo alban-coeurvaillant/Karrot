@@ -1,4 +1,8 @@
 @component('layouts.front')
+    @slot('scripts')
+        <script src="https://js.hcaptcha.com/1/api.js?hl=fr" async defer></script>
+    @endslot
+    
     @slot('h1')
         {{ __('Contact') }}
     @endslot
@@ -36,6 +40,11 @@
             <label for="message">{{ __('Your message') }}</label>
             <textarea name="message" id="message"></textarea>
         </div>
+
+        <div
+            class="h-captcha"
+            data-sitekey="{{ env('HCAPTCHA_SITEKEY') }}"
+        ></div>
 
         <div>
             <button>{{ __('Send') }}</button>
