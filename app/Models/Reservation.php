@@ -15,4 +15,9 @@ class Reservation extends Model
     {
         return $this->belongsTo(Event::class);
     }
+
+    public function getFullnameAttribute()
+    {
+        return join(' ', [$this->firstname, $this->lastname]);
+    }
 }

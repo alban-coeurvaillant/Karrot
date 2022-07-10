@@ -54,6 +54,6 @@ class ValidHCaptcha implements Rule
      */
     public function message()
     {
-        return 'Invalid CAPTCHA. You need to prove you are human.';
+        return __('validation.captcha');
     }
 }

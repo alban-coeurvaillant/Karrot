@@ -33,7 +33,8 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mail/contact')
+        return $this->markdown('mail.contact')
+            ->subject(__('New contact'))
             ->to(config('mail.contact.address'), config('mail.contact.name'))
             ->replyTo($this->contact->email, $this->contact->fullname);
     }

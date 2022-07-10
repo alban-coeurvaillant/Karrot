@@ -114,6 +114,7 @@ return [
     'uploaded'             => "Le fichier du champ :attribute n'a pu être téléversé.",
     'url'                  => "Le format de l'URL de :attribute n'est pas valide.",
     'uuid'                 => 'Le champ :attribute doit être un UUID valide',
+    'captcha'              => 'Le captcha n\'a pas été correctement validé.',
 
     /*
     |--------------------------------------------------------------------------
@@ -146,7 +147,7 @@ return [
     'attributes' => [
         'name'                  => 'nom',
         'username'              => "nom d'utilisateur",
-        'email'                 => 'email',
+        'email'                 => 'Email',
         'firstname'             => 'Prénom',
         'lastname'              => 'Nom',
         'password'              => 'mot de passe',
@@ -172,5 +173,6 @@ return [
         'date'                  => 'Date',
         'time'                  => 'Horaire',
         'place'                 => 'Lieu du concert',
+        'h-captcha-response'    => 'Captcha'
     ],
 ];

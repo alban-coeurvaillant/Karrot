@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use App\Models\Reservation;
+use \App\Mail\Reservation as ReservationMailable;
+use \App\Mail\ReservationConfirmation as ReservationConfirmationMailable;
+use App\Rules\ValidHCaptcha;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class EventController extends Controller
@@ -37,12 +41,15 @@ class EventController extends Controller
             'lastname' => 'required',
             'firstname' => 'required',
             'email' => 'required|email',
+            'h-captcha-response' => ['required', new ValidHCaptcha()]
         ]);
 
 
         $reservation = new Reservation();
         $reservation->fill($request->all());
         $event->reservations()->save($reservation);
+        Mail::send(new ReservationMailable($reservation));
+        Mail::send(new ReservationConfirmationMailable($reservation));
 
         return back()->withConfirmation('Votre réservation a été envoyée.');
     }
