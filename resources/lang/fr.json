@@ -8,7 +8,11 @@
     "Place of event": "Lieu de l'événement",
     "Time": "Horaire",
     "Online": "En ligne",
+    "Title": "Titre",
+    "Slug": "Lien",
 
+    "Content": "Contenu",
+    "Contents": "Contenus",
     "Event": "Evénement",
     "Events": "Evénements",
     "Create a event": "Créer un événement",

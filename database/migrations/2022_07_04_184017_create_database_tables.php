@@ -40,6 +40,16 @@ class CreateDatabaseTables extends Migration
             $table->text('message')->nullable();
             $table->nullableTimestamps();
         });
+        
+        Schema::create('contents', function (Blueprint $table) {
+            $table->id();
+            $table->string('slug')->index();
+            $table->string('title')->nullable();
+            $table->longText('content')->nullable();
+            $table->nullableTimestamps();
+        });
+        
+        
     }
 
     /**
@@ -49,6 +59,7 @@ class CreateDatabaseTables extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('contents');
         Schema::dropIfExists('contacts');
         Schema::dropIfExists('reservations');
         Schema::dropIfExists('events');

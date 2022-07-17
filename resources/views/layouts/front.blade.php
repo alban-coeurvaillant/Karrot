@@ -15,6 +15,7 @@
     <ul class="flex flex-row gap-3 py-5">
         <li><a href="/">Accueil</a></li>
         <li><a href="{{ url('page-1') }}">Page 1</a></li>
+        <li><a href="{{ url('page-2') }}">Page 2</a></li>
         @if (config('karrot.event'))<li><a href="{{ route('event.index') }}">Events</a></li>@endif
         @if (config('karrot.contact'))<li><a href="{{ route('contact.index') }}">Contact</a></li>@endif
     </ul>

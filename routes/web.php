@@ -22,6 +22,15 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('dashboard', [\App\Http\Controllers\Admin\MainController::class, 'dashboard'])->name('dashboard');
     Route::resource('event', \App\Http\Controllers\Admin\EventController::class);
     Route::resource('contact', \App\Http\Controllers\Admin\ContactController::class);
+    Route::resource('content', \App\Http\Controllers\Admin\ContentController::class)
+        ->except([
+            'create',
+            'store',
+            'delete',
+            'show',
+        ])->where([
+            'content' => '[a-z\-0-9]+'
+        ]);
 });
 
 

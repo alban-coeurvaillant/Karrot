@@ -16,6 +16,11 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('admin.content.index')" :active="request()->routeIs('admin.content.*')">
+                        {{ __('Contents') }}
+                    </x-nav-link>
+                </div>
                 @if (config('karrot.event'))
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('admin.event.index')" :active="request()->routeIs('admin.event.*')">
