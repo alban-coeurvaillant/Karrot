@@ -37,7 +37,7 @@
                             <form class="delete-form" action="{{ route('admin.event.destroy', $event) }}" method="post" enctype="application/x-www-form-urlencoded">
                                 @csrf
                                 @method('delete')
-                                <x-button>{{ __('Delete') }}</x-button>
+                                <x-button class="btn-danger">{{ __('Delete') }}</x-button>
                             </form>
                         </td>
                     </tr>

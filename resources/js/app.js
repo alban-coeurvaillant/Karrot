@@ -1,5 +1,6 @@
 import './bootstrap';
 
+import bootstrap from 'bootstrap';
 import Alpine from 'alpinejs';
 import Quill from 'quill';
 

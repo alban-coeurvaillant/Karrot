@@ -11,16 +11,51 @@
     {{ $scripts ?? null }}
 </head>
 <body>
-<header class="container mx-auto mb-5 border-b">
-    <ul class="flex flex-row gap-3 py-5">
-        <li><a href="/">Accueil</a></li>
-        <li><a href="{{ url('page-1') }}">Page 1</a></li>
-        <li><a href="{{ url('page-2') }}">Page 2</a></li>
-        <li><a href="{{ url('page-3') }}">Page 3</a></li>
-        @if (config('karrot.event'))<li><a href="{{ route('event.index') }}">Events</a></li>@endif
-        @if (config('karrot.contact'))<li><a href="{{ route('contact.index') }}">Contact</a></li>@endif
-    </ul>
+<header class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            <x-application-logo width="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <x-nav-link :href="url('page-1')" :active="url()->current() == url('page-1')">
+                        Page 1
+                    </x-nav-link>
+                </li>
+                <li class="nav-item">
+                    <x-nav-link :href="url('page-2')" :active="url()->current() == url('page-2')">
+                        Page 2
+                    </x-nav-link>
+                </li>
+                <li class="nav-item">
+                    <x-nav-link :href="url('page-3')" :active="url()->current() == url('page-3')">
+                        Page 3
+                    </x-nav-link>
+                </li>
+                @if (config('karrot.event'))
+                <li class="nav-item">
+                    <x-nav-link :href="route('event.index')" :active="request()->routeIs('event.index')">
+                        Events
+                    </x-nav-link>
+                </li>
+                @endif
+                @if (config('karrot.contact'))
+                <li class="nav-item">
+                    <x-nav-link :href="route('contact.index')" :active="request()->routeIs('contact.index')">
+                        Contact
+                    </x-nav-link>
+                </li>
+                @endif
+            </ul>
+        </div>
+    </div>
 </header>
+
 <main class="container mx-auto">
     <h1>{{ $h1 }}</h1>
     {{ $slot }}

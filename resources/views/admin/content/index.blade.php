@@ -7,12 +7,12 @@
 
     <div class="py-12">
         <x-card>
-            <table class="table w-full">
+            <table class="table w-100">
                 <thead>
                 <tr>
                     <th class="text-left">{{ __('Title') }}</th>
                     <th class="text-left">{{ __('Slug') }}</th>
-                    <td class="w-28"></td>
+                    <td style="width:150px;"></td>
                 </tr>
                 </thead>
                 <tbody>
