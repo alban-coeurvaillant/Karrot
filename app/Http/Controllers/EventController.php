@@ -20,8 +20,20 @@ class EventController extends Controller
 
     public function index()
     {
-        $events = Event::online()->get();
-        return view('front.event.index', compact('events'));
+        $events = Event::canDisplay()->orderBy('date')->get();
+        $data = $items = collect();
+        $currentYearMonth = null;
+        foreach ($events as $event) {
+            if ($event->year_month != $currentYearMonth) {
+                if ($items->isNotEmpty()) $data[] = $items;
+                $items = collect();
+                $currentYearMonth = $event->year_month; 
+            }
+            $items[] = $event;
+        }
+        if ($items->isNotEmpty()) $data[] = $items;
+        
+        return view('front.event.index', compact('data'));
     }
 
     public function reservation(Event $event)

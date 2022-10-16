@@ -16,6 +16,7 @@ class CreateDatabaseTables extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('place')->nullable();
+            $table->text('description')->nullable();
             $table->string('date')->nullable();
             $table->string('time')->nullable();
             $table->boolean('online')->default(false);
