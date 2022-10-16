@@ -1,0 +1,29 @@
+h1 {
+}
+
+.section--tiltle {
+  text-indent: 0.6em;
+  font-style: italic;
+  font-family: Adamina, serif;
+  color: rgb(255,255,255);
+  background: #844d7b;
+}
+
+.header--section {
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: var(--bs-nav-tabs-link-active-color);
+  background: #844d7b;
+  border-style: none;
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  /*isolation: isolate;*/
+  background: #3D0635;
+  margin: 0px;
+  border-style: none;
+  border-color: var(--bs-border-color-translucent);
+}
+

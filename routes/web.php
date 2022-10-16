@@ -36,7 +36,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
 
 require __DIR__ . '/auth.php';
 
-Route::prefix('event')->name('event.')->group(function () {
+Route::prefix('concerts-reservations')->name('event.')->group(function () {
     Route::get('/', [\App\Http\Controllers\EventController::class, 'index'])->name('index');
     Route::get('reservation/{event}', [\App\Http\Controllers\EventController::class, 'reservation'])->name('reservation');
     Route::post('reservation/{event}', [\App\Http\Controllers\EventController::class, 'sendReservation'])->name('sendReservation');

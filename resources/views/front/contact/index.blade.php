@@ -24,21 +24,21 @@
     <form action="{{ route('contact.send') }}" method="post" enctype="application/x-www-form-urlencoded">
         @csrf
 
-        <div>
+        <div class="mb-3">
             <label for="lastname">{{ __('Lastname') }}</label>
-            <input type="text" name="lastname" id="lastname">
+            <x-input type="text" name="lastname" id="lastname" />
         </div>
-        <div>
+        <div class="mb-3">
             <label for="firstname">{{ __('Firstname') }}</label>
-            <input type="text" name="firstname" id="firstname">
+            <x-input type="text" name="firstname" id="firstname" />
         </div>
-        <div>
+        <div class="mb-3">
             <label for="email">{{ __('Email') }}</label>
-            <input type="email" name="email" id="email">
+            <x-input type="email" name="email" id="email" />
         </div>
-        <div>
+        <div class="mb-3">
             <label for="message">{{ __('Your message') }}</label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message" class="form-control"></textarea>
         </div>
 
         <div
@@ -47,7 +47,7 @@
         ></div>
 
         <div>
-            <button>{{ __('Send') }}</button>
+            <x-button class="btn-primary">{{ __('Send') }}</x-button>
         </div>
 
     </form>
