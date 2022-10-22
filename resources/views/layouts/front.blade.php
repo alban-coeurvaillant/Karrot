@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     {{ $scripts ?? null }}
 </head>
-<body class="bg-dark">
+<body class="bg-darks">
 <div class="main-wrapper container-fluid mx-auto">
     @include('front.header-nav')
 
