@@ -45,7 +45,7 @@
                 </li>
                 @endif
                 @if (config('karrot.contact'))
-                <li class="nav-item">
+                <li class="nav-item test">
                     <x-nav-link :href="route('contact.index')" :active="request()->routeIs('contact.index')">
                         Contact
                     </x-nav-link>
