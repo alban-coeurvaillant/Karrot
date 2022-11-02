@@ -26,7 +26,9 @@
     @include('front.header-nav')
 
     <div class="p-3 section--tiltle">
-        <h1>{{ $h1 }}</h1>
+        <h1>{{ $h1 }}
+            sss
+        </h1>
     </div>
     <div id="main-1" class="bg-light">
         <div>
