@@ -1,6 +1,6 @@
 <header style="background: var(--bs-body-bg);border-top-left-radius: 1em;border-top-right-radius: 1em;min-height: 6em;">
     <div class="d-flex flex-column justify-content-center align-items-center flex-wrap justify-content-sm-center flex-xl-row justify-content-xl-between flex-xxl-row justify-content-xxl-between p-3"><a class="navbar-brand p-2" href="#">
-            <picture class="d-flex justify-content-center align-items-center"><img class="img-fluid" src="{{ asset('img/GD-logo.svg') }}" style="width: 100%;height: 100%;" width="100%" height="100%" loading="lazy"></picture>
+            <picture class="d-flex  align-items-center"><img class="img-fluid" src="{{ asset('img/GD-logo.svg') }}" style="width: 100%;height: 100%;" width="100%" height="100%" loading="lazy"></picture>
         </a>
         <div><span class="text-nowrap fs-5 fw-bold" style="font-family: 'Alegreya Sans', sans-serif;background: linear-gradient(#361030, #45143c 100%), var(--bs-purple);color: rgb(255,255,255);border-radius: 0.3em;border-top-left-radius: 0.2em;border-top-right-radius: 0.2em;border-bottom-right-radius: 0.2em;border-bottom-left-radius: 0.2em;font-size: 1.2em;padding-top: 0.2em;padding-right: 0.5em;padding-bottom: 0.3em;padding-left: 0.5em;">Chants authentiques de l'église Afro-Américaine</span></div>
     </div>
