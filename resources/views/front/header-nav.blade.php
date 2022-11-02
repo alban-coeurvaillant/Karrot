@@ -1,5 +1,5 @@
 <header style="background: var(--bs-body-bg);border-top-left-radius: 1em;border-top-right-radius: 1em;min-height: 6em;">
-    <div class="d-flex flex-column justify-content-center align-items-center flex-wrap justify-content-sm-center flex-xl-row justify-content-xl-between flex-xxl-row justify-content-xxl-between p-3">
+    <div class="d-flex justify-content-center align-items-center flex-wrap justify-content-sm-center flex-xl-row justify-content-xl-between flex-xxl-row justify-content-xxl-between p-3">
         
     <a class="navbar-brand d-flex" href="#">
         <picture class="d-flex justify-content-center align-items-center">
