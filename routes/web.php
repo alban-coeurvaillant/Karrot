@@ -44,6 +44,8 @@ Route::prefix('concerts-reservations')->name('event.')->group(function () {
     Route::post('reservation/{event}', [\App\Http\Controllers\EventController::class, 'sendReservation'])->name('sendReservation');
 });
 
+Route::get('galerie', [\App\Http\Controllers\GalleryController::class, 'index'])->name('gallery.index');
+
 Route::prefix('contact')->name('contact.')->group(function () {
     Route::get('/', [\App\Http\Controllers\ContactController::class, 'index'])->name('index');
     Route::post('/', [\App\Http\Controllers\ContactController::class, 'send'])->name('send');

@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class GalleryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('gallery');
+    }
+    
     /**
      * Display a listing of the resource.
      *
