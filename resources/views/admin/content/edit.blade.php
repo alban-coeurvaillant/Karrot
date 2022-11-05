@@ -34,7 +34,7 @@
                     <input name="content" id="content_hidden_field" type="hidden" value="">
                 </div>
                 <div>
-                    <x-button>{{ __('Validate') }}</x-button>
+                    <x-button class="btn-primary">{{ __('Validate') }}</x-button>
                 </div>
             </form>
         </x-card>
