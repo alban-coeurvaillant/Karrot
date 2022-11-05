@@ -64,7 +64,7 @@ class GalleryController extends Controller
     public function update(Request $request, Image $image)
     {
         $this->validate($request, [
-            'file' => 'required|file',
+            'file' => 'required|image',
         ]);
 
         $image->fill($request->all());
