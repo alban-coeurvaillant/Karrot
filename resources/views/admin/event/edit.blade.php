@@ -8,7 +8,7 @@
     <div class="py-12">
         <x-card>
             <x-slot name="header">
-                <div class="mb-5">
+                <div>
                     <x-button-link :href="route('admin.event.index')">{{ __('Back') }}</x-button-link>
                 </div>
             </x-slot>
