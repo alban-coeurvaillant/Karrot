@@ -7,7 +7,7 @@
         </picture>
     </a>
         <div>
-            <span class="text-nowrap fs-5 fw-bold" style="font-family: 'Alegreya Sans', sans-serif;background: linear-gradient(#361030, #45143c 100%), var(--bs-purple);color: rgb(255,255,255);border-radius: 0.3em;border-top-left-radius: 0.2em;border-top-right-radius: 0.2em;border-bottom-right-radius: 0.2em;border-bottom-left-radius: 0.2em;font-size: 1.2em;padding-top: 0.2em;padding-right: 0.5em;padding-bottom: 0.3em;padding-left: 0.5em;">Chants authentiques de l'église Afro-Américaine</span></div>
+            <span class="text-nowrap fs-5 fw-bold" style="">Chants authentiques de l'église Afro-Américaine</span></div>
     </div>
 </header>
 <ul class="nav nav-tabs flex-column nav-fill d-flex justify-content-center align-items-start flex-sm-column align-items-sm-center flex-xl-row flex-xl-nowrap flex-xxl-row flex-xxl-nowrap" style="background: #4a0740;border-style: none;">
