@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <!-- Logo -->
         <a href="{{ route('admin.dashboard') }}" class="navbar-brand">
-            <x-application-logo width="50" />
+            <x-application-logo width="200" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,6 +24,13 @@
                 <li class="nav-item">
                     <x-nav-link :href="route('admin.event.index')" :active="request()->routeIs('admin.event.*')">
                         {{ __('Events') }}
+                    </x-nav-link>
+                </li>
+                @endif
+                @if (config('karrot.gallery'))
+                <li class="nav-item">
+                    <x-nav-link :href="route('admin.gallery.index')" :active="request()->routeIs('admin.gallery.*')">
+                        {{ __('Gallery') }}
                     </x-nav-link>
                 </li>
                 @endif
