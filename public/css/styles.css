@@ -29,6 +29,3 @@ body {
   border-color: var(--bs-border-color-translucent);
 }
 
-*{
-  outline: solid red;
-}
