@@ -21,12 +21,14 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     });
     Route::get('dashboard', [\App\Http\Controllers\Admin\MainController::class, 'dashboard'])->name('dashboard');
     Route::resource('event', \App\Http\Controllers\Admin\EventController::class);
+    Route::resource('gallery', \App\Http\Controllers\Admin\GalleryController::class)->except(['destroy']);
+    Route::delete('gallery/{image}', [\App\Http\Controllers\Admin\GalleryController::class, 'destroy'])->name('gallery.destroy');
     Route::resource('contact', \App\Http\Controllers\Admin\ContactController::class);
     Route::resource('content', \App\Http\Controllers\Admin\ContentController::class)
         ->except([
             'create',
             'store',
-            'delete',
+            'destroy',
             'show',
         ])->where([
             'content' => '[a-z\-0-9]+'
@@ -41,6 +43,8 @@ Route::prefix('concerts-reservations')->name('event.')->group(function () {
     Route::get('reservation/{event}', [\App\Http\Controllers\EventController::class, 'reservation'])->name('reservation');
     Route::post('reservation/{event}', [\App\Http\Controllers\EventController::class, 'sendReservation'])->name('sendReservation');
 });
+
+Route::get('galerie', [\App\Http\Controllers\GalleryController::class, 'index'])->name('gallery.index');
 
 Route::prefix('contact')->name('contact.')->group(function () {
     Route::get('/', [\App\Http\Controllers\ContactController::class, 'index'])->name('index');

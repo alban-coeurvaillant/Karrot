@@ -26,9 +26,7 @@
     @include('front.header-nav')
 
     <div class="p-3 section--tiltle">
-        <h1>{{ $h1 }}
-            sss
-        </h1>
+        <h1>{{ $h1 }}</h1>
     </div>
     <div id="main-1" class="bg-light">
         <div>
@@ -57,7 +55,7 @@
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-<script src="{{ asset('js/Lightbox-Gallery.js.js') }}"></script>
+<script src="{{ asset('js/Lightbox-Gallery.js') }}"></script>
 <script src="{{ asset('js/scripts.js') }}"></script>
 </body>
 </html>

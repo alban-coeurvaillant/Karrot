@@ -22,9 +22,11 @@
             <a class="nav-link @if (request()->routeIs('event.index')) active @endif fw-semibold flex-grow-1" href="{{ route('event.index') }}" style="border-radius: 0;color: var(--bs-nav-tabs-link-active-bg);">Concerts et reservations</a>
         </li>
     @endif
+    @if (config('karrot.gallery'))
     <li class="nav-item flex-grow-0 align-self-stretch align-self-sm-stretch align-self-md-stretch align-self-lg-stretch">
-        <a class="nav-link fw-semibold flex-grow-1" href="photo-galery.html" style="border-radius: 0;color: var(--bs-nav-tabs-link-active-bg);">Galerie photo</a>
+        <a class="nav-link @if (request()->routeIs('gallery.index')) active @endif fw-semibold flex-grow-1" href="{{ route('gallery.index') }}" style="border-radius: 0;color: var(--bs-nav-tabs-link-active-bg);">Galerie photo</a>
     </li>
+    @endif
     <li class="nav-item @if (url()->current() == url('presse')) active @endif flex-grow-0 align-self-stretch align-self-sm-stretch align-self-md-stretch align-self-lg-stretch">
         <a class="nav-link fw-semibold flex-grow-1" href="{{ url('presse') }}" style="border-radius: 0;color: var(--bs-nav-tabs-link-active-bg);">Presse</a>
     </li>
