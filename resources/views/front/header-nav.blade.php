@@ -1,19 +1,26 @@
 <header style="background: var(--bs-body-bg);border-top-left-radius: 1em;border-top-right-radius: 1em;min-height: 6em;">
     <div class="d-flex justify-content-center align-items-center flex-wrap justify-content-sm-center flex-xl-row justify-content-xl-between flex-xxl-row justify-content-xxl-between p-3">
-        
     <a class="navbar-brand d-flex" href="#">
         <picture class="d-flex justify-content-center align-items-center">
             <img class="img-fluid" src="{{ asset('img/GD-logo.svg') }}" loading="lazy">
         </picture>
     </a>
         <div>
-            <span class="text-nowrap fs-5 fw-bold" style="">Chants authentiques de l'église Afro-Américaine</span></div>
+            <span class="text-nowrap fs-5 fw-bold">
+                Chants authentiques de l'église Afro-Américaine
+            </span>
+        </div>
     </div>
 </header>
+
 <ul class="nav nav-tabs flex-column nav-fill d-flex justify-content-center align-items-start flex-sm-column align-items-sm-center flex-xl-row flex-xl-nowrap flex-xxl-row flex-xxl-nowrap" style="background: #4a0740;border-style: none;">
+    
     <li class="nav-item flex-grow-0 align-self-stretch align-self-sm-stretch align-self-md-stretch align-self-lg-stretch">
-        <a class="nav-link  @if (url()->current() == url('/')) active @endif fw-semibold flex-grow-1" href="/" style="border-radius: 0;color: var(--bs-nav-tabs-link-active-bg);">Notre chorale</a>
+        <a class="nav-link  @if (url()->current() == url('/')) active @endif fw-semibold flex-grow-1" href="/" style="border-radius: 0;color: var(--bs-nav-tabs-link-active-bg);">
+        Notre chorale
+        </a>
     </li>
+
     <li class="nav-item flex-grow-0 align-self-stretch align-self-sm-stretch align-self-md-stretch align-self-lg-stretch" style="border-style: none;">
         <a class="nav-link @if (url()->current() == url('histoire-du-gospel')) active @endif fw-semibold flex-grow-1" href="{{ url('histoire-du-gospel') }}" style="border-radius: 0;color: var(--bs-nav-tabs-link-active-bg);">L'histoire du gospel</a>
     </li>
