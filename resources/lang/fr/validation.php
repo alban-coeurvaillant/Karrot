@@ -173,6 +173,7 @@ return [
         'date'                  => 'Date',
         'time'                  => 'Horaire',
         'place'                 => 'Lieu du concert',
+        'nb_seats'              => 'Nombre de place(s)',
         'h-captcha-response'    => 'Captcha'
     ],
 ];

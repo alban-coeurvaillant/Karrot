@@ -32,4 +32,9 @@ class Event extends Model
     {
         $q->where('online', true)->where('date', '>=', date('Y-m-d'));
     }
+
+    public function getDateFrAttribute()
+    {
+        return $this->date->format('d/m/Y');
+    }
 }

@@ -19,7 +19,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::orderByDesc('date')->orderByDesc('time')->get();
+        $events = Event::orderByDesc('date')->orderByDesc('time')->withCount('reservations')->withSum('reservations', 'nb_seats')->get();
         return view('admin.event.index', compact('events'));
     }
 

@@ -15,19 +15,24 @@
                 <th class="text-left">{{ __('Date') }}</th>
                 <th class="text-left">{{ __('Place of event') }}</th>
                 <th class="text-left">{{ __('Time') }}</th>
+                <th class="text-left">{{ __('Reservations') }}</th>
                 <th class="text-left">{{ __('Online') }}</th>
                 <td></td>
-                <td class="w-28"></td>
-                <td class="w-28"></td>
+                <td></td>
+                <td></td>
             </tr>
             </thead>
             <tbody>
             @forelse ($events as $event)
                 <tr>
-                    <td>{{ $event->date }}</td>
+                    <td>{{ $event->date_fr }}</td>
                     <td>{{ $event->place }}</td>
                     <td>{{ $event->time }}</td>
-                    <td><button class="inline-block rounded-full w-5 h-5 @if ($event->online) bg-green-600 @else bg-red-600 @endif"></button></td>
+                    <td>
+                        {{ $event->reservations_count }} 
+                        @if ($event->reservations_count) ({{ $event->reservations_sum_nb_seats }} {{ __('seat(s)') }}) @endif
+                    </td>
+                    <td class="text-center"><x-toggle-button active="{{ $event->online }}"></x-toggle-button></td>
                     <td><x-button-link :href="route('admin.event.show', $event)">{{ __('Show the reservations') }}</x-button-link></td>
                     <td><x-button-link :href="route('admin.event.edit', $event)">{{ __('Modify') }}</x-button-link></td>
                     <td>

@@ -2,6 +2,7 @@
     "Lastname": "Nom",
     "Firstname": "Prénom",
     "Email": "Email",
+    "Nb seats": "Nombre de place(s)",
     "Message": "Message",
     "Your message": "Votre message",
     "Date": "Date",
@@ -10,6 +11,7 @@
     "Online": "En ligne",
     "Title": "Titre",
     "Slug": "Lien",
+    "Book": "Réserver",
 
     "Content": "Contenu",
     "Contents": "Contenus",
@@ -26,7 +28,8 @@
     "No image": "Pas d'image",
 
     "Reservation": "Réservation",
-    "Show the reservations": "Voir les réservation",
+    "Show the reservations": "Voir les réservations",
+    "seat(s)": "place(s)",
 
     "New contact": "Nouveau contact",
     "New reservation": "Nouvelle réservation",
