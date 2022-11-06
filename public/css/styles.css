@@ -35,7 +35,6 @@ body {
 }
 
 header .navbar-brand img {
-  outline: solid;
   width: 16rem;
   margin: 1em;
 }
