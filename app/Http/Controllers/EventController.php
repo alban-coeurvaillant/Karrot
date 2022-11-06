@@ -7,6 +7,7 @@ use App\Models\Reservation;
 use \App\Mail\Reservation as ReservationMailable;
 use \App\Mail\ReservationConfirmation as ReservationConfirmationMailable;
 use App\Rules\ValidHCaptcha;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -38,7 +39,7 @@ class EventController extends Controller
 
     public function reservation(Event $event)
     {
-        if (!$event->online)
+        if (!$event->online || Carbon::now()->hour(0)->minute(0)->second(0)->milli(0)->gt($event->date))
             throw new NotFoundHttpException();
 
         return view('front.event.reservation', compact('event'));
@@ -46,14 +47,15 @@ class EventController extends Controller
 
     public function sendReservation(Request  $request, Event $event)
     {
-        if (!$event->online)
+        if (!$event->online || Carbon::now()->hour(0)->minute(0)->second(0)->milli(0)->gt($event->date))
             throw new NotFoundHttpException();
 
         $this->validate($request, [
             'lastname' => 'required',
             'firstname' => 'required',
+            'nb_seats' => 'required|integer|between:1,50',
             'email' => 'required|email',
-            'h-captcha-response' => ['required', new ValidHCaptcha()]
+//            'h-captcha-response' => ['required', new ValidHCaptcha()]
         ]);
 
 

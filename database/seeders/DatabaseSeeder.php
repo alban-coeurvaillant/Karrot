@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\User::factory()->create([
             'name' => 'Admin',
-            'email' => 'admin@admin',
-            'password' => bcrypt('cbi123')
+            'email' => env('KARROT_LOGIN'),
+            'password' => bcrypt(env('KARROT_PASSWORD'))
         ]);
     }
 }

@@ -17,7 +17,7 @@
                         <h6 class="text-muted mb-2"><span style="color: black;">{{ ucfirst($event->date->isoFormat('dddd')) }}&nbsp;</span><i class="far fa-star"></i>&nbsp;{{ $event->date->format('d/m/y') }} {{ $event->time }}<br></h6>
                     </div>
                     <div class="col d-xxl-flex justify-content-xxl-end align-items-xxl-center">
-                        <x-button-link href="{{ route('event.reservation', $event) }}">Reserver</x-button-link>
+                        <x-button-link href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
                     </div>
                 </div>
             </div>

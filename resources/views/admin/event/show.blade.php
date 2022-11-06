@@ -8,32 +8,30 @@
     <div class="py-12">
         <x-card>
             <x-slot name="header">
-                <div class="mb-5">
+                <div>
                     <x-button-link :href="route('admin.event.index')">{{ __('Back') }}</x-button-link>
                 </div>
             </x-slot>
 
             <div>
                 <div>{{ $event->place }}</div>
-                <div>{{ $event->date }}</div>
+                <div>{{ $event->date_fr }}</div>
                 <div>{{ $event->time }}</div>
             </div>
             <hr class="my-5">
             <table class="table w-full">
                 <thead>
                 <tr>
-                    <th class="text-left">{{ __('Firstname') }}</th>
-                    <th class="text-left">{{ __('Lastname') }}</th>
-                    <th class="text-left">{{ __('Email') }}</th>
+                    <th class="text-left">{{ __('Name') }}</th>
+                    <th class="text-left">{{ __('Nb seats') }}</th>
                     <th class="text-left">{{ __('Message') }}</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($event->reservations as $reservation)
                     <tr>
-                        <td>{{ $reservation->firstname }}</td>
-                        <td>{{ $reservation->lastname }}</td>
-                        <td>{{ $reservation->email }}</td>
+                        <td><a href="mailto:{{ $reservation->email }}">{{ $reservation->fullname }}</a></td>
+                        <td>{{ $reservation->nb_seats }}</td>
                         <td>{{ $reservation->message }}</td>
                     </tr>
                 @endforeach

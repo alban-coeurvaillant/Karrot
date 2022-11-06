@@ -17,7 +17,7 @@ class CreateDatabaseTables extends Migration
             $table->id();
             $table->string('place')->nullable();
             $table->text('description')->nullable();
-            $table->string('date')->nullable();
+            $table->date('date')->nullable();
             $table->string('time')->nullable();
             $table->boolean('online')->default(false);
             $table->nullableTimestamps();
@@ -30,6 +30,7 @@ class CreateDatabaseTables extends Migration
             $table->string('firstname')->nullable();
             $table->string('email')->nullable();
             $table->text('message')->nullable();
+            $table->unsignedSmallInteger('nb_seats')->nullable();
             $table->nullableTimestamps();
         });
 
