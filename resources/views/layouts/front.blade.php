@@ -34,10 +34,18 @@
                 <div class="col-12 col-xl-9 col-xxl-9 col-9">
                     {{ $slot }}
                 </div>
-                <div class="col-10 col-sm-10 col-xl-3 col-xxl-3 col-3">
-                    <h3 class="text-capitalize" style="background: #4a0740;color: var(--bs-light);font-size: 0.9em;padding: 0.3em;text-align: center;margin-top: 0.5em;">Réservations</h3>
-                    <picture><img src="{{ asset('img/affiche.jpg') }}" style="width: 100%;"></picture><button class="btn btn-primary" type="button" style="background: rgb(125, 105, 144);border-radius: 0;min-width: 100%;margin-top: 0.5em;">Acheter sur la Fnac</button><button class="btn btn-primary" type="button" style="background: rgb(125, 105, 144);border-radius: 0;min-width: 100%;margin-top: 0.5em;">Acheter sur la Fnac</button>
-                    <h3 class="text-capitalize" style="background: #4a0740;color: var(--bs-light);font-size: 0.9em;padding: 0.3em;text-align: center;margin-top: 0.5em;">Presse Pack</h3>
+                <div class=" col-10 col-sm-10 col-xl-3 col-xxl-3 col-3 aside-column">
+                    <h3>Réservations</h3>
+                    <picture>
+                        <img src="{{ asset('img/affiche.jpg') }}">
+                    </picture>
+                    <button class="btn btn-primary" type="button">
+                        Acheter sur la Fnac
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                        Acheter sur la Fnac
+                    </button>
+                    <h3>Presse Pack</h3>
                 </div>
             </div>
         </div>
