@@ -30,5 +30,50 @@ body {
 }
 
 .img-fluid {
-  width: 22rem;
+  width: 16rem;
+    margin-top: 1em;
+}
+
+header .navbar-brand img {
+  outline: solid;
+  width: 16rem;
+  margin: 1em;
+}
+header span {
+  margin: 1em;
+  font-family: "Alegreya Sans", sans-serif;
+  background: linear-gradient(#361030, #45143c 100%), var(--bs-purple);
+  color: white;
+  border-radius: 0.3em;
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+  font-size: 1.2em;
+  padding: 0.2em 0.5em 0.3em;
+}
+
+.nav-tabs .nav-link, .nav-tabs:hover .nav-link:hover {
+  border: none;
+  margin-bottom: 0;
+}
+
+.card {
+  margin-top: 1em;
+}
+
+h2 {
+  margin-top: 1em;
+}
+body {
+  padding: 2em;
+  background: black;
+}
+body .container {
+  background: red;
+  padding: 2em;
+}
+body .container main {
+  background: white;
+  padding: 1em;
 }
