@@ -11,8 +11,7 @@ body {
   background: #844d7b;
 }
 
-.header--section {
-}
+
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: var(--bs-nav-tabs-link-active-color);
@@ -75,4 +74,34 @@ body .container {
 body .container main {
   background: white;
   padding: 1em;
+}
+
+body {
+  background-image: url("../wood.jpg");
+}
+
+.o-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 1em 1em 0 0;
+}
+@media (max-width: 960px) {
+  .o-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand picture img {
+  min-width: 14em;
+}
+
+.navbar-brand-baseline {
+  text-align: center;
 }
