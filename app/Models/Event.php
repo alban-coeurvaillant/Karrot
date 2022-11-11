@@ -9,9 +9,13 @@ class Event extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['date', 'place', 'description', 'time', 'online'];
+    protected $fillable = ['date', 'place', 'description', 'time', 'online', 'seats'];
     
     protected $dates = ['date'];
+    
+    protected $attributes = [
+        'seats' => 100,
+    ];
 
     public function reservations()
     {

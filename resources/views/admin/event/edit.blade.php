@@ -41,6 +41,10 @@
                     <x-input id="time_field" name="time" type="time" value="{{ old('time', $event->time) }}" />
                 </div>
                 <div class="mb-3">
+                    <label for="seats_field">{{ __('Remaining seats') }}</label>
+                    <x-input id="seats_field" name="seats" type="number" value="{{ old('seats', $event->seats) }}" />
+                </div>
+                <div class="mb-3">
                     <label for="online_field">{{ __('Online') }}</label>
                     <input type="hidden" name="online" value="0">
                     <input id="online_field" name="online" type="checkbox" value="1" @if(old('online', $event->online)) checked @endif>

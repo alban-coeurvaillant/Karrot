@@ -16,6 +16,7 @@
                 <th class="text-left">{{ __('Place of event') }}</th>
                 <th class="text-left">{{ __('Time') }}</th>
                 <th class="text-left">{{ __('Reservations') }}</th>
+                <th class="text-left">{{ __('Remaining seats') }}</th>
                 <th class="text-left">{{ __('Online') }}</th>
                 <td></td>
                 <td></td>
@@ -32,6 +33,7 @@
                         {{ $event->reservations_count }} 
                         @if ($event->reservations_count) ({{ $event->reservations_sum_nb_seats }} {{ __('seat(s)') }}) @endif
                     </td>
+                    <td>{{ $event->seats }}</td>
                     <td class="text-center"><x-toggle-button active="{{ $event->online }}"></x-toggle-button></td>
                     <td><x-button-link :href="route('admin.event.show', $event)">{{ __('Show the reservations') }}</x-button-link></td>
                     <td><x-button-link :href="route('admin.event.edit', $event)">{{ __('Modify') }}</x-button-link></td>
