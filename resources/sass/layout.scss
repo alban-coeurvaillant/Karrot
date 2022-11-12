@@ -1,0 +1,178 @@
+
+
+header {
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.8em 0.8em 0 0;
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        picture{
+            img {
+                min-width: 14em;
+                min-width: 20em;
+                width: 16rem;
+                margin: 1em;
+            }
+        }
+    }
+
+    span {
+ 
+    }
+}
+
+
+// suppression des effets de bordure sur les items de menu 
+.o-main-nav {
+    background: red;
+    display: flex;
+    padding: 0;
+    flex-wrap: nowrap;
+    margin: 0;
+
+    
+    .nav-item{
+        list-style-type: none;
+        flex-grow: 1;
+        a {
+            background: #844d7b;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: white;
+            &:hover {
+                background: hsl(311, 27%, 25%);
+            }
+        }
+    }
+}
+.nav {
+    outline: solid;
+
+}
+.nav-tabs .nav-link,.nav-tabs:hover .nav-link:hover  {
+ 
+    border: none;
+    margin-bottom: 0;
+}
+
+
+
+// ajout des marges dans card des évènements
+.card {
+    margin-top: 1em;
+}
+
+h2{
+    margin-top: 1em;
+  
+}
+
+
+// style pour le back office
+
+body {
+    background-color: green;
+    padding: 1em;
+    .container {
+        padding: 2em;
+        main {
+        background: white;
+            padding: 1em;
+        }
+    }
+}
+
+
+.navbar-brand-baseline {
+    margin: 1em;
+    background: #3D0635;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0.7em;
+    border-radius: 0.7em;
+    p{
+        margin: 0;
+        font-size: 1.2em;
+        color: white;
+    }
+}
+.o-section-title {
+    text-indent: 0.6em;
+    font-style: italic;
+    font-family: Adamina, serif;
+    color: rgb(255,255,255);
+    background: #3D0635;
+    padding: 0.7em;
+  }
+
+  .o-main-content {
+    background-color: white;
+    display: flex;
+    padding: 2em;
+    .main-column {
+        background: rgba(0, 0, 255, 0.201);
+        padding: 1em;
+        width: 80%;
+        font-size: 1.1em;
+    }
+    .aside-column{
+        background: rgba(0, 128, 0, 0.247);
+        padding: 1em;
+        width: 20%;
+
+    }
+  }
+  
+
+// Mise en forme du header
+
+.o-header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius:  1em 1em 0 0;
+    
+    @media (max-width: 960px) { 
+   
+        flex-direction: column;
+        align-items: center;
+ }
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5em;
+
+    
+    .footer-mentions {
+    display: flex;
+    align-items: center;
+    p{
+        margin: 0;
+    }
+    }
+
+    .footer-socials {
+        display: flex;
+        align-items: center;
+        p{
+            margin: 0;
+        }
+    }
+}
