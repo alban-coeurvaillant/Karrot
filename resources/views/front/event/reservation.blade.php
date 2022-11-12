@@ -27,6 +27,9 @@
     </x-alert>
     @endif
 
+    @if (!$event->seats)
+        <div>Toutes les places ont été réservées pour ce concert.</div>
+    @else
     <form action="{{ route('event.sendReservation', $event) }}" method="post" enctype="application/x-www-form-urlencoded">
         @csrf
 
@@ -52,7 +55,7 @@
             <label for="nb_seats" class="col-sm-5 col-md-3 col-form-label">{{ __('Nb seats') }} *</label>
             <div class="col-auto">
                 <select name="nb_seats" id="nb_seats" class="form-control">
-                    @foreach(range(1, 50) as $nb)
+                    @foreach(range(1, min(50, $event->seats)) as $nb)
                         <option value="{{ $nb }}" @if (old('nb_seats') == $nb) selected @endif>{{ $nb }}</option>
                     @endforeach
                 </select>
@@ -73,5 +76,6 @@
         </div>
 
     </form>
+    @endif
 
 @endcomponent

@@ -10,6 +10,7 @@ use App\Rules\ValidHCaptcha;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class EventController extends Controller
@@ -49,19 +50,25 @@ class EventController extends Controller
     {
         if (!$event->online || Carbon::now()->hour(0)->minute(0)->second(0)->milli(0)->gt($event->date))
             throw new NotFoundHttpException();
+        
+        if (!$event->seats)
+        throw new AccessDeniedHttpException('No more place');
 
         $this->validate($request, [
             'lastname' => 'required',
             'firstname' => 'required',
-            'nb_seats' => 'required|integer|between:1,50',
+            'nb_seats' => 'required|integer|between:1,' . $event->seats,
             'email' => 'required|email',
-//            'h-captcha-response' => ['required', new ValidHCaptcha()]
+            'h-captcha-response' => ['required', new ValidHCaptcha()]
         ]);
 
+        
 
         $reservation = new Reservation();
         $reservation->fill($request->all());
         $event->reservations()->save($reservation);
+        $event->seats = max(0, $event->seats - $reservation->nb_seats);
+        $event->save();
         Mail::send(new ReservationMailable($reservation));
         Mail::send(new ReservationConfirmationMailable($reservation));
 
