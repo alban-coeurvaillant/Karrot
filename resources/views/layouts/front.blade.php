@@ -34,8 +34,8 @@
                     <h3>Réservations</h3>
                     <div id="contact-block">
                         <p>
-                        <span class="tel"><strong>Tél. :</strong>   01 43 14 08 10</span>
-                        <span class="port"><strong>Port. :</strong>  06 07 08 55 56</span>
+                        <span class="tel">Tél. :   01 43 14 08 10</span>
+                        <span class="port">Port. : 06 07 08 55 56</span>
                         </p>
                         <ul class="o-contact-block">
                             <li>
@@ -45,11 +45,12 @@
                             <button type="button" class="btn btn-buy">Acheter sur la Fnac</button>
                             </li>
                         </ul>
+                       
                     </div>
 
-                   
-               
                     <h3>Presse Pack</h3>
+                    <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
+                    
                 </div>
     </div>
     
