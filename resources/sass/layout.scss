@@ -1,11 +1,57 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+.card {
+    margin-top: 1em;
+}
+
+h2{
+    margin-top: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #510040;
+    font-weight: bold;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image:url("https://www.gospeldream.fr/css/img/wood.jpg") ;
+    padding: 1em;
+    .main-wrapper {
+        max-width: 1226px;
+        margin: auto;
+        .container {
+            padding: 2em;
+            main {
+            background: white;
+                padding: 1em;
+            }
+        }
+    }
+
+}
+
+.btn-buy{
+    background-color: #9A6196;
+    color: #fff;
+    border-radius: 0;
+}
+
 
 header {
-   
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: white;
+    background-color: #EFEFEF;
     border-radius: 0.8em 0.8em 0 0;
 
     .navbar-brand {
@@ -21,121 +67,175 @@ header {
         }
     }
 
-    span {
- 
-    }
 }
 
 
-// suppression des effets de bordure sur les items de menu 
+
 .o-main-nav {
-    background: red;
     display: flex;
     padding: 0;
     flex-wrap: nowrap;
     margin: 0;
+    background-color: #4A0740;
 
     
     .nav-item{
         list-style-type: none;
         flex-grow: 1;
         a {
-            background: #844d7b;
+         
             display: block;
             width: 100%;
             height: 100%;
             padding: 0.5em 1em;
             text-align: center;
             text-decoration: none;
-            font-size: 1.2em;
-            color: white;
-            &:hover {
-                background: hsl(311, 27%, 25%);
+            font-size: 18spx;
+            color: #cdcfc9;
+            font-weight: 500;
+            &.active {
+                color: #fff;
+                background: #7D6990;
+                font-weight: 700;
             }
         }
     }
 }
-.nav {
-    outline: solid;
-
-}
-.nav-tabs .nav-link,.nav-tabs:hover .nav-link:hover  {
- 
-    border: none;
-    margin-bottom: 0;
-}
 
 
 
-// ajout des marges dans card des évènements
-.card {
-    margin-top: 1em;
-}
-
-h2{
-    margin-top: 1em;
-  
-}
 
 
-// style pour le back office
 
-body {
-    background-color: green;
-    padding: 1em;
-    .container {
-        padding: 2em;
-        main {
-        background: white;
-            padding: 1em;
-        }
-    }
-}
+
 
 
 .navbar-brand-baseline {
-    margin: 1em;
     background: #3D0635;
+    border-radius: 5px;
+    font-family: 'Anton', sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
-    padding: 0.7em;
-    border-radius: 0.7em;
+    justify-content: center;
+    align-self: flex-end;
+    letter-spacing: 0.1em;
+    height: min-content;
+    width: max-content;
+    padding: 8px;
+    max-height: 32px;
+    margin-bottom: 1em;
+    
+
     p{
         margin: 0;
         font-size: 1.2em;
         color: white;
     }
 }
+
+button {
+    margin: 0;
+}
+.o-contact-block{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li{
+        list-style-type: none;
+        background-color: #9a6196;
+        padding: 6px;
+        text-align: center;
+        margin-top: 12px;
+        width: 90%;
+        color: white;
+        font-weight: bold;
+        &:first-of-type{
+            margin-top: initial;
+        }
+    
+    }
+
+}
+
+#contact-block{
+    width: 100%;
+    p{
+        text-align: center;
+        span{
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            color: #510040;
+        }
+    }
+}
+
+
+
+
 .o-section-title {
-    text-indent: 0.6em;
-    font-style: italic;
+    display: flex;
+    align-items: center;
     font-family: Adamina, serif;
     color: rgb(255,255,255);
-    background: #3D0635;
+    background: #7D6990;
     padding: 0.7em;
+    min-height: 6em;
+
+        h1{
+            margin: 0 1em 0;
+            font-style: italic;
+            font-size: 52px;
+        }
   }
 
   .o-main-content {
-    background-color: white;
+    background-color: #EFEFEF;
     display: flex;
-    padding: 2em;
     .main-column {
-        background: rgba(0, 0, 255, 0.201);
+        background-color: #FFF;
         padding: 1em;
         width: 80%;
         font-size: 1.1em;
     }
     .aside-column{
-        background: rgba(0, 128, 0, 0.247);
-        padding: 1em;
-        width: 20%;
+      
+        padding:  1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+
+        h3 {
+            background: #3D0635;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            padding: 0.5em;
+          }
+
+        picture {
+            width: 100%;
+            img {
+                width: 100%;
+                border: 12px solid white;
+                min-width: 13rem;
+              }
+          }
+
+       
+          button {
+            width: 90%;
+            padding: 0;
+          }
 
     }
   }
   
 
-// Mise en forme du header
 
 .o-header {
     background-color: white;
@@ -156,10 +256,9 @@ body {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    padding: 0.5em;
-
-    
+    background-color: #e7e7e7;
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
     .footer-mentions {
     display: flex;
     align-items: center;
