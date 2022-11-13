@@ -11,7 +11,7 @@
 
 <ul class="o-main-nav">
     <li class="nav-item">
-        <a class="@if (url()->current() == url('/')) active @endif fw-semibold flex-grow-1" href="/">
+        <a class="@if (url()->current() == url('/')) active @endif" href="/">
         Notre chorale
         </a>
     </li>

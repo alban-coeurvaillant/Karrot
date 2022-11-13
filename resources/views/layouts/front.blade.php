@@ -17,7 +17,7 @@
     {{ $scripts ?? null }}
 </head>
 <body>
-<div class="main-wrapper container-fluid mx-auto">
+<div class="main-wrapper ">
     @include('front.header-nav')
     <div class="o-section-title">
         <h1>{{ $h1 }}</h1>
@@ -27,16 +27,28 @@
                     {{ $slot }}
                 </div>
                 <div class="aside-column">
-                    <h3>Réservations</h3>
+                 
                     <picture>
                         <img src="{{ asset('img/affiche.jpg') }}">
                     </picture>
-                    <button class="btn btn-primary" type="button">
-                        Acheter sur la Fnac
-                    </button>
-                    <button class="btn btn-primary" type="button">
-                        Acheter sur la Fnac
-                    </button>
+                    <h3>Réservations</h3>
+                    <div id="contact-block">
+                        <p>
+                        <span class="tel"><strong>Tél. :</strong>   01 43 14 08 10</span>
+                        <span class="port"><strong>Port. :</strong>  06 07 08 55 56</span>
+                        </p>
+                        <ul class="o-contact-block">
+                            <li>
+                            <button type="button" class="btn btn-buy">Acheter sur la Fnac</button>
+                            </li>
+                            <li>
+                            <button type="button" class="btn btn-buy">Acheter sur la Fnac</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                   
+               
                     <h3>Presse Pack</h3>
                 </div>
     </div>
