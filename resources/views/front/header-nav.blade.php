@@ -1,10 +1,10 @@
 <header class="o-master-header">
-    <a class="navbar-brand" href="#">
+    <a class="header-logo" href="#">
         <picture class="">
             <img src="{{ asset('img/GD-logo.svg') }}" loading="lazy">
         </picture>
     </a>
-    <div class="navbar-brand-baseline">
+    <div class="header-baseline">
     <p>Chants authentiques de l'église Afro-Américaine</p>
     </div>
 </header>
