@@ -17,31 +17,4 @@
 
 
 
-.aside-column {
-  outline: solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.aside-column picture {
-  background: red;
-  margin-top: 0.5em;
-  width: 100%;
-}
-.aside-column picture img {
-  width: 100%;
-}
-.aside-column h3 {
-  margin-top: 0.5em;
-  background: #3D0635;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 1em;
-  padding: 0.5em;
-}
-.aside-column button {
-  outline: solid;
-  margin-top: 0.5em;
-  width: 100%;
-}
+

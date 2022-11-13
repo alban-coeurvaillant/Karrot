@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.2.1 (https://getbootstrap.com/)
@@ -10910,11 +10912,48 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.card {
+  margin-top: 1em;
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #510040;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
+  padding: 1em;
+}
+body .main-wrapper {
+  max-width: 1226px;
+  margin: auto;
+}
+body .main-wrapper .container {
+  padding: 2em;
+}
+body .main-wrapper .container main {
+  background: white;
+  padding: 1em;
+}
+
+.btn-buy {
+  background-color: #9A6196;
+  color: #fff;
+  border-radius: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background-color: white;
+  background-color: #EFEFEF;
   border-radius: 0.8em 0.8em 0 0;
 }
 header .navbar-brand {
@@ -10927,69 +10966,54 @@ header .navbar-brand picture img {
   width: 16rem;
   margin: 1em;
 }
+
 .o-main-nav {
-  background: red;
   display: flex;
   padding: 0;
   flex-wrap: nowrap;
   margin: 0;
+  background-color: #4A0740;
 }
 .o-main-nav .nav-item {
   list-style-type: none;
   flex-grow: 1;
 }
 .o-main-nav .nav-item a {
-  background: #844d7b;
   display: block;
   width: 100%;
   height: 100%;
   padding: 0.5em 1em;
   text-align: center;
   text-decoration: none;
-  font-size: 1.2em;
-  color: white;
+  font-size: 18spx;
+  color: #cdcfc9;
+  font-weight: 500;
 }
-.o-main-nav .nav-item a:hover {
-  background: hsl(311deg, 27%, 25%);
-}
-
-.nav {
-  outline: solid;
-}
-
-.nav-tabs .nav-link, .nav-tabs:hover .nav-link:hover {
-  border: none;
-  margin-bottom: 0;
-}
-
-.card {
-  margin-top: 1em;
-}
-
-h2 {
-  margin-top: 1em;
-}
-
-body {
-  background-color: green;
-  padding: 1em;
-}
-body .container {
-  padding: 2em;
-}
-body .container main {
-  background: white;
-  padding: 1em;
+.o-main-nav .nav-item a.active {
+  color: #fff;
+  background: #7D6990;
+  font-weight: 700;
 }
 
 .navbar-brand-baseline {
-  margin: 1em;
   background: #3D0635;
+  border-radius: 5px;
+  font-family: "Anton", sans-serif;
   text-align: center;
   display: flex;
   align-items: center;
-  padding: 0.7em;
-  border-radius: 0.7em;
+  justify-content: center;
+  align-self: flex-end;
+  letter-spacing: 0.1em;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  max-height: 32px;
+  margin-bottom: 1em;
 }
 .navbar-brand-baseline p {
   margin: 0;
@@ -10997,30 +11021,93 @@ body .container main {
   color: white;
 }
 
+button {
+  margin: 0;
+}
+
+.o-contact-block {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.o-contact-block li {
+  list-style-type: none;
+  background-color: #9a6196;
+  padding: 6px;
+  text-align: center;
+  margin-top: 12px;
+  width: 90%;
+  color: white;
+  font-weight: bold;
+}
+.o-contact-block li:first-of-type {
+  margin-top: initial;
+}
+
+#contact-block {
+  width: 100%;
+}
+#contact-block p {
+  text-align: center;
+}
+#contact-block p span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #510040;
+}
+
 .o-section-title {
-  text-indent: 0.6em;
-  font-style: italic;
+  display: flex;
+  align-items: center;
   font-family: Adamina, serif;
   color: rgb(255, 255, 255);
-  background: #3D0635;
+  background: #7D6990;
   padding: 0.7em;
+  min-height: 6em;
+}
+.o-section-title h1 {
+  margin: 0 1em 0;
+  font-style: italic;
+  font-size: 52px;
 }
 
 .o-main-content {
-  background-color: white;
+  background-color: #EFEFEF;
   display: flex;
-  padding: 2em;
 }
 .o-main-content .main-column {
-  background: rgba(0, 0, 255, 0.201);
+  background-color: #FFF;
   padding: 1em;
   width: 80%;
   font-size: 1.1em;
 }
 .o-main-content .aside-column {
-  background: rgba(0, 128, 0, 0.247);
   padding: 1em;
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.o-main-content .aside-column h3 {
+  background: #3D0635;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 0.5em;
+}
+.o-main-content .aside-column picture {
+  width: 100%;
+}
+.o-main-content .aside-column picture img {
+  width: 100%;
+  border: 12px solid white;
+  min-width: 13rem;
+}
+.o-main-content .aside-column button {
+  width: 90%;
+  padding: 0;
 }
 
 .o-header {
@@ -11040,8 +11127,9 @@ body .container main {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: white;
-  padding: 0.5em;
+  background-color: #e7e7e7;
+  padding: 1em;
+  border-radius: 0 0 1em 1em;
 }
 footer .footer-mentions {
   display: flex;
