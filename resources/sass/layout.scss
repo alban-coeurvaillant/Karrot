@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
+* {
+    box-sizing: border-box ;
+}
 
 
 .card {
@@ -26,6 +28,24 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-image:url("https://www.gospeldream.fr/css/img/wood.jpg") ;
     padding: 1em;
+
+
+
+    .o-master-header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 28px;
+        border-radius:  1em 1em 0 0;
+        
+        @media (max-width: 960px) { 
+            flex-direction: column;
+            align-items: center;
+            
+     }
+    
+    }
+    
     .main-wrapper {
         max-width: 1226px;
         margin: auto;
@@ -54,15 +74,14 @@ header {
     background-color: #EFEFEF;
     border-radius: 0.8em 0.8em 0 0;
 
-    .navbar-brand {
+    .header-logo {
         display: flex;
         align-items: center;
         picture{
+            width: 100%;
             img {
-                min-width: 14em;
-                min-width: 20em;
-                width: 16rem;
-                margin: 1em;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -100,6 +119,10 @@ header {
             }
         }
     }
+
+    @media (max-width: 960px) { 
+        flex-direction: column;
+    }
 }
 
 
@@ -110,7 +133,7 @@ header {
 
 
 
-.navbar-brand-baseline {
+.header-baseline {
     background: #3D0635;
     border-radius: 5px;
     font-family: 'Anton', sans-serif;
@@ -119,7 +142,7 @@ header {
     align-items: center;
     justify-content: center;
     align-self: flex-end;
-    letter-spacing: 0.1em;
+    letter-spacing: 1.6px;
     height: min-content;
     width: max-content;
     padding: 8px;
@@ -131,6 +154,12 @@ header {
         margin: 0;
         font-size: 1.2em;
         color: white;
+    }
+
+    @media (max-width: 960px) { 
+        align-self: center;
+        font-size: 10px;
+        transform: scale(0.8);
     }
 }
 
@@ -188,18 +217,35 @@ button {
             margin: 0 1em 0;
             font-style: italic;
             font-size: 52px;
+
+            @media (max-width: 960px) { 
+                margin: 0;
+                font-size: 22px;
+                margin: auto;
+            }
         }
+
+            @media (max-width: 960px) { 
+                margin: 0;
+                font-size: 22px;
+                min-height: initial;
+            }
   }
 
   .o-main-content {
     background-color: #EFEFEF;
     display: flex;
+
     .main-column {
         background-color: #FFF;
         padding: 1em;
         width: 80%;
         font-size: 1.1em;
+        @media (max-width: 960px) { 
+            width: 100%;
+        }
     }
+
     .aside-column{
       
         padding:  1em;
@@ -233,24 +279,14 @@ button {
           }
 
     }
+
+    @media (max-width: 960px) { 
+        flex-direction: column-reverse;
+    }
   }
   
 
 
-.o-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    border-radius:  1em 1em 0 0;
-    
-    @media (max-width: 960px) { 
-   
-        flex-direction: column;
-        align-items: center;
- }
-
-}
 
 
 footer {
@@ -262,16 +298,25 @@ footer {
     .footer-mentions {
     display: flex;
     align-items: center;
-    p{
-        margin: 0;
+        p{
+            margin: 0;
+        }
+
+    @media (max-width: 960px) { 
+        display: flex;
+        flex-direction: column;
     }
     }
 
     .footer-socials {
         display: flex;
         align-items: center;
-        p{
-            margin: 0;
-        }
+        p { margin: 0;}
+
+    }
+
+   @media (max-width: 960px) { 
+        display: flex;
+        flex-direction: column;
     }
 }
