@@ -76,6 +76,10 @@
         </div>
 
     </form>
+
+    <div class="my-3 small">
+        <em>* {{ __('Mandatory fields') }}</em>
+    </div>
     @endif
 
 @endcomponent

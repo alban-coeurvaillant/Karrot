@@ -1,5 +1,5 @@
 <header class="o-master-header">
-    <a class="header-logo" href="#">
+    <a class="header-logo" href="{{ route('home') }}">
         <picture class="">
             <img src="{{ asset('img/GD-logo.svg') }}" loading="lazy">
         </picture>
@@ -11,7 +11,7 @@
 
 <ul class="o-main-nav">
     <li class="nav-item">
-        <a class="@if (url()->current() == url('/')) active @endif" href="/">
+        <a class="@if (request()->routeIs('home')) active @endif" href="/">
         Notre chorale
         </a>
     </li>
@@ -22,7 +22,7 @@
 
     @if (config('karrot.event'))
     <li class="nav-item">
-            <a class="@if (request()->routeIs('event.index')) active @endif " href="{{ route('event.index') }}" >Concerts et reservations</a>
+            <a class="@if (request()->routeIs('event.*')) active @endif " href="{{ route('event.index') }}" >Concerts et reservations</a>
         </li>
     @endif
 
@@ -32,11 +32,11 @@
     </li>
     @endif
 
-    <li class="nav-item @if (url()->current() == url('presse')) active @endif">
-        <a href="{{ url('presse') }}">Presse</a>
+    <li class="nav-item">
+        <a class="@if (url()->current() == url('presse')) active @endif" href="{{ url('presse') }}">Presse</a>
     </li>
-    <li class=" nav-item @if (url()->current() == url('discographie')) active @endif">
-        <a href="{{ url('discographie') }}">Discographie</a>
+    <li class=" nav-item">
+        <a class="@if (url()->current() == url('discographie')) active @endif" href="{{ url('discographie') }}">Discographie</a>
     </li>
     @if (config('karrot.contact'))
     <li class="nav-item">
