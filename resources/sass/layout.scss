@@ -64,6 +64,7 @@ body {
     background-color: #9A6196;
     color: #fff;
     border-radius: 0;
+    font-weight: 600;
 }
 
 
@@ -109,7 +110,7 @@ header {
             padding: 0.5em 1em;
             text-align: center;
             text-decoration: none;
-            font-size: 18spx;
+            font-size: 16px;
             color: #cdcfc9;
             font-weight: 500;
             &.active {
@@ -196,7 +197,7 @@ button {
             display: block;
             font-size: 20px;
             font-weight: bold;
-            color: #510040;
+            color: #9a6196;
         }
     }
 }
@@ -216,7 +217,7 @@ button {
         h1{
             margin: 0 1em 0;
             font-style: italic;
-            font-size: 52px;
+            font-size: 46px;
 
             @media (max-width: 960px) { 
                 margin: 0;
@@ -240,7 +241,10 @@ button {
         background-color: #FFF;
         padding: 1em;
         width: 80%;
-        font-size: 1.1em;
+        font-size: 16px;
+
+
+
         @media (max-width: 960px) { 
             width: 100%;
         }
@@ -261,6 +265,7 @@ button {
             color: white;
             font-size: 20px;
             padding: 0.5em;
+            margin: 0;
           }
 
         picture {
