@@ -27,5 +27,13 @@ class Image extends Model
         InterventionImage::make($file)->fit(800)->save($thumbpath);
         $this->thumbpath = $dir . 'thumbs/' . $filename;
     }
-    
+
+
+    public function delete()
+    {
+        $files = [$this->thumbpath, $this->path];
+        if (parent::delete()) {
+            Storage::disk('real_public')->delete($files);
+        }
+    }
 }

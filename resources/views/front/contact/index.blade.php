@@ -8,15 +8,15 @@
     @endslot
 
     @if ($errors->any())
-        <x-alert class="text-red-600">
+        <x-alert class="alert alert-danger">
             @foreach($errors->all() as $error)
-                <p>{{ $error }}</p>
+                <p class="m-0">{{ $error }}</p>
             @endforeach
         </x-alert>
     @endif
 
     @if (session('confirmation'))
-    <x-alert class="text-green-600">
+    <x-alert class="alert alert-success">
         {{ session('confirmation') }}
     </x-alert>
     @endif
@@ -26,19 +26,19 @@
 
         <div class="mb-3">
             <label for="lastname">{{ __('Lastname') }}</label>
-            <x-input type="text" name="lastname" id="lastname" />
+            <x-input type="text" name="lastname" id="lastname" value="{{ old('lastname') }}" />
         </div>
         <div class="mb-3">
             <label for="firstname">{{ __('Firstname') }}</label>
-            <x-input type="text" name="firstname" id="firstname" />
+            <x-input type="text" name="firstname" id="firstname" value="{{ old('firstname') }}" />
         </div>
         <div class="mb-3">
-            <label for="email">{{ __('Email') }}</label>
-            <x-input type="email" name="email" id="email" />
+            <label for="email">{{ __('Email') }} *</label>
+            <x-input type="email" name="email" id="email" required value="{{ old('email') }}"/>
         </div>
         <div class="mb-3">
-            <label for="message">{{ __('Your message') }}</label>
-            <textarea name="message" id="message" class="form-control"></textarea>
+            <label for="message">{{ __('Your message') }} *</label>
+            <textarea name="message" id="message" class="form-control" required>{{ old('message') }}</textarea>
         </div>
 
         <div
@@ -52,4 +52,7 @@
 
     </form>
 
+    <div class="my-3 small">
+        <em>* {{ __('Mandatory fields') }}</em>
+    </div>
 @endcomponent
