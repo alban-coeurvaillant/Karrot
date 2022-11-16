@@ -1,2 +1,47 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~quill/dist/quill.snow.css";
+
+
+html {
+
+    height: 100%;
+    width: 100%;
+    body {
+        background: black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.o-guest-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    background: white;
+    padding: 60px;
+    border-radius: 12px;
+    min-width: 512px;
+    min-height: 412px;
+    .card-image{
+        text-align: center;
+        img {
+            height: 38px;
+        }
+    }
+    .card-content{
+        .text-box{
+            margin-top: 24px;
+        }
+    }
+}
+
+main, header{
+    background: white;
+    padding: 24px;
+}
