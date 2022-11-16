@@ -17,7 +17,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container o-guest-card">
             {{ $slot }}
         </div>
     </body>

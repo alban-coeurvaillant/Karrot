@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-50" />
+                <x-application-logo/>
             </a>
         </x-slot>
 
@@ -16,14 +16,14 @@
             @csrf
 
             <!-- Email Address -->
-            <div>
+            <div class="text-box">
                 <x-label for="email" :value="__('Email')" />
 
                 <x-input id="email" type="email" name="email" :value="old('email')" required autofocus />
             </div>
 
             <!-- Password -->
-            <div class="mb-3">
+            <div class="text-box">
                 <x-label for="password" :value="__('Password')" />
 
                 <x-input id="password"
@@ -33,7 +33,7 @@
             </div>
 
             <!-- Remember Me -->
-            <div class="mb-3">
+            <div class="text-box">
                 <label for="remember_me">
                     <input id="remember_me" type="checkbox" name="remember">
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
