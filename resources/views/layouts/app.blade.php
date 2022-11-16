@@ -13,7 +13,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
-        <div class="container">
+        <div class="o-login-card container">
             @include('layouts.navigation')
     
             <!-- Page Heading -->
