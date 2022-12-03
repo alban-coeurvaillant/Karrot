@@ -34,6 +34,11 @@
                     </x-nav-link>
                 </li>
                 @endif
+                <li class="nav-item">
+                    <x-nav-link :href="route('admin.disc.index')" :active="request()->routeIs('admin.disc.*')">
+                        {{ __('Discography') }}
+                    </x-nav-link>
+                </li>
                 @if (config('karrot.contact'))
                 <li class="nav-item">
                     <x-nav-link :href="route('admin.contact.index')" :active="request()->routeIs('admin.contact.*')">

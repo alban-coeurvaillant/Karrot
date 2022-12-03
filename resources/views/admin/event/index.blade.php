@@ -18,9 +18,9 @@
                 <th class="text-left">{{ __('Reservations') }}</th>
                 <th class="text-left">{{ __('Remaining seats') }}</th>
                 <th class="text-left">{{ __('Online') }}</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="col-action"></td>
+                <td class="col-action"></td>
+                <td class="col-action"></td>
             </tr>
             </thead>
             <tbody>

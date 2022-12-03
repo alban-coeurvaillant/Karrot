@@ -15,8 +15,8 @@
                 <th class="text-left">{{ __('Firstname') }}</th>
                 <th class="text-left">{{ __('Lastname') }}</th>
                 <th class="text-left">{{ __('Email') }}</th>
-                <td class="w-28"></td>
-                <td class="w-28"></td>
+                <td class="col-action"></td>
+                <td class="col-action"></td>
             </tr>
             </thead>
             <tbody>
@@ -30,7 +30,7 @@
                         <form class="delete-form" action="{{ route('admin.contact.destroy', $contact) }}" method="post" enctype="application/x-www-form-urlencoded">
                             @csrf
                             @method('delete')
-                            <x-button>{{ __('Delete') }}</x-button>
+                            <x-button class="btn-danger">{{ __('Delete') }}</x-button>
                         </form>
                     </td>
                 </tr>

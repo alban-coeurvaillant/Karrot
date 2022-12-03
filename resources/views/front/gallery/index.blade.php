@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3 photos" data-bss-baguettebox="">
                 @foreach($images as $image)
-                <div class="col item"><a href="{{ $image->path }}"><img class="img-fluid" src="{{ $image->thumbpath }}" alt=""></a></div>
+                <div class="col item"><a href="{{ asset($image->path) }}"><img class="img-fluid" src="{{ asset($image->thumbpath) }}" alt=""></a></div>
                 @endforeach
                 <div class="w-100"></div>
                 <div class="w-100"></div>

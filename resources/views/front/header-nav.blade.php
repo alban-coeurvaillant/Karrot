@@ -36,7 +36,7 @@
         <a class="@if (url()->current() == url('presse')) active @endif" href="{{ url('presse') }}">Presse</a>
     </li>
     <li class=" nav-item">
-        <a class="@if (url()->current() == url('discographie')) active @endif" href="{{ url('discographie') }}">Discographie</a>
+        <a class="@if (url()->current() == url('discographie')) active @endif" href="{{ route('disc.index') }}">Discographie</a>
     </li>
     @if (config('karrot.contact'))
     <li class="nav-item">
