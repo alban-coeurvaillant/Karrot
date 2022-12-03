@@ -10925,14 +10925,10 @@ textarea.form-control-lg {
   margin-top: 1em;
 }
 
-h2 {
-  margin-top: 1em;
-}
-
 a {
   text-decoration: none;
   color: #510040;
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 body {
@@ -11129,6 +11125,16 @@ button {
   }
 }
 
+h2 {
+  color: #510040;
+}
+
+@media (max-width: 960px) {
+  .main-column {
+    margin: initial;
+  }
+}
+
 .o-main-content {
   background-color: #EFEFEF;
   display: flex;
@@ -11138,6 +11144,9 @@ button {
   padding: 1em;
   width: 80%;
   font-size: 16px;
+}
+.o-main-content .main-column h2:nth-of-type(n+2) {
+  margin-top: 1em;
 }
 @media (max-width: 960px) {
   .o-main-content .main-column {
@@ -11249,6 +11258,11 @@ footer .footer-socials p {
   font-style: normal;
   font-family: Adamina, serif;
   font-size: 1.3em;
+}
+@media (max-width: 960px) {
+  .o-main-content .main-column {
+    margin: 0;
+  }
 }
 
 .card-body {
