@@ -61,8 +61,8 @@
     
     <footer>
         <div class="footer-mentions">
-            <p>&nbsp;© 2022 - Tous droits réservés www.gospeldream.fr&nbsp;</p>
-            <a href="#">Consultez nos mentions légales</a>
+            <p>&nbsp;© 2022 - Tous droits réservés www.gospeldream.fr&nbsp; <a href="#">Consultez nos mentions légales</a></p>
+            
         </div>
         <div class="footer-socials">
             <p>Retrouvez nous sur nos sur :</p>
