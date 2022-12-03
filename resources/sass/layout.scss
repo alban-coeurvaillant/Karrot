@@ -1,7 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --gd-primary-color: #510040;
+    --gd-secondary-color: #7d6990;
 
+}
 
 * {
     box-sizing: border-box ;
@@ -22,14 +26,10 @@ a{
     font-weight: bold;
 }
 
-
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-image:url("https://www.gospeldream.fr/css/img/wood.jpg") ;
     padding: 1em;
-
-
 
     .o-master-header {
         background-color: white;
@@ -50,7 +50,6 @@ body {
         max-width: 1226px;
         margin: auto;
         .container {
-            padding: 2em;
             main {
             background: white;
                 padding: 1em;
@@ -61,10 +60,12 @@ body {
 }
 
 .btn-buy{
-    background-color: #9A6196;
+    //background-color: #9A6196;
+    background-color: #3D0635;
     color: #fff;
     border-radius: 0;
     font-weight: 600;
+    
 }
 
 
@@ -174,23 +175,28 @@ button {
     align-items: center;
     li{
         list-style-type: none;
-        background-color: #9a6196;
-        padding: 6px;
+        min-height: 36px;
         text-align: center;
         margin-top: 12px;
-        width: 90%;
+        width: 100%;
         color: white;
         font-weight: bold;
         &:first-of-type{
             margin-top: initial;
         }
     
+            a{
+                height: 100%;
+                display: block;
+                width: 100%;
+            }
     }
 
 }
 
 #contact-block{
     width: 100%;
+    margin-top: 1em;
     p{
         text-align: center;
         span{
@@ -202,6 +208,9 @@ button {
     }
 }
 
+.btn{
+    min-height: 1em;
+}
 
 
 
@@ -213,7 +222,6 @@ button {
     background: #7D6990;
     padding: 0.7em;
     min-height: 6em;
-
         h1{
             margin: 0 1em 0;
             font-style: italic;
@@ -233,7 +241,7 @@ button {
             }
   }
 
-  .o-main-content {
+.o-main-content {
     background-color: #EFEFEF;
     display: flex;
 
@@ -242,9 +250,6 @@ button {
         padding: 1em;
         width: 80%;
         font-size: 16px;
-
-
-
         @media (max-width: 960px) { 
             width: 100%;
         }
@@ -272,7 +277,6 @@ button {
             width: 100%;
             img {
                 width: 100%;
-                border: 12px solid white;
                 min-width: 13rem;
               }
           }
@@ -288,7 +292,7 @@ button {
     @media (max-width: 960px) { 
         flex-direction: column-reverse;
     }
-  }
+}
   
 
 
@@ -326,4 +330,67 @@ footer {
     }
 }
 
+.aside-column {
+    background-color: white !important;
+    .container{
+        padding: 0 !important;
+        margin-top: 1em;
+    }
+}
+.o-photo-gallery {
+    .container{
+        padding: 0 !important;
+        .photos{
+              display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+            .photo{
+                outline: solid #f1f1f1 2px;
+                    &:hover{
+                        outline:2px solid rgb(204,204,204) !important;
+                }
+            }
+        }
+    }
+}
 
+.o-main-content {
+  
+    // background: var(--gd-primary-color);
+    .main-column {
+        margin: 2em;
+        padding: 2em;
+        p{
+            font-weight: normal !important;
+            strong{
+             
+                font-weight: normal !important;
+                color: var(--gd-primary-color);
+            }
+        }
+        
+        h3{
+            em{
+                color: var(--gd-primary-color);
+                font-style:  normal;
+                font-family: Adamina,serif;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+}
+
+.card-body {
+    background: var(--main-bg-color);
+    .btn-primary {
+        background: blue;
+        border-radius: 0;
+
+    }
+}
+
+p br{
+
+    display: none;
+}

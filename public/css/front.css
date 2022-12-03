@@ -10912,6 +10912,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+:root {
+  --gd-primary-color: #510040;
+  --gd-secondary-color: #7d6990;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10952,16 +10957,13 @@ body .main-wrapper {
   max-width: 1226px;
   margin: auto;
 }
-body .main-wrapper .container {
-  padding: 2em;
-}
 body .main-wrapper .container main {
   background: white;
   padding: 1em;
 }
 
 .btn-buy {
-  background-color: #9A6196;
+  background-color: #3D0635;
   color: #fff;
   border-radius: 0;
   font-weight: 600;
@@ -11064,20 +11066,25 @@ button {
 }
 .o-contact-block li {
   list-style-type: none;
-  background-color: #9a6196;
-  padding: 6px;
+  min-height: 36px;
   text-align: center;
   margin-top: 12px;
-  width: 90%;
+  width: 100%;
   color: white;
   font-weight: bold;
 }
 .o-contact-block li:first-of-type {
   margin-top: initial;
 }
+.o-contact-block li a {
+  height: 100%;
+  display: block;
+  width: 100%;
+}
 
 #contact-block {
   width: 100%;
+  margin-top: 1em;
 }
 #contact-block p {
   text-align: center;
@@ -11087,6 +11094,10 @@ button {
   font-size: 20px;
   font-weight: bold;
   color: #9a6196;
+}
+
+.btn {
+  min-height: 1em;
 }
 
 .o-section-title {
@@ -11153,7 +11164,6 @@ button {
 }
 .o-main-content .aside-column picture img {
   width: 100%;
-  border: 12px solid white;
   min-width: 13rem;
 }
 .o-main-content .aside-column button {
@@ -11198,4 +11208,57 @@ footer .footer-socials p {
     display: flex;
     flex-direction: column;
   }
+}
+
+.aside-column {
+  background-color: white !important;
+}
+.aside-column .container {
+  padding: 0 !important;
+  margin-top: 1em;
+}
+
+.o-photo-gallery .container {
+  padding: 0 !important;
+}
+.o-photo-gallery .container .photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.o-photo-gallery .container .photos .photo {
+  outline: solid #f1f1f1 2px;
+}
+.o-photo-gallery .container .photos .photo:hover {
+  outline: 2px solid rgb(204, 204, 204) !important;
+}
+
+.o-main-content .main-column {
+  margin: 2em;
+  padding: 2em;
+}
+.o-main-content .main-column p {
+  font-weight: normal !important;
+}
+.o-main-content .main-column p strong {
+  font-weight: normal !important;
+  color: var(--gd-primary-color);
+}
+.o-main-content .main-column h3 em {
+  color: var(--gd-primary-color);
+  font-style: normal;
+  font-family: Adamina, serif;
+  font-size: 1.3em;
+}
+
+.card-body {
+  background: var(--main-bg-color);
+}
+.card-body .btn-primary {
+  background: blue;
+  border-radius: 0;
+}
+
+p br {
+  display: none;
 }
