@@ -27,30 +27,35 @@
                     {{ $slot }}
                 </div>
                 <div class="aside-column">
-                 
-                    <picture>
-                        <img src="{{ asset('img/affiche.jpg') }}">
-                    </picture>
+                    <div class="container">
                     <h3>Réservations</h3>
-                    <div id="contact-block">
+                    <picture>
+                            <img src="{{ asset('img/affiche.jpg') }}">
+                        </picture>
+                        <div id="contact-block">
                         <p>
-                        <span class="tel">Tél. :   01 43 14 08 10</span>
-                        <span class="port">Port. : 06 07 08 55 56</span>
+                            <span class="tel">Tél. :   01 43 14 08 10</span>
+                            <span class="port">Port. : 06 07 08 55 56</span>
                         </p>
                         <ul class="o-contact-block">
                             <li>
-                            <button type="button" class="btn btn-buy">Acheter sur la Fnac</button>
+                                <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-buy">
+                                Acheter sur la Fnac
+                                </a>
+                                
                             </li>
                             <li>
-                            <button type="button" class="btn btn-buy">Acheter sur la Fnac</button>
+                                <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="btn btn-buy">
+                                    Acheter sur franceBillet
+                                </a>
                             </li>
                         </ul>
-                       
+                        </div>
                     </div>
-
+                    <div class="container">
                     <h3>Presse Pack</h3>
                     <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
-                    
+                    </div>
                 </div>
     </div>
     
