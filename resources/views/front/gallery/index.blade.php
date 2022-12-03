@@ -14,6 +14,10 @@
                 </div>
                 @endforeach
             </div>
+            
+            <div class="mt-3">
+                {{ $images->onEachSide(0)->links() }}
+            </div>
         </div>
     </section>
 @endcomponent

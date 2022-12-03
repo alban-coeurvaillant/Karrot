@@ -15,14 +15,16 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class EventController extends Controller
 {
+    const NB_ITEMS_PAGE = 20;
+    
     public function __construct()
     {
         $this->middleware('event');
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $events = Event::canDisplay()->orderBy('date')->get();
+        $events = Event::canDisplay()->orderBy('date')->paginate(self::NB_ITEMS_PAGE);
         $data = $items = collect();
         $currentYearMonth = null;
         foreach ($events as $event) {
@@ -35,7 +37,7 @@ class EventController extends Controller
         }
         if ($items->isNotEmpty()) $data[] = $items;
         
-        return view('front.event.index', compact('data'));
+        return view('front.event.index', compact('data', 'events'));
     }
 
     public function reservation(Event $event)
