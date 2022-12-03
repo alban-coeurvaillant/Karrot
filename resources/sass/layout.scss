@@ -50,7 +50,6 @@ body {
         max-width: 1226px;
         margin: auto;
         .container {
-            padding: 2em;
             main {
             background: white;
                 padding: 1em;
@@ -61,10 +60,12 @@ body {
 }
 
 .btn-buy{
-    background-color: #9A6196;
+    //background-color: #9A6196;
+    background-color: #3D0635;
     color: #fff;
     border-radius: 0;
     font-weight: 600;
+    
 }
 
 
@@ -174,23 +175,28 @@ button {
     align-items: center;
     li{
         list-style-type: none;
-        background-color: #9a6196;
-        padding: 6px;
+        min-height: 36px;
         text-align: center;
         margin-top: 12px;
-        width: 90%;
+        width: 100%;
         color: white;
         font-weight: bold;
         &:first-of-type{
             margin-top: initial;
         }
     
+            a{
+                height: 100%;
+                display: block;
+                width: 100%;
+            }
     }
 
 }
 
 #contact-block{
     width: 100%;
+    margin-top: 1em;
     p{
         text-align: center;
         span{
@@ -202,6 +208,9 @@ button {
     }
 }
 
+.btn{
+    min-height: 1em;
+}
 
 
 
@@ -213,7 +222,6 @@ button {
     background: #7D6990;
     padding: 0.7em;
     min-height: 6em;
-
         h1{
             margin: 0 1em 0;
             font-style: italic;
@@ -233,7 +241,7 @@ button {
             }
   }
 
-  .o-main-content {
+.o-main-content {
     background-color: #EFEFEF;
     display: flex;
 
@@ -242,9 +250,6 @@ button {
         padding: 1em;
         width: 80%;
         font-size: 16px;
-
-
-
         @media (max-width: 960px) { 
             width: 100%;
         }
@@ -272,7 +277,6 @@ button {
             width: 100%;
             img {
                 width: 100%;
-                border: 12px solid white;
                 min-width: 13rem;
               }
           }
@@ -288,7 +292,7 @@ button {
     @media (max-width: 960px) { 
         flex-direction: column-reverse;
     }
-  }
+}
   
 
 

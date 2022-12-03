@@ -10952,16 +10952,13 @@ body .main-wrapper {
   max-width: 1226px;
   margin: auto;
 }
-body .main-wrapper .container {
-  padding: 2em;
-}
 body .main-wrapper .container main {
   background: white;
   padding: 1em;
 }
 
 .btn-buy {
-  background-color: #9A6196;
+  background-color: #3D0635;
   color: #fff;
   border-radius: 0;
   font-weight: 600;
@@ -11064,20 +11061,25 @@ button {
 }
 .o-contact-block li {
   list-style-type: none;
-  background-color: #9a6196;
-  padding: 6px;
+  min-height: 36px;
   text-align: center;
   margin-top: 12px;
-  width: 90%;
+  width: 100%;
   color: white;
   font-weight: bold;
 }
 .o-contact-block li:first-of-type {
   margin-top: initial;
 }
+.o-contact-block li a {
+  height: 100%;
+  display: block;
+  width: 100%;
+}
 
 #contact-block {
   width: 100%;
+  margin-top: 1em;
 }
 #contact-block p {
   text-align: center;
@@ -11087,6 +11089,10 @@ button {
   font-size: 20px;
   font-weight: bold;
   color: #9a6196;
+}
+
+.btn {
+  min-height: 1em;
 }
 
 .o-section-title {
@@ -11153,7 +11159,6 @@ button {
 }
 .o-main-content .aside-column picture img {
   width: 100%;
-  border: 12px solid white;
   min-width: 13rem;
 }
 .o-main-content .aside-column button {
