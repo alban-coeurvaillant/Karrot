@@ -20,7 +20,7 @@ class CreateDatabaseTables extends Migration
             $table->date('date')->nullable();
             $table->string('time')->nullable();
             $table->boolean('online')->default(false);
-            $table->unsignedSmallInteger('places')->default(100);
+            $table->unsignedSmallInteger('seats')->default(100);
             $table->nullableTimestamps();
         });
 
