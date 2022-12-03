@@ -3,6 +3,7 @@
         Bienvenue
     @endslot
 
+    <h2>Bla blah blah</h2>
     <p>Créée en 1990 la formation est aujourd’hui la plus active, avec un chant liturgique en plein essor depuis la fin
         des années 90.</p>
 
