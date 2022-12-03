@@ -1,14 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --gd-primary-color: #510040;
     --gd-secondary-color: #7d6990;
-
 }
 
 * {
-    box-sizing: border-box ;
+    box-sizing: border-box;
 }
 
 
@@ -16,19 +15,17 @@
     margin-top: 1em;
 }
 
-h2{
-    margin-top: 1em;
-}
 
-a{
+
+a {
     text-decoration: none;
     color: #510040;
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image:url("https://www.gospeldream.fr/css/img/wood.jpg") ;
+    background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
     padding: 1em;
 
     .o-master-header {
@@ -36,22 +33,23 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 28px;
-        border-radius:  1em 1em 0 0;
-        
-        @media (max-width: 960px) { 
+        border-radius: 1em 1em 0 0;
+
+        @media (max-width: 960px) {
             flex-direction: column;
             align-items: center;
-            
-     }
-    
+
+        }
+
     }
-    
+
     .main-wrapper {
         max-width: 1226px;
         margin: auto;
+
         .container {
             main {
-            background: white;
+                background: white;
                 padding: 1em;
             }
         }
@@ -59,13 +57,13 @@ body {
 
 }
 
-.btn-buy{
+.btn-buy {
     //background-color: #9A6196;
     background-color: #3D0635;
     color: #fff;
     border-radius: 0;
     font-weight: 600;
-    
+
 }
 
 
@@ -79,8 +77,10 @@ header {
     .header-logo {
         display: flex;
         align-items: center;
-        picture{
+
+        picture {
             width: 100%;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -99,12 +99,13 @@ header {
     margin: 0;
     background-color: #4A0740;
 
-    
-    .nav-item{
+
+    .nav-item {
         list-style-type: none;
         flex-grow: 1;
+
         a {
-         
+
             display: block;
             width: 100%;
             height: 100%;
@@ -114,6 +115,7 @@ header {
             font-size: 16px;
             color: #cdcfc9;
             font-weight: 500;
+
             &.active {
                 color: #fff;
                 background: #7D6990;
@@ -122,7 +124,7 @@ header {
         }
     }
 
-    @media (max-width: 960px) { 
+    @media (max-width: 960px) {
         flex-direction: column;
     }
 }
@@ -150,15 +152,15 @@ header {
     padding: 8px;
     max-height: 32px;
     margin-bottom: 1em;
-    
 
-    p{
+
+    p {
         margin: 0;
         font-size: 1.2em;
         color: white;
     }
 
-    @media (max-width: 960px) { 
+    @media (max-width: 960px) {
         align-self: center;
         font-size: 10px;
         transform: scale(0.8);
@@ -168,12 +170,14 @@ header {
 button {
     margin: 0;
 }
-.o-contact-block{
+
+.o-contact-block {
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    li{
+
+    li {
         list-style-type: none;
         min-height: 36px;
         text-align: center;
@@ -181,25 +185,28 @@ button {
         width: 100%;
         color: white;
         font-weight: bold;
-        &:first-of-type{
+
+        &:first-of-type {
             margin-top: initial;
         }
-    
-            a{
-                height: 100%;
-                display: block;
-                width: 100%;
-            }
+
+        a {
+            height: 100%;
+            display: block;
+            width: 100%;
+        }
     }
 
 }
 
-#contact-block{
+#contact-block {
     width: 100%;
     margin-top: 1em;
-    p{
+
+    p {
         text-align: center;
-        span{
+
+        span {
             display: block;
             font-size: 20px;
             font-weight: bold;
@@ -208,7 +215,7 @@ button {
     }
 }
 
-.btn{
+.btn {
     min-height: 1em;
 }
 
@@ -218,28 +225,42 @@ button {
     display: flex;
     align-items: center;
     font-family: Adamina, serif;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     background: #7D6990;
     padding: 0.7em;
     min-height: 6em;
-        h1{
-            margin: 0 1em 0;
-            font-style: italic;
-            font-size: 46px;
 
-            @media (max-width: 960px) { 
-                margin: 0;
-                font-size: 22px;
-                margin: auto;
-            }
+    h1 {
+        margin: 0 1em 0;
+        font-style: italic;
+        font-size: 46px;
+
+        @media (max-width: 960px) {
+            margin: 0;
+            font-size: 22px;
+            margin: auto;
         }
+    }
 
-            @media (max-width: 960px) { 
-                margin: 0;
-                font-size: 22px;
-                min-height: initial;
-            }
-  }
+    @media (max-width: 960px) {
+        margin: 0;
+        font-size: 22px;
+        min-height: initial;
+    }
+}
+
+h2 {
+    color: #510040;
+}
+
+
+.main-column {
+
+    @media (max-width: 960px) {
+        margin: initial;
+    }
+}
+
 
 .o-main-content {
     background-color: #EFEFEF;
@@ -250,18 +271,23 @@ button {
         padding: 1em;
         width: 80%;
         font-size: 16px;
-        @media (max-width: 960px) { 
+
+        h2:nth-of-type(n+2) {
+            margin-top: 1em
+        }
+
+        @media (max-width: 960px) {
             width: 100%;
         }
+
     }
 
-    .aside-column{
-      
-        padding:  1em;
+    .aside-column {
+        padding: 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
 
         h3 {
             background: #3D0635;
@@ -271,29 +297,30 @@ button {
             font-size: 20px;
             padding: 0.5em;
             margin: 0;
-          }
+        }
 
         picture {
             width: 100%;
+
             img {
                 width: 100%;
                 min-width: 13rem;
-              }
-          }
+            }
+        }
 
-       
-          button {
+
+        button {
             width: 90%;
             padding: 0;
-          }
+        }
 
     }
 
-    @media (max-width: 960px) { 
+    @media (max-width: 960px) {
         flex-direction: column-reverse;
     }
 }
-  
+
 
 
 
@@ -304,27 +331,32 @@ footer {
     background-color: #e7e7e7;
     padding: 1em;
     border-radius: 0 0 1em 1em;
+
     .footer-mentions {
-    display: flex;
-    align-items: center;
-        p{
+        display: flex;
+        align-items: center;
+
+        p {
             margin: 0;
         }
 
-    @media (max-width: 960px) { 
-        display: flex;
-        flex-direction: column;
-    }
+        @media (max-width: 960px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .footer-socials {
         display: flex;
         align-items: center;
-        p { margin: 0;}
+
+        p {
+            margin: 0;
+        }
 
     }
 
-   @media (max-width: 960px) { 
+    @media (max-width: 960px) {
         display: flex;
         flex-direction: column;
     }
@@ -332,22 +364,27 @@ footer {
 
 .aside-column {
     background-color: white !important;
-    .container{
+
+    .container {
         padding: 0 !important;
         margin-top: 1em;
     }
 }
+
 .o-photo-gallery {
-    .container{
+    .container {
         padding: 0 !important;
-        .photos{
-              display: grid;
+
+        .photos {
+            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 1em;
-            .photo{
+
+            .photo {
                 outline: solid #f1f1f1 2px;
-                    &:hover{
-                        outline:2px solid rgb(204,204,204) !important;
+
+                &:hover {
+                    outline: 2px solid rgb(204, 204, 204) !important;
                 }
             }
         }
@@ -355,34 +392,42 @@ footer {
 }
 
 .o-main-content {
-  
-    // background: var(--gd-primary-color);
     .main-column {
         margin: 2em;
         padding: 2em;
-        p{
+
+        p {
             font-weight: normal !important;
-            strong{
-             
+
+            strong {
+
                 font-weight: normal !important;
                 color: var(--gd-primary-color);
             }
         }
-        
-        h3{
-            em{
+
+        h3 {
+            em {
                 color: var(--gd-primary-color);
-                font-style:  normal;
-                font-family: Adamina,serif;
+                font-style: normal;
+                font-family: Adamina, serif;
                 font-size: 1.3em;
             }
         }
+
+
+        @media (max-width: 960px) {
+            margin: 0;
+        }
+
+
     }
 
 }
 
 .card-body {
     background: var(--main-bg-color);
+
     .btn-primary {
         background: blue;
         border-radius: 0;
@@ -390,7 +435,7 @@ footer {
     }
 }
 
-p br{
+p br {
 
     display: none;
 }
