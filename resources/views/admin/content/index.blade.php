@@ -11,7 +11,7 @@
             <tr>
                 <th class="text-left">{{ __('Title') }}</th>
                 <th class="text-left">{{ __('Slug') }}</th>
-                <td style="width:150px;"></td>
+                <td class="col-action"></td>
             </tr>
             </thead>
             <tbody>
