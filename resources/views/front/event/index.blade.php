@@ -16,15 +16,14 @@
             <div class="event-description">
                 <p>{{ $event->description }}</p>
             </div> 
-           
             <div class="event-reservation">
             <span class="date">
                     {{ ucfirst($event->date->isoFormat('dddd')) }}   <i class="far fa-star"></i>
                     {{ $event->date->format('d/m/y') }}      
                 </span>
                 <span class="time">{{ $event->time }}</span>
+                <x-button-link href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
             </div>
-                    <x-button-link href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
             </div>
         </div>
         @endforeach
