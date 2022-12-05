@@ -14,6 +14,7 @@
             </div>
             <div class="card-description">
             <div class="event-description">
+                <div class="event-image">img</div>
                 <p>{{ $event->description }}</p>
             </div> 
             <div class="event-reservation">
