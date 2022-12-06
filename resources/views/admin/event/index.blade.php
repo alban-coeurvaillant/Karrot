@@ -35,7 +35,7 @@
                     </td>
                     <td>{{ $event->seats }}</td>
                     <td class="text-center"><x-toggle-button active="{{ $event->online }}"></x-toggle-button></td>
-                    <td><x-button-link :href="route('admin.event.show', $event)">{{ __('Show the reservations') }}</x-button-link></td>
+                    <td><x-button-link :href="route('admin.event.show', $event)">{{ __('Reservations') }}</x-button-link></td>
                     <td><x-button-link :href="route('admin.event.edit', $event)">{{ __('Modify') }}</x-button-link></td>
                     <td>
                         <form class="delete-form" action="{{ route('admin.event.destroy', $event) }}" method="post" enctype="application/x-www-form-urlencoded">

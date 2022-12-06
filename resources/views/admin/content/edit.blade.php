@@ -24,16 +24,16 @@
             <form id="form_edit" action="{{ route('admin.content.update', $content->slug) }}" method="post" enctype="application/x-www-form-urlencoded">
                 @csrf
                 @method('put')
-                <div>
+                <div class="mb-3">
                     <label for="title_field">{{ __('Title') }}</label>
                     <x-input id="title_field" name="title" type="text" value="{{ old('title', $content->title) }}" />
                 </div>
-                <div>
+                <div class="mb-3">
                     <label for="content_field">{{ __('Content') }}</label>
                     <div id="content_field" class="rich-editor">{!! $content->content !!}</div>
                     <input name="content" id="content_hidden_field" type="hidden" value="">
                 </div>
-                <div>
+                <div class="mb-3">
                     <x-button class="btn-primary">{{ __('Validate') }}</x-button>
                 </div>
             </form>
