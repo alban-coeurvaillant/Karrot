@@ -1,11 +1,32 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~quill/dist/quill.snow.css";
 
-
+body{
+    background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
+}
 .ql-editor {
     min-height: 30vh;
 }
 
 .col-action {
     width:110px;
+}
+.o-guest-card{
+    outline: solid;
+    max-width: 373px;
+    background: rgb(255, 255, 255);
+    margin-top: 10em;
+    padding: 2em;
+    border-radius: 0.2em;
+
+    
+}
+.card-image{
+    margin-bottom: 2em;
+}
+
+form{
+    .text-box{
+        margin-bottom: 1em;
+    }
 }
