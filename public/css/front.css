@@ -10926,7 +10926,6 @@ textarea.form-control-lg {
 }
 
 a {
-  text-decoration: none;
   color: #510040;
   text-decoration: underline;
 }
@@ -11112,7 +11111,6 @@ button {
 }
 @media (max-width: 960px) {
   .o-section-title h1 {
-    margin: 0;
     font-size: 22px;
     margin: auto;
   }
@@ -11300,7 +11298,6 @@ p br {
   color: transparent;
 }
 .o-card-event .card-description .event-description .event-image + p {
-  padding: 0;
   margin: 0;
   width: 80%;
   padding: 1em;

@@ -1,14 +1,9 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Contacts') }}
-        </h2>
+        <h2>{{ __('Contacts') }} </h2>
+          <x-button-link :href="route('admin.contact.create')">{{ __('Create a contact') }}</x-button-link>
     </x-slot>
-
-    <div class="py-12">
-        <div class="mb-5">
-            <x-button-link :href="route('admin.contact.create')">{{ __('Create a contact') }}</x-button-link>
-        </div>
+    <div>
         <table class="table table-bordered w-100">
             <thead>
             <tr>

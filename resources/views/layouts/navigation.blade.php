@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">

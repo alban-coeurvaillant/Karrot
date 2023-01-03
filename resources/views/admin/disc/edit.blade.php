@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+      <div class="admin-content">
         <x-card>
             <x-slot name="header">
                 <div class="mb-5">

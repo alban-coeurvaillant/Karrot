@@ -3,12 +3,9 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Discography') }}
         </h2>
+          <x-button-link :href="route('admin.disc.create')">{{ __('Create a disc') }}</x-button-link>
     </x-slot>
-
-    <div class="py-12">
-        <div class="mb-5">
-            <x-button-link :href="route('admin.disc.create')">{{ __('Create a disc') }}</x-button-link>
-        </div>
+    <div class="admin-content">
         <table class="table table-bordered w-100">
             <thead>
             <tr>

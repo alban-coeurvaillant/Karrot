@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+      <div class="admin-content">
         <table class="table table-bordered w-100">
             <thead>
             <tr>

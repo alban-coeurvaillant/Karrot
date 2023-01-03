@@ -3,14 +3,13 @@
         <h2>
             {{ __('Gallery') }}
         </h2>
+         <x-button-link :href="route('admin.gallery.index')">{{ __('Back') }}</x-button-link>
     </x-slot>
 
-    <div class="py-12">
+     <div class="admin-content">
         <x-card>
             <x-slot name="header">
-                <div class="mb-5">
-                    <x-button-link :href="route('admin.gallery.index')">{{ __('Back') }}</x-button-link>
-                </div>
+           
             </x-slot>
 
             @if ($errors->any())

@@ -1,14 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2>
             {{ __('Events') }}
         </h2>
+         <x-button-link :href="route('admin.event.create')">{{ __('Create a event') }}</x-button-link>
     </x-slot>
-
-    <div class="py-12">
-        <div class="mb-5">
-            <x-button-link :href="route('admin.event.create')">{{ __('Create a event') }}</x-button-link>
-        </div>
+      <div class="admin-content">
         <table class="table table-bordered w-100">
             <thead>
             <tr>

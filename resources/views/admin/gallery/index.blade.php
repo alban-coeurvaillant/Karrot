@@ -3,12 +3,10 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Gallery') }}
         </h2>
+          <x-button-link :href="route('admin.gallery.create')">{{ __('Create a image') }}</x-button-link>
     </x-slot>
 
-    <div class="py-12">
-        <div class="mb-5">
-            <x-button-link :href="route('admin.gallery.create')">{{ __('Create a image') }}</x-button-link>
-        </div>
+     <div class="admin-content">
         <div class="d-flex flex-wrap gap-3">
             @forelse ($images as $image)
                 <div class="card">
