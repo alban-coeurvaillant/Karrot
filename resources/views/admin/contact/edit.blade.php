@@ -1,18 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="">
             {{ __('Contacts') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
+    <div>
         <x-card>
             <x-slot name="header">
-                <div class="mb-5">
+                <div>
                     <x-button-link :href="route('admin.contact.index')">{{ __('Back') }}</x-button-link>
                 </div>
             </x-slot>
-
             @if ($errors->any())
             <x-alert class="text-red-600">
                 @foreach($errors->all() as $error)
@@ -20,7 +18,6 @@
                 @endforeach
             </x-alert>
             @endif
-
             <form action="{{ $action }}" method="post" enctype="application/x-www-form-urlencoded">
                 @csrf
                 @method($method)
