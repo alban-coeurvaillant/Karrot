@@ -6,15 +6,15 @@
          <x-button-link :href="route('admin.event.create')">{{ __('Create a event') }}</x-button-link>
     </x-slot>
       <div class="admin-content">
-        <table class="table table-bordered w-100">
+        <table id="event" class="table table-bordered">
             <thead>
             <tr>
-                <th class="text-left">{{ __('Date') }}</th>
-                <th class="text-left">{{ __('Place of event') }}</th>
-                <th class="text-left">{{ __('Time') }}</th>
-                <th class="text-left">{{ __('Reservations') }}</th>
-                <th class="text-left">{{ __('Remaining seats') }}</th>
-                <th class="text-left">{{ __('Online') }}</th>
+                <th >{{ __('Date') }}</th>
+                <th >{{ __('Place of event') }}</th>
+                <th >{{ __('Time') }}</th>
+                <th>{{ __('Reservations') }}</th>
+                <th>{{ __('Remaining seats') }}</th>
+                <th>{{ __('Online') }}</th>
                 <td class="col-action"></td>
                 <td class="col-action"></td>
                 <td class="col-action"></td>

@@ -18,16 +18,26 @@ body{
 }
 
 .o-admin-header {
-    background: white;
+    background: #7D6990;
+    color: white;
     padding: 1em;
+    height: 8em;
     display: flex;
+    align-items: center;
     .btn{
      margin-left: auto;   
+    }
+  
+}
+
+table {
+    th{
+        white-space: nowrap;
     }
 }
 
 .main-container{
-    background: red;
+    padding: 1em;
 }
 .admin-content{
     background: white;
@@ -44,12 +54,23 @@ body{
     
 }
 
+
+.o-gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+}
+
 .o-admin-page{
     .main-wrapper{
         max-width: 1024px;
         margin: 2em auto;
         min-height: 800px   ;
         background: white;
+        border-radius: 0.4em;
+    }
+    nav {
+        padding: 1em;
     }
 }
 .card-image{

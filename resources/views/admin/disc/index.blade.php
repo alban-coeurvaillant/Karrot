@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2>
             {{ __('Discography') }}
         </h2>
           <x-button-link :href="route('admin.disc.create')">{{ __('Create a disc') }}</x-button-link>
@@ -9,8 +9,8 @@
         <table class="table table-bordered w-100">
             <thead>
             <tr>
-                <th class="text-left">{{ __('Title') }}</th>
-                <th class="text-left">{{ __('URL') }}</th>
+                <th>{{ __('Title') }}</th>
+                <th >{{ __('URL') }}</th>
                 <td class="col-action"></td>
                 <td class="col-action"></td>
             </tr>

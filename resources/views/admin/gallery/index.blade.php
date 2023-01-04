@@ -1,13 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Gallery') }}
-        </h2>
+        <h2>{{ __('Gallery') }} </h2>
           <x-button-link :href="route('admin.gallery.create')">{{ __('Create a image') }}</x-button-link>
     </x-slot>
 
      <div class="admin-content">
-        <div class="d-flex flex-wrap gap-3">
+        <div class="o-gallery-container">
             @forelse ($images as $image)
                 <div class="card">
                     <div class="card-body">
