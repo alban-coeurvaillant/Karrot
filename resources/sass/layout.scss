@@ -1,36 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --gd-primary-color: #510040;
-    --gd-secondary-color: #7d6990;
-}
+@import "utils";
+@import "typography";
+@import "colors";
 
 * {
     box-sizing: border-box;
 }
 
+
 .card {
-    margin-top: 1em;
+    margin-top: $unit;
 }
 
 a {
-   
-    color: #510040;
+    color: $Loulou;
     text-decoration: underline;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
     background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
-    padding: 1em;
+    padding: $unit;
 
     .o-master-header {
         background-color: white;
         display: flex;
         justify-content: space-between;
         padding: 28px;
-        border-radius: 1em 1em 0 0;
+        border-radius: $unit $unit 0 0;
 
         @media (max-width: 960px) {
             flex-direction: column;
@@ -47,7 +42,7 @@ body {
         .container {
             main {
                 background: white;
-                padding: 1em;
+                padding: $unit;
             }
         }
     }
@@ -215,7 +210,7 @@ button {
         font-size: 46px;
 
         @media (max-width: 960px) {
-         
+
             font-size: 22px;
             margin: auto;
         }
@@ -372,16 +367,14 @@ footer {
             font-weight: normal !important;
 
             strong {
-
                 font-weight: normal !important;
-                color: var(--gd-primary-color);
+                color: $Loulou;
             }
         }
 
         h3 {
-
             em {
-                color: var(--gd-primary-color);
+                color: $Loulou;
                 font-style: normal;
                 font-family: Adamina, serif;
                 font-size: 1.3em;
@@ -407,7 +400,6 @@ footer {
 
 
 p br {
-
     display: none;
 }
 
