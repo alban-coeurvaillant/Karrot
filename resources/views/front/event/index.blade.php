@@ -16,15 +16,16 @@
             <div class="event-description">
                 <div class="event-image">img</div>
                 <p>{{ $event->description }}</p>
+                      <div class="event-time">
+                                        <span class="date">
+                                                                       {{ ucfirst($event->date->isoFormat('dddd')) }}   <i class="far fa-star"></i>
+                                                                       {{ $event->date->format('d/m/y') }}      
+                                                                   </span>
+                                                                     <span class="time">{{ $event->time }}</span>
+                                        </div> 
             </div> 
             
-             <div class="event-time">
-                        <span class="date">
-                                                       {{ ucfirst($event->date->isoFormat('dddd')) }}   <i class="far fa-star"></i>
-                                                       {{ $event->date->format('d/m/y') }}      
-                                                   </span>
-                                                     <span class="time">{{ $event->time }}</span>
-                        </div> 
+       
               
                             
             <div class="event-reservation">

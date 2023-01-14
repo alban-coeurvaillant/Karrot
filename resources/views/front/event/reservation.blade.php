@@ -72,7 +72,7 @@
         ></div>
 
         <div class="mb-3">
-            <button class="btn btn-primary">{{ __('Send') }}</button>
+            <button>{{ __('Send') }}</button>
         </div>
 
     </form>
