@@ -11229,12 +11229,6 @@ h2 {
   color: #510040;
 }
 
-@media (min-width: 960px) {
-  .main-column {
-    margin: initial;
-  }
-}
-
 footer {
   display: flex;
   background-color: #e7e7e7;
@@ -11373,7 +11367,6 @@ footer .footer-socials p {
   border-color: #dddddd;
 }
 .o-main-content .main-column p {
-  padding: 1em;
   font-weight: normal !important;
 }
 .o-main-content .main-column p strong {
@@ -11383,6 +11376,11 @@ footer .footer-socials p {
 .o-main-content .main-column h3 em {
   color: #4A0740;
   font-style: normal;
+}
+@media (min-width: 960px) {
+  .o-main-content .main-column {
+    margin: initial;
+  }
 }
 
 .o-disc-info {
@@ -11420,9 +11418,10 @@ p br {
 .o-calendar-date {
   background: #3d0635;
   width: 100%;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
   border-radius: 0.4em;
+  margin-top: 1em;
 }
 .o-calendar-date p {
   margin: 0;
@@ -11436,10 +11435,11 @@ p br {
   border-radius: 0.8em;
   overflow: hidden;
   margin-top: 1em;
+  width: 100%;
 }
 .o-card-event .card-title {
   height: 4em;
-  background: #3d0635;
+  background: #7D6990;
   display: flex;
   align-items: center;
   justify-content: center;

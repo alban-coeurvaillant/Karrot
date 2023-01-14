@@ -332,9 +332,7 @@ h2 {
 
 .main-column {
 
-    @media (min-width: 960px) {
-        margin: initial;
-    }
+   
 }
 
 
@@ -500,7 +498,6 @@ footer {
         }
 
         p {
-            padding: 1em;
             font-weight: normal !important;
 
             strong {
@@ -515,7 +512,9 @@ footer {
                 font-style: normal;
             }
         }
-
+        @media (min-width: 960px) {
+            margin: initial;
+        }
     }
 
 }
@@ -562,9 +561,10 @@ p br {
 .o-calendar-date{
     background: #3d0635;
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
     border-radius: 0.4em;
+    margin-top: 1em;
     p{
         margin: 0;
         padding: 0;
@@ -578,11 +578,11 @@ p br {
     border-radius: 0.8em;
     overflow: hidden;
     margin-top: 1em;
-   
+    width: 100%;
 
     .card-title {
         height: 4em;
-        background: #3d0635;
+        background: #7D6990;
         display: flex;
         align-items: center;
         justify-content: center;
