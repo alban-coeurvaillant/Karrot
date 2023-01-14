@@ -8,7 +8,6 @@
 
 
 .card {
-    background-color: chartreuse;
     padding: 2em;
 }
 
@@ -126,6 +125,7 @@ header {
     .nav-item {
         list-style-type: none;
         flex-grow: 1;
+        border-color: hsl(309deg 25% 16%);
 
         a {
             display: flex;
@@ -376,7 +376,7 @@ footer {
 
         .photos {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-gap: 1em;
 
             .photo {

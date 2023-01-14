@@ -10933,7 +10933,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-  background-color: chartreuse;
   padding: 2em;
 }
 
@@ -11039,6 +11038,7 @@ header .header-logo picture img {
 .o-main-nav .nav-item {
   list-style-type: none;
   flex-grow: 1;
+  border-color: hsl(309deg, 25%, 16%);
 }
 .o-main-nav .nav-item a {
   display: flex;
@@ -11270,7 +11270,7 @@ footer .footer-socials p {
 }
 .o-photo-gallery .container .photos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 }
 .o-photo-gallery .container .photos .photo {
