@@ -2,13 +2,10 @@
     
     
     @slot('h1')
-        Bienvenuess
+        Gospel Dream
     @endslot
-<div class="main-container">
-
-<div class="card">
-    <h2>lorem</h2>
-   
+    <div class="main-container">
+    <h2>Notre Chorale</h2>
     <p>
     Créée en 1990 la formation est aujourd’hui la plus active, avec un chant liturgique en plein essor depuis la fin des années 90.
     </p>
@@ -24,7 +21,7 @@
     <p>Sur scène, la chorale respire la joie de vivre, avec des voix qui parcourent toutes les nuances, des murmures aux
         vocalises improvisées, leur concert est conçu pour permettre au public de participer, de témoigner et partager
         un hymne à l’amour.</p>
-</div>
+
 
 </div>
     
