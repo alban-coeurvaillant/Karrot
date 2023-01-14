@@ -9,7 +9,7 @@
     <p>Chants authentiques de l'église Afro-Américaine</p>
     </div>
 </div>
-    <div id="mobile-btn"> Menu</div>
+    <div id="mobile-btn"> voir le menu</div>
  
 </header>
 

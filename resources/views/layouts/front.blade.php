@@ -20,7 +20,7 @@
 <div class="main-wrapper ">
     @include('front.header-nav')
     <div class="o-section-title">
-        <h1>{{ $h1 }}</h1>
+        <h1 class="a-heading a-heading-1">{{ $h1 }}</h1>
     </div>
     <div id="main" class="o-main-content">
                 <div class="main-column">
@@ -39,13 +39,13 @@
                         </p>
                         <ul class="o-contact-block">
                             <li>
-                                <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-buy">
+                                <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class=" btn-buy">
                                 Acheter sur la Fnac
                                 </a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="btn btn-buy">
+                                <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class=" btn-buy">
                                     Acheter sur franceBillet
                                 </a>
                             </li>
@@ -60,24 +60,27 @@
     </div>
     
     <footer>
-        <div class="footer-mentions">
-            <p>&nbsp;© 2022 - Tous droits réservés www.gospeldream.fr&nbsp; <a href="{{ url('mentions-legales') }}">Consultez nos mentions légales</a></p>
-            
+    <div class="footer-container">
+    
+    </div>
+        <div class="footer-copyrights">
+            <p> Tous droits réservés www.gospeldream.com ©2022 </p>
         </div>
+         <div class="footer-mentions">
+         <a href="{{ url('mentions-legales') }}">Consultez nos mentions légales</a>
+         </div>
         <div class="footer-socials">
             <p>Retrouvez nous sur nos sur :</p>
-            <a href="#">
+            <div class="socials-icons">
+            <a href="#" id="facebook">
                 <i class="fab fa-facebook m-2">
                 </i>
             </a>
-            <a href="#">
-                <i class="far fa-star m-1">
-                </i>
-            </a>
-            <a href="#">
+            <a href="#" id="instagram">
                 <i class="fab fa-instagram m-1">
                 </i>
             </a>
+            </div>
         </div>
     </footer>
 </div>
