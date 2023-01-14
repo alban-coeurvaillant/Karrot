@@ -10949,18 +10949,19 @@ body .o-master-header {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 28px;
+  padding: 1em;
   border-radius: 1em 1em 0 0;
 }
 body .o-master-header .column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1em;
+  width: 100%;
 }
 @media (min-width: 960px) {
   body .o-master-header .column {
     align-items: initial;
+    max-width: 22em;
   }
 }
 @media (max-width: 960px) {
@@ -10977,6 +10978,15 @@ body .main-wrapper {
 body .main-wrapper .container main {
   background: white;
   padding: 1em;
+}
+body:before {
+  content: " ";
+  background: hsla(309deg, 82%, 13%, 0.28);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #mobile-btn {
@@ -11013,9 +11023,7 @@ header {
 header .header-logo {
   display: flex;
   align-items: center;
-  max-width: 18em;
   margin-bottom: 0.5em;
-  width: 22em;
 }
 header .header-logo picture {
   width: 100%;
@@ -11078,24 +11086,21 @@ header .header-logo picture img {
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 1.6px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 8px;
   max-height: 2.4em;
   margin-bottom: 1em;
   align-self: center;
+  width: 100%;
+  padding: 1.2em 0;
+  max-width: 22em;
 }
 .header-baseline p {
   font-family: "Anton", sans-serif;
   margin: 0;
   font-size: 1em;
   color: white;
-  white-space: nowrap;
 }
 
 button {
@@ -11107,6 +11112,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1em;
 }
 .o-contact-block li {
   list-style-type: none;
@@ -11149,6 +11155,21 @@ button {
   font-size: 20px;
   font-weight: bold;
   color: #4a0740;
+  border: 2px solid;
+  border-radius: 1em;
+  width: 90%;
+  margin: 1em auto;
+  padding: 0.2em;
+}
+
+#image-block {
+  margin: auto;
+}
+
+.k-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .btn {
