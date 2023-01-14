@@ -1,4 +1,5 @@
 <header class="o-master-header">
+<div class="column">
     <a class="header-logo" href="{{ route('home') }}">
         <picture class="">
             <img src="{{ asset('img/GD-logo.svg') }}" loading="lazy">
@@ -7,19 +8,20 @@
     <div class="header-baseline">
     <p>Chants authentiques de l'église Afro-Américaine</p>
     </div>
+</div>
+    <div id="mobile-btn"> Menu</div>
+ 
 </header>
 
-<ul class="o-main-nav">
+<ul id="main-nav" class="o-main-nav">
     <li class="nav-item">
         <a class="@if (request()->routeIs('home')) active @endif" href="/">
-        Notre chorale
+        Notre chorales        
         </a>
     </li>
-
     <li class="nav-item">
         <a class="@if (url()->current() == url('histoire-du-gospel')) active @endif" href="{{ url('histoire-du-gospel') }}">L'histoire du gospel</a>
     </li>
-
     @if (config('karrot.event'))
     <li class="nav-item">
             <a class="@if (request()->routeIs('event.*')) active @endif " href="{{ route('event.index') }}" >Concerts et reservations</a>
