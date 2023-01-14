@@ -11334,6 +11334,12 @@ footer .footer-socials p {
   }
 }
 
+.o-main-content .main-column .main-container h2 {
+  border-bottom: 1px solid;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.4em;
+  border-color: #dddddd;
+}
 .o-main-content .main-column p {
   font-weight: normal !important;
 }
