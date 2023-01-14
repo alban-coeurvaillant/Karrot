@@ -11346,8 +11346,8 @@ footer .footer-socials p {
   font-style: normal;
 }
 
-.main-column em {
-  font-style: normal;
+em {
+  font-style: normal !important;
 }
 
 .card-body {
