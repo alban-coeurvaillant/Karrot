@@ -11417,6 +11417,14 @@ p br {
   display: none;
 }
 
+.o-calendar-date {
+  background: #3d0635;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  border-radius: 0.4em;
+}
+
 .o-card-event {
   background: #d1d1d1;
   border-radius: 0.8em;
