@@ -5,7 +5,7 @@
 
     @foreach($data as $row)
         <div class="o-calendar-date">
-            <h2>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</h2>
+            <p>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</p>
         </div>
         @foreach($row as $event)
         <div class="o-card-event">
