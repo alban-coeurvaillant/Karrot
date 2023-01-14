@@ -4,7 +4,7 @@
     @endslot
 
     @foreach($data as $row)
-        <div>
+        <div class="o-calendar-date">
             <h2>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</h2>
         </div>
         @foreach($row as $event)
