@@ -11344,7 +11344,10 @@ footer .footer-socials p {
 .o-main-content .main-column h3 em {
   color: #4A0740;
   font-style: normal;
-  font-size: 1.3em;
+}
+
+.main-column em {
+  font-style: normal;
 }
 
 .card-body {

@@ -457,7 +457,6 @@ footer {
             em {
                 color: $Loulou;
                 font-style: normal;
-                font-size: 1.3em;
             }
         }
 
@@ -465,6 +464,9 @@ footer {
 
 }
 
+.main-column em{
+    font-style: normal;
+}
 .card-body {
     background: var(--main-bg-color);
 
