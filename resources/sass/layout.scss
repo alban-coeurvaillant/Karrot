@@ -565,6 +565,12 @@ p br {
     padding: 1em;
     text-align: center;
     border-radius: 0.4em;
+    p{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 1.5em;
+    }
 }
 
 .o-card-event {
@@ -572,7 +578,7 @@ p br {
     border-radius: 0.8em;
     overflow: hidden;
     margin-top: 1em;
-    max-width: 24em;
+   
 
     .card-title {
         height: 4em;
@@ -607,6 +613,7 @@ p br {
                 background-position: center;
                 color: transparent;
                 height: 10em;
+                display: none;
             }
 
             .event-image + p {

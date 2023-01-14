@@ -11424,13 +11424,18 @@ p br {
   text-align: center;
   border-radius: 0.4em;
 }
+.o-calendar-date p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 1.5em;
+}
 
 .o-card-event {
   background: #d1d1d1;
   border-radius: 0.8em;
   overflow: hidden;
   margin-top: 1em;
-  max-width: 24em;
 }
 .o-card-event .card-title {
   height: 4em;
@@ -11463,6 +11468,7 @@ p br {
   background-position: center;
   color: transparent;
   height: 10em;
+  display: none;
 }
 .o-card-event .card-description .event-description .event-image + p {
   margin: 0;

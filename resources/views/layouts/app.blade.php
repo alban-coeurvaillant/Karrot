@@ -16,17 +16,17 @@
     <body class="o-admin-page">
         <div class="main-wrapper">
             @include('layouts.navigation')
-            <!-- Page Heading start-->
+        
+        
             <header class="o-admin-header">
                     {{ $header }}
             </header>
-            <!-- Page Heading end-->
-    
-            <!-- Page Content start-->
+               
+            
             <main class="main-container">
                 {{ $slot }}
             </main>
-             <!-- Page Content end-->
+            
         </div>
     </body>
 </html>
