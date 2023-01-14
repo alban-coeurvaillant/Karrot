@@ -11045,8 +11045,10 @@ header .header-logo picture img {
 }
 .o-main-nav .nav-item {
   list-style-type: none;
+  overflow: hidden;
   flex-grow: 1;
   border-color: hsl(309deg, 25%, 16%);
+  border-radius: 0 0 0.4em 0.4em;
 }
 .o-main-nav .nav-item a {
   display: flex;
@@ -11099,8 +11101,13 @@ header .header-logo picture img {
 .header-baseline p {
   font-family: "Anton", sans-serif;
   margin: 0;
-  font-size: 1em;
+  font-size: 3.9vw;
   color: white;
+}
+@media (min-width: 425px) {
+  .header-baseline p {
+    font-size: 1.1em;
+  }
 }
 
 button {
