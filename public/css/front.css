@@ -11302,7 +11302,8 @@ footer .footer-socials p {
   grid-gap: 1em;
 }
 .o-photo-gallery .container .photos .photo {
-  outline: solid #f1f1f1 2px;
+  border-radius: 1em;
+  overflow: hidden;
 }
 .o-photo-gallery .container .photos .photo:hover {
   outline: 2px solid rgb(204, 204, 204) !important;
@@ -11318,6 +11319,9 @@ footer .footer-socials p {
   padding: 1em;
   width: 100%;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .o-main-content .main-column h2:nth-of-type(n+2) {
   margin-top: 1em;
@@ -11369,6 +11373,7 @@ footer .footer-socials p {
   border-color: #dddddd;
 }
 .o-main-content .main-column p {
+  padding: 1em;
   font-weight: normal !important;
 }
 .o-main-content .main-column p strong {
@@ -11417,6 +11422,7 @@ p br {
   border-radius: 0.8em;
   overflow: hidden;
   margin-top: 1em;
+  max-width: 24em;
 }
 .o-card-event .card-title {
   height: 4em;
