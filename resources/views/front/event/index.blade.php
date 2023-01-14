@@ -17,12 +17,17 @@
                 <div class="event-image">img</div>
                 <p>{{ $event->description }}</p>
             </div> 
+            
+             <div class="event-time">
+                        <span class="date">
+                                                       {{ ucfirst($event->date->isoFormat('dddd')) }}   <i class="far fa-star"></i>
+                                                       {{ $event->date->format('d/m/y') }}      
+                                                   </span>
+                                                     <span class="time">{{ $event->time }}</span>
+                        </div> 
+              
+                            
             <div class="event-reservation">
-            <span class="date">
-                    {{ ucfirst($event->date->isoFormat('dddd')) }}   <i class="far fa-star"></i>
-                    {{ $event->date->format('d/m/y') }}      
-                </span>
-                <span class="time">{{ $event->time }}</span>
                 <x-button-link href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
             </div>
             </div>
