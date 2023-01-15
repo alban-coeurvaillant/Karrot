@@ -24,7 +24,6 @@
                                                                      <span class="time">{{ $event->time }}</span>
                                         </div> 
             </div> 
-            
             <div class="event-reservation">
                 <x-button-link href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
             </div>
