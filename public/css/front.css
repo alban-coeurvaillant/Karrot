@@ -11460,8 +11460,11 @@ p br {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: red;
+  min-height: 8em;
 }
-.o-card-event .event-description {
+
+.event-description {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -11475,14 +11478,18 @@ p br {
 }
 
 .event-time {
-  background-color: hsla(0deg, 0%, 0%, 0.38);
-  height: 3em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: white;
   width: 100%;
   bottom: 0;
+  position: absolute;
+  height: inherit;
+  top: 0em;
+  padding: 1em;
+  background: #2d2d18;
+  flex-direction: column;
 }
 
 .event-reservation a {
