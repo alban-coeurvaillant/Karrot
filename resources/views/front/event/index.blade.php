@@ -14,15 +14,15 @@
             </div>
             <div class="card-description">
                 <div class="event-image">img</div>
-                    <p>{{ $event->description }}</p>
-                  <div class="event-time">
-                        <span class="date">
-                            {{ ucfirst($event->date->isoFormat('dddd')) }}   
-                            <i class="far fa-star"></i>
-                            {{ $event->date->format('d/m/y') }}      
-                        </span>
-                        <span class="time">{{ $event->time }}</span>
-                    </div> 
+                <div class="event-description">{{ $event->description }}</div>
+              <div class="event-time">
+                    <span class="date">
+                        {{ ucfirst($event->date->isoFormat('dddd')) }}   
+                        <i class="far fa-star"></i>
+                        {{ $event->date->format('d/m/y') }}      
+                    </span>
+                    <span class="time">{{ $event->time }}</span>
+                </div> 
                 </div> 
              <div class="event-reservation">
                 <x-button-link href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
@@ -30,7 +30,6 @@
         </div>
         @endforeach
     @endforeach
-
     <div class="mt-3">
         {{ $events->onEachSide(0)->links() }}
     </div>
