@@ -574,7 +574,8 @@ p br {
 }
 
 .o-card-event {
-    background: #d1d1d1;
+    background: #ffffff;
+    box-shadow: 0px -1px 18px 8px #4242422b;
     border-radius: 0.8em;
     overflow: hidden;
     margin-top: 1em;
@@ -588,7 +589,7 @@ p br {
 
         h4 {
             font-size: 1em;
-            color: $white;
+            color: $Loulou;
             text-transform: uppercase;
             margin-left: 1em;
         }
@@ -598,34 +599,47 @@ p br {
         width: 100%;
         display: flex;
         flex-direction: column;
+        background: red;
+        min-height: 8em;
     }
 
-    .event-description {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding-bottom: 2.5em;
-        overflow: hidden;
-        display: none;
 
-
-    }
 }
 
 
-
+.event-description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 2.5em;
+    overflow: hidden;
+    display: none;
+}
 .event-image {
 display: none;
 }
-.event-time {
-    background-color: hsl(0deg 0% 0% / 38%);
-    height: 3em;
+
+.event-day-date-time{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    .day{
+        font-size: 1.6em;
+    }
+}
+.event-time {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: white;
     width: 100%;
     bottom: 0;
+    position: absolute;
+    height: inherit;
+    top: 0em;
+    padding: 1em;
+    background: #2d2d18;
+    flex-direction: column;
 }
 
 .event-reservation {

@@ -11438,7 +11438,8 @@ p br {
 }
 
 .o-card-event {
-  background: #d1d1d1;
+  background: #ffffff;
+  box-shadow: 0px -1px 18px 8px rgba(66, 66, 66, 0.168627451);
   border-radius: 0.8em;
   overflow: hidden;
   margin-top: 1em;
@@ -11452,7 +11453,7 @@ p br {
 }
 .o-card-event .card-title h4 {
   font-size: 1em;
-  color: #FFFFFF;
+  color: #4A0740;
   text-transform: uppercase;
   margin-left: 1em;
 }
@@ -11475,6 +11476,15 @@ p br {
 
 .event-image {
   display: none;
+}
+
+.event-day-date-time {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.event-day-date-time .day {
+  font-size: 1.6em;
 }
 
 .event-time {
