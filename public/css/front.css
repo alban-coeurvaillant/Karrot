@@ -11285,6 +11285,16 @@ footer .footer-socials p {
   margin-top: 1em;
 }
 
+.discs-group {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 960px) {
+  .discs-group {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .o-photo-gallery .container {
   padding: 0 !important;
 }
@@ -11392,7 +11402,6 @@ footer .footer-socials p {
 }
 
 .o-disc-info {
-  background: red;
   display: flex;
   flex-direction: column;
   align-items: center;
