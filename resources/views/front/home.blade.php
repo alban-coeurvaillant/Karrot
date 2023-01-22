@@ -4,7 +4,7 @@
     @slot('h1')
         Gospel Dream
     @endslot
-    <div class="main-container">
+  
     <h2>Notre Chorale</h2>
     <p>
     Créée en 1990 la formation est aujourd’hui la plus active, avec un chant liturgique en plein essor depuis la fin des années 90.
@@ -23,7 +23,7 @@
         un hymne à l’amour.</p>
 
 
-</div>
+
     
 
 @endcomponent
