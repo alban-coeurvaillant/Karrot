@@ -26,47 +26,38 @@
         <div class="main-container">
           <div class="main-column">
                             {{ $slot }}
-                        </div>
-                            <div class="aside-column">
-                                            <div class="k-container">
-                                                        <div id="contact-block">
-                                                                     <h3>Réservations</h3>
-                                                                        <p>
-                                                                            <span class="tel">Tél. :   01 43 14 08 10</span>
-                                                                            <span class="port">Port. : 06 07 08 55 56</span>
-                                                                        </p>
-                                                                    </div>
-                                                                        
-                                                <div id="image-block">
-                                                    <picture>
-                                                        <img src="{{ asset('img/affiche.jpg') }}">
-                                                    </picture>
-                                                </div>
-                                          
-                                    
-                                                 <ul class="o-contact-block">
-                                                    <li>
-                                                       <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class=" btn-buy">
-                                                        Acheter sur la Fnac</a>
-                                                                                    
-                                                           </li>
-                                                            <li>
-                                                                <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class=" btn-buy">
-                                                                    Acheter sur franceBillet
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                            
-                                                <div id="video-block">
-                                                    <h3>Presse Pack</h3>
-                                                    <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
-                                               </div>
-                                            </div>
-        
-        </div>
+            </div>
+            
+            <div class="aside-column">
+            
+                <div id="contact-block">
+                     <h3>Réservations</h3>
+                    <p>
+                        <span class="tel">Tél. :   01 43 14 08 10</span>
+                        <span class="port">Port. : 06 07 08 55 56</span>
+                    </p>
+                </div>
+                                        
+                <div id="image-block">
+                    <picture>
+                        <img src="{{ asset('img/affiche.jpg') }}">
+                    </picture>
+                </div>
+          
+                 <ul class="o-contact-block">
+                    <li> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class=" btn-buy"> Acheter sur la Fnac</a> </li>
+                    <li> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class=" btn-buy"> </a> </li>
+                </ul>
+            
+                <div id="video-block">
+                    <h3>Presse Pack</h3>
+                    <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
+               </div>
+                               
+            </div>
               
             
-                </div>
+        </div>
     </div>
     
     <footer>
