@@ -15,12 +15,9 @@
             <div class="card-description">
                 <div class="event-image">img</div>
                 <div class="event-description">{{ $event->description }}</div>
-              <div class="event-time">
-                    <span class="date">
-                        {{ ucfirst($event->date->isoFormat('dddd')) }}   
-                        <i class="far fa-star"></i>
-                        {{ $event->date->format('d/m/y') }}      
-                    </span>
+                <div class="event-day-date-time">
+                     <span class="day"> {{ ucfirst($event->date->isoFormat('dddd')) }} </span>
+                    <span class="date">{{ $event->date->format('d/m/y') }}  </span>
                     <span class="time">{{ $event->time }}</span>
                 </div> 
                 </div> 
