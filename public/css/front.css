@@ -11174,9 +11174,7 @@ button {
 
 .k-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
+  display: flex;
 }
 
 .btn {
@@ -11302,7 +11300,7 @@ footer .footer-socials p {
 .o-photo-gallery .container .photos .photo:hover {
   outline: 2px solid rgb(204, 204, 204) !important;
 }
-@media (mi, -width: 960px) {
+@media (min-width: 960px) {
   .o-photo-gallery .container .photos {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
