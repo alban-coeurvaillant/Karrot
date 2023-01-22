@@ -274,9 +274,10 @@ button {
 }
 
 .k-container {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
 }
 
 .btn {
@@ -399,7 +400,7 @@ footer {
 
         .photos {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-gap: 1em;
 
             .photo {
@@ -409,6 +410,10 @@ footer {
                 &:hover {
                     outline: 2px solid rgb(204, 204, 204) !important;
                 }
+            }
+
+            @media (mi,-width: 960px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
     }
@@ -429,11 +434,7 @@ footer {
             font-size: 16px;
             display: flex;
             flex-direction: column;
-            background-color: #FFF;
-            padding: 1em;
-            width: 100%;
-            font-size: 16px;
-
+            border-radius: 1em;
 
             h2 {
                 border-bottom: 1px solid;
@@ -583,7 +584,6 @@ p br {
 
     .card-title {
         height: 3em;
-        background: #7D6990;
         display: flex;
         align-items: center;
 
@@ -599,7 +599,6 @@ p br {
         width: 100%;
         display: flex;
         flex-direction: column;
-        background: red;
         min-height: 8em;
     }
 
