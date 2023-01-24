@@ -22,7 +22,7 @@
                 </div> 
                 </div> 
              <div class="event-reservation">
-                <x-button-link href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
+                <x-button-link :primary="false" href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
             </div>
         </div>
         @endforeach

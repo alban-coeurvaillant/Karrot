@@ -1,5 +1,1 @@
-
-
-$('.nav-link').click(function(){
-    console.log('buton was clicked');
-});
+(()=>{var e;e=document.getElementById("main-nav"),document.getElementById("mobile-btn").addEventListener("click",(function(){e.classList.toggle("is-display")}))})();
