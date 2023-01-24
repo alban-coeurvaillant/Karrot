@@ -25,7 +25,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 1em;
-        border-radius: $unit $unit 0 0;
+        border-radius: var(--radius) var(--radius) 0 0;
 
         .column {
             display: flex;
@@ -75,7 +75,7 @@ body {
     padding: 1em 3em;
     color: #3d0635;
     border: 2px solid #3d0635;
-    border-radius: 0.5em;
+    border-radius: var(--radius);
 
     cursor: pointer;
 
@@ -93,7 +93,7 @@ body {
 .btn-buy {
     background-color: #4a0740;
     color: #fff;
-    border-radius: 0;
+    border-radius: var(--radius);
     font-weight: 600;
 }
 
@@ -102,7 +102,7 @@ header {
     justify-content: space-between;
     padding: 1em;
     background-color: #EFEFEF;
-    border-radius: 0.8em 0.8em 0 0;
+    border-radius: var(--radius) var(--radius) 0 0;
 
     .header-logo {
         display: flex;
@@ -136,7 +136,7 @@ header {
         overflow: hidden;
         flex-grow: 1;
         border-color: hsl(309deg 25% 16%);
-        border-radius: 0 0 0.4em 0.4em;
+        border-radius: 0 0 var(--radius) var(--radius);
 
         a {
             display: flex;
@@ -176,7 +176,7 @@ header {
 .header-baseline {
 
     background: #3D0635;
-    border-radius: 5px;
+    border-radius: var(--radius);
     text-align: center;
     display: flex;
     align-items: center;
@@ -234,7 +234,7 @@ button {
             min-height: 3em;
             align-items: center;
             justify-content: center;
-            border-radius: $border-radius;
+            border-radius: var(--radius);
             background-color: #7d6990;
             text-decoration: none;
 
@@ -249,8 +249,6 @@ button {
 
 #contact-block {
     width: 100%;
-    margin-top: 1em;
-
     p {
         text-align: center;
 
@@ -260,7 +258,7 @@ button {
             font-weight: bold;
             color: #4a0740;
             border: 2px solid;
-            border-radius: 1em;
+            border-radius: var(--radius);
             width: 90%;
             margin: 1em auto;
             padding: 0.2em;
@@ -410,7 +408,7 @@ footer {
             grid-gap: 1em;
 
             .photo {
-                border-radius: 1em;
+                border-radius: var(--radius);
                 overflow: hidden;
 
                 &:hover {
@@ -440,7 +438,7 @@ footer {
             font-size: 16px;
             display: flex;
             flex-direction: column;
-            border-radius: 1em;
+            border-radius: var(--radius);
 
             h2 {
                 border-bottom: 1px solid;
@@ -476,7 +474,6 @@ footer {
         }
 
         .aside-column {
-            padding: 1em;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -567,7 +564,7 @@ p br {
     width: 100%;
     padding: 0.5em;
     text-align: center;
-    border-radius: 0.4em;
+    border-radius: var(--radius);
     margin-top: 1em;
 
     p {
@@ -581,7 +578,7 @@ p br {
 .o-card-event {
     background: #ffffff;
     box-shadow: 0px -1px 18px 8px #4242422b;
-    border-radius: 0.8em;
+    border-radius: var(--radius);
     overflow: hidden;
     margin-top: 1em;
     width: 100%;
