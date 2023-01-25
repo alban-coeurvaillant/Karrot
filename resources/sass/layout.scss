@@ -90,13 +90,6 @@ body {
 
 }
 
-.btn-buy {
-    background-color: #4a0740;
-    color: #fff;
-    border-radius: var(--radius);
-    font-weight: 600;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -129,6 +122,7 @@ header {
 
     &.is-display {
         display: flex;
+        flex-direction: column;
     }
 
     .nav-item {
@@ -160,12 +154,6 @@ header {
         }
     }
 
-    @media (max-width: 960px) {
-
-        position: absolute;
-        width: 93%;
-
-    }
 
     @media (min-width: 960px) {
         display: flex;
@@ -213,15 +201,18 @@ button {
     flex-direction: column;
     align-items: center;
     margin-top: 1em;
+    width: 100%;
 
     li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         list-style-type: none;
-        min-height: 36px;
         text-align: center;
         margin-top: 12px;
         width: 100%;
-        color: white;
         font-weight: bold;
+     
 
         &:first-of-type {
             margin-top: initial;
@@ -230,13 +221,14 @@ button {
         a {
             display: flex;
             height: 100%;
-            width: 100%;
-            min-height: 3em;
+            width: 80%;
+            height: 3em;
             align-items: center;
             justify-content: center;
             border-radius: var(--radius);
             background-color: #7d6990;
             text-decoration: none;
+            color: white;
 
             &:hover {
                 background-color: #4a0740;
@@ -381,15 +373,6 @@ footer {
     }
 }
 
-.aside-column {
-    background-color: white !important;
-
-    .container {
-        padding: 0 !important;
-        margin-top: 1em;
-    }
-}
-
 .discs-group {
     display: grid;
     grid-template-columns: 1fr  ;
@@ -427,9 +410,13 @@ footer {
     background-color: #EFEFEF;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .main-container {
-        outline: solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 30em;
 
         .main-column {
             background-color: #FFF;
@@ -477,6 +464,8 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            background-color: white;
 
             h3 {
                 background: #4a0740;
@@ -513,9 +502,11 @@ footer {
         }
 
         @media (min-width: 960px) {
+            align-items: initial;
             padding: 2em;
             flex-direction: row;
             display: flex;
+            max-width: initial;
         }
     }
 }

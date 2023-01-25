@@ -45,8 +45,8 @@
                 </div>
           
                  <ul class="o-contact-block">
-                    <li> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class=" btn-buy"> Acheter sur la Fnac</a> </li>
-                    <li> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class=" btn-buy"> </a> </li>
+                    <li> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="">Acheter sur la Fnac</a> </li>
+                    <li> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="">Acheter sur FranceBillet</a> </li>
                 </ul>
             
                 <div id="video-block">
@@ -73,7 +73,7 @@
         <div class="footer-socials">
             <p>Retrouvez nous sur nos sur :</p>
             <div class="socials-icons">
-            <a href="#" id="facebook">
+            <a href="https://www.facebook.com/Gospeldreamfr/" id="facebook">
                 <i class="fab fa-facebook m-2">
                 </i>
             </a>

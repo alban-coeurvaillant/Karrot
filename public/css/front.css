@@ -11029,13 +11029,6 @@ body:before {
   }
 }
 
-.btn-buy {
-  background-color: #4a0740;
-  color: #fff;
-  border-radius: var(--radius);
-  font-weight: 600;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -11065,6 +11058,7 @@ header .header-logo picture img {
 }
 .o-main-nav.is-display {
   display: flex;
+  flex-direction: column;
 }
 .o-main-nav .nav-item {
   list-style-type: none;
@@ -11090,12 +11084,6 @@ header .header-logo picture img {
 }
 .o-main-nav .nav-item a:hover {
   color: #fff;
-}
-@media (max-width: 960px) {
-  .o-main-nav {
-    position: absolute;
-    width: 93%;
-  }
 }
 @media (min-width: 960px) {
   .o-main-nav {
@@ -11143,14 +11131,16 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 1em;
+  width: 100%;
 }
 .o-contact-block li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
-  min-height: 36px;
   text-align: center;
   margin-top: 12px;
   width: 100%;
-  color: white;
   font-weight: bold;
 }
 .o-contact-block li:first-of-type {
@@ -11159,13 +11149,14 @@ button {
 .o-contact-block li a {
   display: flex;
   height: 100%;
-  width: 100%;
-  min-height: 3em;
+  width: 80%;
+  height: 3em;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
   background-color: #7d6990;
   text-decoration: none;
+  color: white;
 }
 .o-contact-block li a:hover {
   background-color: #4a0740;
@@ -11299,14 +11290,6 @@ footer .footer-socials p {
   }
 }
 
-.aside-column {
-  background-color: white !important;
-}
-.aside-column .container {
-  padding: 0 !important;
-  margin-top: 1em;
-}
-
 .discs-group {
   display: grid;
   grid-template-columns: 1fr;
@@ -11342,9 +11325,13 @@ footer .footer-socials p {
   background-color: #EFEFEF;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .o-main-content .main-container {
-  outline: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30em;
 }
 .o-main-content .main-container .main-column {
   background-color: #FFF;
@@ -11385,6 +11372,8 @@ footer .footer-socials p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  background-color: white;
 }
 .o-main-content .main-container .aside-column h3 {
   background: #4a0740;
@@ -11416,9 +11405,11 @@ footer .footer-socials p {
 }
 @media (min-width: 960px) {
   .o-main-content .main-container {
+    align-items: initial;
     padding: 2em;
     flex-direction: row;
     display: flex;
+    max-width: initial;
   }
 }
 
