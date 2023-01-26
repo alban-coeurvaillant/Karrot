@@ -11183,6 +11183,7 @@ button {
 
 #image-block {
   margin: auto;
+  margin-top: 0;
 }
 
 .k-container {
@@ -11332,6 +11333,7 @@ footer .footer-socials p {
   flex-direction: column;
   align-items: center;
   max-width: 30em;
+  width: 100%;
 }
 .o-main-content .main-container .main-column {
   background-color: #FFF;
