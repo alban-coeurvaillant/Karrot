@@ -7,6 +7,7 @@
         <div class="o-calendar-date">
             <p>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</p>
         </div>
+         <div class="o-events">
         @foreach($row as $event)
         <div class="o-card-event">
             <div class="card-title">
@@ -27,6 +28,7 @@
         </div>
         @endforeach
     @endforeach
+    </div>
     <div class="mt-3">
         {{ $events->onEachSide(0)->links() }}
     </div>
