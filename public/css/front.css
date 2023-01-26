@@ -11182,7 +11182,14 @@ button {
 }
 
 .o-events {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 425px) {
+  .o-events {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+  }
 }
 
 #image-block {
@@ -11451,12 +11458,13 @@ p br {
 }
 
 .o-calendar-date {
-  background: #7D6990;
+  background: #4a0740;
   width: 100%;
   padding: 0.5em;
-  text-align: center;
+  text-align: right;
   border-radius: var(--radius);
   margin-top: 1em;
+  color: black;
 }
 .o-calendar-date p {
   margin: 0;
@@ -11477,18 +11485,22 @@ p br {
   height: 3em;
   display: flex;
   align-items: center;
+  background: #7d6990;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
 }
 .o-card-event .card-title h4 {
-  font-size: 1em;
-  color: #4A0740;
+  font-size: 0.9em;
+  color: #ffffff;
   text-transform: uppercase;
-  margin-left: 1em;
+  margin: 0;
 }
 .o-card-event .card-description {
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 8em;
+  height: 12em;
 }
 
 .event-description {
@@ -11508,6 +11520,9 @@ p br {
   display: flex;
   flex-direction: column;
   padding: 1em;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: end;
 }
 .event-day-date-time .day {
   font-size: 1.6em;
@@ -11531,12 +11546,16 @@ p br {
 .event-reservation a {
   display: flex;
   align-items: center;
-  background-color: #3d0635;
+  background-color: #eeeeee;
   text-align: center;
   justify-content: center;
   text-decoration: none;
   color: white;
   width: 100%;
+  border-radius: 0;
+  height: 3em;
+  font-size: 1.2em;
+  color: black;
 }
 
 .a-heading {
