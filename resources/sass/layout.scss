@@ -261,15 +261,10 @@ button {
 
 .o-events{
 
-    display: grid;
-    grid-template-columns: 1fr;
-  
+    display: flex;
+    flex-direction: column;
     @media (min-width: 425px) {
-       
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 1em;
     }
-    
     
 }
 #image-block {
@@ -391,7 +386,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr  ;
     @media (min-width: 960px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:1fr;
     }
 }
 
@@ -534,15 +529,14 @@ footer {
     margin-top: 2em;
 
     .disc-image {
-
+        width: 24em;
+        margin-right: 1em;
     }
 
     .disc-description {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 }
 

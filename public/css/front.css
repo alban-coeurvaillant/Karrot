@@ -11182,16 +11182,9 @@ button {
 }
 
 .o-events {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
 }
-@media (min-width: 425px) {
-  .o-events {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1em;
-  }
-}
-
 #image-block {
   margin: auto;
   margin-top: 0;
@@ -11308,7 +11301,7 @@ footer .footer-socials p {
 }
 @media (min-width: 960px) {
   .discs-group {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -11433,12 +11426,14 @@ footer .footer-socials p {
   padding: 1em;
   margin-top: 2em;
 }
+.o-disc-info .disc-image {
+  width: 24em;
+  margin-right: 1em;
+}
 .o-disc-info .disc-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 em {
