@@ -11462,7 +11462,7 @@ body .event-reservation {
 body .event-reservation a {
   display: flex;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: #78658a;
   text-align: center;
   justify-content: center;
   text-decoration: none;
@@ -11472,9 +11472,8 @@ body .event-reservation a {
   font-size: 1.2em;
   height: 100%;
 }
-@media (max-width: 60em) {
-  body .event-reservation {
-    width: 29%;
+@media (min-width: 60em) {
+  body .event-reservation a {
     margin-left: auto;
   }
 }

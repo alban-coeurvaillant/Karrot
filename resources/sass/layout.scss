@@ -549,11 +549,10 @@ body {
     }
     .event-reservation {
         width: 30%;
-        
         a {
             display: flex;
             align-items: center;
-            background-color: #eeeeee;
+            background-color:#78658a;
             text-align: center;
             justify-content: center;
             text-decoration: none;
@@ -562,12 +561,12 @@ body {
             border-radius: 0;
             font-size: 1.2em;
             height: 100%;
-        }
-        @media (max-width:60em) {
-            width: 29%;
-            margin-left: auto;
+            @media (min-width:60em) {
+                margin-left: auto;
+            }
         }
     }
+    
     footer {
         display: flex;
         background-color: #e7e7e7;
