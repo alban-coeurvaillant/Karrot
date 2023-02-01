@@ -11392,7 +11392,6 @@ body .o-card-event {
   box-shadow: 0 -1px 18px 8px rgba(66, 66, 66, 0.168627451);
   border-radius: var(--radius);
   overflow: hidden;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 1em;
@@ -11401,15 +11400,13 @@ body .o-card-event .card-title {
   height: 3em;
   display: flex;
   align-items: center;
-  background: #7d6990;
   justify-content: center;
   text-align: center;
   padding: 1em;
 }
 body .o-card-event .card-title h4 {
-  font-size: 0.9em;
-  color: #ffffff;
-  text-transform: uppercase;
+  font-size: inherit;
+  color: initial;
   margin: 0;
 }
 @media (min-width: 60em) {
@@ -11420,6 +11417,7 @@ body .o-card-event .card-title h4 {
 body .o-card-event .card-description {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 @media (min-width: 60em) {
   body .o-card-event .card-description {
@@ -11477,6 +11475,7 @@ body .event-reservation a {
 @media (max-width: 60em) {
   body .event-reservation {
     width: 29%;
+    margin-left: auto;
   }
 }
 body footer {

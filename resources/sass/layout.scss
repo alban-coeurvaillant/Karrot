@@ -468,7 +468,6 @@ body {
         box-shadow: 0 -1px 18px 8px #4242422b;
         border-radius: var(--radius);
         overflow: hidden;
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         margin: 1em;
@@ -477,15 +476,13 @@ body {
             height: 3em;
             display: flex;
             align-items: center;
-            background: #7d6990;
             justify-content: center;
             text-align: center;
             padding: $unit;
 
             h4 {
-                font-size: 0.9em;
-                color: #ffffff;
-                text-transform: uppercase;
+                font-size: inherit;
+                color: initial;
                 margin: 0;
             }
 
@@ -497,6 +494,7 @@ body {
         .card-description {
             width: 100%;
             display: flex;
+            align-items: center;
 
             @media (min-width:60em) {
                 width: 70%;
@@ -551,6 +549,7 @@ body {
     }
     .event-reservation {
         width: 30%;
+        
         a {
             display: flex;
             align-items: center;
@@ -566,6 +565,7 @@ body {
         }
         @media (max-width:60em) {
             width: 29%;
+            margin-left: auto;
         }
     }
     footer {
