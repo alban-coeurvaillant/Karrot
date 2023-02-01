@@ -11182,6 +11182,7 @@ body #contact-block p span {
 }
 body .o-events {
   display: flex;
+  flex-direction: column;
 }
 body #image-block {
   margin: auto;
@@ -11413,7 +11414,7 @@ body .o-card-event .card-title h4 {
 }
 @media (min-width: 60em) {
   body .o-card-event .card-title {
-    width: 31%;
+    width: 30%;
   }
 }
 body .o-card-event .card-description {
@@ -11422,7 +11423,7 @@ body .o-card-event .card-description {
 }
 @media (min-width: 60em) {
   body .o-card-event .card-description {
-    width: 40%;
+    width: 70%;
   }
 }
 body .event-description {

@@ -249,6 +249,7 @@ body {
     }
     .o-events{
         display: flex;
+        flex-direction: column;
         @media (min-width: 425px) {
         }
 
@@ -489,7 +490,7 @@ body {
             }
 
             @media (min-width:60em) {
-                width: 31%;
+                width: 30%;
             }
         }
 
@@ -498,7 +499,7 @@ body {
             display: flex;
 
             @media (min-width:60em) {
-                width: 40%;
+                width: 70%;
             }
         }
     }
