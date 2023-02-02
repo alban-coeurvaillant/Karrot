@@ -11183,6 +11183,7 @@ body #contact-block p span {
 body .o-events {
   display: flex;
   flex-direction: column;
+  padding: 1em;
 }
 body #image-block {
   margin: auto;
@@ -11376,7 +11377,7 @@ body .o-calendar-date {
   background: #4a0740;
   width: 100%;
   padding: 0.5em;
-  text-align: right;
+  text-align: left;
   border-radius: var(--radius);
   margin-top: 1em;
   color: black;
@@ -11394,15 +11395,18 @@ body .o-card-event {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  margin: 1em;
+  margin-top: 1em;
+}
+body .o-card-event:first-of-type {
+  margin-top: 0;
 }
 body .o-card-event .card-title {
-  height: 3em;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 body .o-card-event .card-title h4 {
   font-size: inherit;
@@ -11411,7 +11415,7 @@ body .o-card-event .card-title h4 {
 }
 @media (min-width: 60em) {
   body .o-card-event .card-title {
-    width: 30%;
+    width: 40%;
   }
 }
 body .o-card-event .card-description {
@@ -11421,7 +11425,7 @@ body .o-card-event .card-description {
 }
 @media (min-width: 60em) {
   body .o-card-event .card-description {
-    width: 70%;
+    width: 60%;
   }
 }
 body .event-description {
@@ -11473,7 +11477,7 @@ body .event-reservation a {
   height: 100%;
 }
 @media (min-width: 60em) {
-  body .event-reservation a {
+  body .event-reservation {
     margin-left: auto;
   }
 }

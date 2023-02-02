@@ -250,8 +250,8 @@ body {
     .o-events{
         display: flex;
         flex-direction: column;
-        @media (min-width: 425px) {
-        }
+        padding: 1em;
+   
 
     }
     #image-block {
@@ -451,7 +451,7 @@ body {
         background: #4a0740;
         width: 100%;
         padding: 0.5em;
-        text-align: right;
+        text-align: left;
         border-radius: var(--radius);
         margin-top: $unit;
         color: black;
@@ -470,15 +470,19 @@ body {
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
-        margin: 1em;
-
+        margin-top: 1em;
+        
+        &:first-of-type {
+            margin-top:0;
+        }
         .card-title {
-            height: 3em;
+            
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
+            text-align: left;
             padding: $unit;
+            white-space: nowrap;
+            text-overflow: ellipsis;
 
             h4 {
                 font-size: inherit;
@@ -487,7 +491,7 @@ body {
             }
 
             @media (min-width:60em) {
-                width: 30%;
+                width: 40%;
             }
         }
 
@@ -497,7 +501,7 @@ body {
             align-items: center;
 
             @media (min-width:60em) {
-                width: 70%;
+                width: 60%;
             }
         }
     }
@@ -561,9 +565,10 @@ body {
             border-radius: 0;
             font-size: 1.2em;
             height: 100%;
-            @media (min-width:60em) {
-                margin-left: auto;
-            }
+          
+        }
+        @media (min-width:60em) {
+            margin-left: auto;
         }
     }
     
