@@ -82,16 +82,10 @@ body {
     }
     
     header {
-        display: flex;
-        justify-content: space-between;
         background-color: #EFEFEF;
         border-radius: var(--radius) var(--radius) 0 0;
 
         .header-logo {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.5em;
-
             picture {
                 width: 100%;
 
@@ -231,7 +225,6 @@ body {
         width: 100%;
         p {
             text-align: center;
-            @extends .d--f;
                
             span {
                 display: block;

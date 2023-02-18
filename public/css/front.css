@@ -11297,15 +11297,8 @@ body .main-wrapper .container main {
   background: white;
 }
 body header {
-  display: flex;
-  justify-content: space-between;
   background-color: #EFEFEF;
   border-radius: var(--radius) var(--radius) 0 0;
-}
-body header .header-logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5em;
 }
 body header .header-logo picture {
   width: 100%;
@@ -11436,7 +11429,6 @@ body #contact-block {
 }
 body #contact-block p {
   text-align: center;
-  @extends .d--f;
 }
 body #contact-block p span {
   display: block;
