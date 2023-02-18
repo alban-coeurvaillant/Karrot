@@ -1,6 +1,6 @@
 <header class="o-master-headerp-4 d-flex fd--r jc--sb">
-<div>
-    <a class="header-logo" href="{{ route('home') }}">
+<div class="d-flex w-100 jc--sb">
+    <a class="header-logo d-block " href="{{ route('home') }}">
         <picture class="">
             <img src="{{ asset('img/GD-logo.svg') }}" loading="lazy">
         </picture>
