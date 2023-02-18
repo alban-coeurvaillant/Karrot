@@ -19,7 +19,7 @@
                 <span class="time d-flex ai--c">{{ $event->time }}</span>
                 </div>
                 <span class="event-reservation w-100">
-                    <x-button-link :primary="false" href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
+                    <x-button-link  href="{{ route('event.reservation', $event) }}" class="btn btn-primary mt-2">{{ __('Book') }}</x-button-link>
                 </span>
         </div>
         @endforeach
