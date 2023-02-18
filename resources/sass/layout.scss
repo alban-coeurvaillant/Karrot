@@ -194,9 +194,7 @@ body {
         align-items: center;
         width: 100%;
 
-        p  {
-        @extends .d--f;
-        }
+     
         li {
             display: flex;
             align-items: center;
@@ -233,6 +231,8 @@ body {
         width: 100%;
         p {
             text-align: center;
+            @extends .d--f;
+               
             span {
                 display: block;
                 font-size: 20px;

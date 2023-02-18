@@ -11404,9 +11404,6 @@ body .o-contact-block {
   align-items: center;
   width: 100%;
 }
-body .o-contact-block p {
-  @extends .d--f;
-}
 body .o-contact-block li {
   display: flex;
   align-items: center;
@@ -11439,6 +11436,7 @@ body #contact-block {
 }
 body #contact-block p {
   text-align: center;
+  @extends .d--f;
 }
 body #contact-block p span {
   display: block;
