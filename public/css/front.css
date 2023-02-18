@@ -11601,7 +11601,6 @@ body .o-disc-info .disc-image {
 }
 body .o-disc-info .disc-description {
 
-
 }
 body .card-body {
   background: var(--main-bg-color);
@@ -11613,15 +11612,12 @@ body .card-body .btn-primary {
 body .o-calendar-date {
   background: #4a0740;
   width: 100%;
-  padding: 0.5em;
   text-align: left;
   border-radius: var(--radius);
   margin-top: var(--unit);
   color: black;
 }
 body .o-calendar-date p {
-  margin: 0;
-  padding: 0;
   color: white;
   font-size: 1.5em;
 }
@@ -11650,12 +11646,12 @@ body .o-card-event .card-description {
   width: 100%;
   display: flex;
   align-items: center;
-}
-@media (min-width: 60em) {
-  body .o-card-event .card-description {
+
+  @media (min-width: 60em) {
     width: 60%;
-  }
 }
+}
+
 body .event-description {
 
   overflow: hidden;
