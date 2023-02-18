@@ -11439,11 +11439,6 @@ body #contact-block p span {
   border-radius: var(--radius);
   width: 90%;
 }
-body .o-events {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-}
 body #image-block {
   margin: auto;
   margin-top: 0;
@@ -11606,13 +11601,21 @@ body .o-main-content .main-container .aside-column button {
     max-width: initial;
   }
 }
-
+body .o-disc-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--unit);
+  margin-top: 2em;
+}
 body .o-disc-info .disc-image {
   width: 24em;
- 
+  margin-right: var(--unit);
 }
 body .o-disc-info .disc-description {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 body .card-body {
   background: var(--main-bg-color);
