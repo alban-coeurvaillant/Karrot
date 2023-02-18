@@ -11543,10 +11543,8 @@ body .o-main-content .main-container .main-column p strong {
 }
 body .o-main-content .main-container .aside-column {
   width: 100%;
-  background-color: var(--bs-blue);
 }
 body .o-main-content .main-container .aside-column .contact-block .contact-block__head h3 {
-  background: var(--bs-blue);
   width: 100%;
   color: white;
   border-top-left-radius: 0.5em;

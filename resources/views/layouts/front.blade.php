@@ -23,7 +23,7 @@
         <h1 class="a-heading a-heading-1">{{ $h1 }}</h1>
     </div>
     <div id="main" class="o-main-content">
-        <div class="main-container">
+        <div class="d-flex flex-column flex-lg-row main-container p-4">
           <div class="main-column p-4">
             {{ $slot }}
             </div>
