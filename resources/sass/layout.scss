@@ -314,22 +314,14 @@ body {
     }
     .o-main-content {
         background-color: #EFEFEF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+     
         .main-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             max-width: 30em;
             width: 100%;
             .main-column {
                 background-color: #FFF;
-                padding: var(--unit);
                 width: 100%;
                 font-size: 16px;
-                display: flex;
-                flex-direction: column;
                 border-radius: var(--radius);
                 h2 {
                     border-bottom: 1px solid;
@@ -360,20 +352,14 @@ body {
                 }
             }
             .aside-column {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 width: 100%;
                 background-color: white;
 
                 h3 {
                     background: #4a0740;
                     width: 100%;
-                    text-align: center;
                     color: white;
                     font-size: 1.5em;
-                    padding: 0.5em;
-                    margin: 0;
                     border-top-left-radius: 0.5em;
                     border-top-right-radius: 0.5em;
                 }
