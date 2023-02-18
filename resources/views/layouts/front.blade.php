@@ -44,9 +44,9 @@
                     </picture>
                 </div>
           
-                 <ul class="o-contact-block">
-                    <li> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="">Acheter sur la Fnac</a> </li>
-                    <li> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="">Acheter sur FranceBillet</a> </li>
+                 <ul class="o-contact-block w-100 p-0">
+                    <li> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="d-flex ai--c jc--c w-100">Acheter sur la Fnac</a> </li>
+                    <li class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class=d-flex ai--c jc--c w-100">Acheter sur FranceBillet</a> </li>
                 </ul>
             
                 <div id="video-block">
