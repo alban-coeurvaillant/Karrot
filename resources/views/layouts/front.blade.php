@@ -28,42 +28,32 @@
             {{ $slot }}
             </div>
             <div class="aside-column">
-                <div id="contact-block">
-                    <div class="contact-block__head">
+                <div id="contact-block-head">
                     <h3 class="p-3">Réservations</h3>
-                    </div>
-                 
-                    <p class="d-flex fd--c ai--c">
-                        <span class="tel mt-3">Tél. :   01 43 14 08 10</span>
-                        <span class="port mt-3">Port. : 06 07 08 55 56</span>
-                    </p>
                 </div>
-                                        
+                <p class="o-contact-block w-100 p-2">
+                    <span> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="d-flex ai--c jc--c w-100">Acheter sur la Fnac</a> </span>
+                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="d-flex ai--c jc--c w-100">Acheter sur FranceBillet</a> </span>
+                </p>
                 <div id="image-block">
                     <picture class="d-flex justify-content-center">
                         <img class="w-75" src="{{ asset('img/affiche.jpg') }}">
                     </picture>
                 </div>
-          
-                <p class="o-contact-block w-100 p-2">
-                    <span> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="d-flex ai--c jc--c w-100">Acheter sur la Fnac</a> </span>
-                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="d-flex ai--c jc--c w-100">Acheter sur FranceBillet</a> </span>
+                <p class="d-flex fd--c ai--c">
+                    <span class="tel mt-3">Tél. : 01 43 14 08 10</span>
+                    <span class="port mt-3">Port. : 06 07 08 55 56</span>
                 </p>
-            
                 <div id="video-block">
                     <h3>Presse Pack</h3>
                     <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
                </div>
-                               
             </div>
-              
-            
         </div>
     </div>
     
     <footer>
     <div class="footer-container">
-    
     </div>
         <div class="footer-copyrights">
             <p> Tous droits réservés www.gospeldream.com ©2022 </p>
