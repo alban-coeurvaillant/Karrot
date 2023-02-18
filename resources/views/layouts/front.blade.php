@@ -29,7 +29,10 @@
             </div>
             <div class="aside-column">
                 <div id="contact-block">
-                     <h3 class="p-3">Réservations</h3>
+                    <div class="contact-block__head">
+                    <h3 class="p-3">Réservations</h3>
+                    </div>
+                     
                     <p class="d-flex fd--c ai--c">
                         <span class="tel mt-3">Tél. :   01 43 14 08 10</span>
                         <span class="port mt-3">Port. : 06 07 08 55 56</span>
