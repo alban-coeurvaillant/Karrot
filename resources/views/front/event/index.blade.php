@@ -4,12 +4,12 @@
     @endslot
 
     @foreach($data as $row)
-        <div class="o-calendar-date">
+        <div class="o-calendar-date ">
             <p>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</p>
         </div>
-         <div class="o-events">
+         <div class="o-events mt-3">
         @foreach($row as $event)
-        <div class="o-card-event d-flex">
+        <div class="o-card-event d-flex mt-2">
                 <span class="event-place d-flex ai--c p-3">{{ $event->place }}</span>
                 <span class="event-image d-flex ai--c p-3 d-none">img</span>
                 <span class="event-description d-flex ai--c p-3 d-none">{{ $event->description }}</span>
