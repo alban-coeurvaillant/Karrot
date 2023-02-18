@@ -24,7 +24,7 @@
     </div>
     <div id="main" class="o-main-content">
         <div class="main-container">
-          <div class="main-column">
+          <div class="main-column p-4">
             {{ $slot }}
             </div>
             <div class="aside-column">

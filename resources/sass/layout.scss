@@ -398,21 +398,13 @@ body {
         }
     }
     .o-disc-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: var(--unit);
-        margin-top: 2em;
-
         .disc-image {
             width: 24em;
             margin-right: var(--unit);
         }
 
         .disc-description {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+           
         }
     }
     .card-body {
