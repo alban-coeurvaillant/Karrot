@@ -10,12 +10,12 @@
          <div class="o-events">
         @foreach($row as $event)
         <div class="o-card-event">
-                <span class="event-place d-flex ai--c">{{ $event->place }}</span>
-                <span class="event-image d-flex ai--c">img</span>
-                <span class="event-description d-flex ai--c">{{ $event->description }}</span>
-                <span class="day d-flex ai--c"> {{ ucfirst($event->date->isoFormat('dddd')) }} </span>
-                <span class="date d-flex ai--c">{{ $event->date->format('d/m/y') }}  </span>
-                <span class="time d-flex ai--c">{{ $event->time }}</span>
+                <span class="event-place d-flex ai--c p-3">{{ $event->place }}</span>
+                <span class="event-image d-flex ai--c p-3">img</span>
+                <span class="event-description d-flex ai--c p-3">{{ $event->description }}</span>
+                <span class="day d-flex ai--c p-3"> {{ ucfirst($event->date->isoFormat('dddd')) }} </span>
+                <span class="date d-flex ai--c p-3">{{ $event->date->format('d/m/y') }}  </span>
+                <span class="time d-flex ai--c p-3">{{ $event->time }}</span>
                <span class="event-reservation">
                     <x-button-link :primary="false" href="{{ route('event.reservation', $event) }}">{{ __('Book') }}</x-button-link>
                 </span>
