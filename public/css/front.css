@@ -11391,31 +11391,21 @@ body .header-baseline p {
   }
 }
 body .o-contact-block {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+
+
+
 }
 body .o-contact-block li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   list-style-type: none;
   text-align: center;
-  margin-top: 12px;
-  width: 100%;
   font-weight: bold;
 }
 body .o-contact-block li:first-of-type {
   margin-top: initial;
 }
 body .o-contact-block li a {
-  display: flex;
-  width: 80%;
   height: 3em;
-  align-items: center;
-  justify-content: center;
   border-radius: var(--radius);
   background-color: #7d6990;
   text-decoration: none;
