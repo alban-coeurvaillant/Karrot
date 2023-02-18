@@ -32,17 +32,17 @@
                     <h3 class="p-3 text-center">Réservations</h3>
                 </div>
                 <p class="o-contact-block w-100 p-2">
-                    <span> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-outline-dark p-2">Acheter sur la Fnac</a> </span>
-                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="btn btn-outline-dark p-2">Acheter sur FranceBillet</a> </span>
+                    <span class="d-flex w-100 a-heading"> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-outline-dark p-2 w-100">Acheter sur la Fnac</a> </span>
+                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="btn btn-outline-dark p-2 w-100">Acheter sur FranceBillet</a> </span>
                 </p>
                 <div id="image-block">
                     <picture class="d-flex justify-content-center">
                         <img class="w-75" src="{{ asset('img/affiche.jpg') }}">
                     </picture>
                 </div>
-                <p class="d-flex fd--c ai--c">
-                    <span class="tel mt-3 btn btn-outline-dark p-2">Tél. : 01 43 14 08 10</span>
-                    <span class="port mt-3 btn btn-outline-dark p-2">Port. : 06 07 08 55 56</span>
+                <p class="d-flex">
+                    <span class="tel mt-2 btn btn-outline-dark p-2 w-100 ">Tél. : 01 43 14 08 10</span>
+                    <span class="port mt-2 btn btn-outline-dark p-2 w-100 ">Port. : 06 07 08 55 56</span>
                 </p>
                 <div id="video-block">
                     <h3 class="text-center p-3">Presse Pack</h3>
