@@ -11672,15 +11672,7 @@ body .event-time {
   background: #2d2d18;
   flex-direction: column;
 }
-body .event-reservation {
-  width: 30%;
-}
 body .event-reservation a {
-  display: flex;
-  align-items: center;
-  background-color: #78658a;
-  text-align: center;
-  justify-content: center;
   text-decoration: none;
   color: white;
   width: 100%;
