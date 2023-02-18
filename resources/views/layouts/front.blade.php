@@ -40,8 +40,8 @@
                 </div>
                                         
                 <div id="image-block">
-                    <picture>
-                        <img src="{{ asset('img/affiche.jpg') }}">
+                    <picture class="d-flex justify-content-center">
+                        <img class="w-75" src="{{ asset('img/affiche.jpg') }}">
                     </picture>
                 </div>
           

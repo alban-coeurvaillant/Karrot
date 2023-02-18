@@ -1,15 +1,15 @@
-<header class="o-master-headerp-4 d-flex fd--r jc--sb p-4">
-<div class="d-flex w-100 jc--sb">
+<header class="d-flex flex-column o-master-headerp-4 p-4">
+<div class="flex-lg-row justify-content-lg-between">
     <a class="header-logo d-block " href="{{ route('home') }}">
         <picture class="">
             <img src="{{ asset('img/GD-logo.svg') }}" loading="lazy">
         </picture>
     </a>
-    <div class="header-baseline">
-    <p>Chants authentiques de l'église Afro-Américaine</p>
+    <div class="header-baseline mt-2">
+    <p class="text-capitalize">Chants authentiques de l'église Afro-Américaine</p>
     </div>
 </div>
-    <div id="mobile-btn"> voir le menu</div>
+    <div id="mobile-btn " class="btn btn-primary d-lg-none mt-3 text-light"> voir le menu</div>
  
 </header>
 
