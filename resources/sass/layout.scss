@@ -194,6 +194,9 @@ body {
         align-items: center;
         width: 100%;
 
+        p  {
+        @extends .d--f;
+        }
         li {
             display: flex;
             align-items: center;
@@ -278,6 +281,7 @@ body {
         }
 
         h1 {
+            color:var(--color-0);
             margin: 0 var(--unit) 0;
             @media (max-width:60em) {
                 margin: auto;

@@ -11404,6 +11404,9 @@ body .o-contact-block {
   align-items: center;
   width: 100%;
 }
+body .o-contact-block p {
+  @extends .d--f;
+}
 body .o-contact-block li {
   display: flex;
   align-items: center;
@@ -11479,6 +11482,7 @@ body .o-section-title {
   }
 }
 body .o-section-title h1 {
+  color: var(--color-0);
   margin: 0 var(--unit) 0;
 }
 @media (max-width: 60em) {
