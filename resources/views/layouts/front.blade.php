@@ -33,14 +33,14 @@
                 </div>
                 <p class="o-contact-block w-100 p-2">
                     <span class="d-flex w-100 a-heading"> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-outline-dark p-2 w-100">Acheter sur la Fnac</a> </span>
-                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="btn btn-outline-dark p-2 w-100">Acheter sur FranceBillet</a> </span>
+                    <span class="d-flex w-100 mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="btn btn-outline-dark p-2 w-100">Acheter sur FranceBillet</a> </span>
                 </p>
                 <div id="image-block">
                     <picture class="d-flex justify-content-center">
                         <img class="w-75" src="{{ asset('img/affiche.jpg') }}">
                     </picture>
                 </div>
-                <p class="d-flex">
+                <p class="d-flex flex-column p-2">
                     <span class="tel mt-2 btn btn-outline-dark p-2 w-100 ">Tél. : 01 43 14 08 10</span>
                     <span class="port mt-2 btn btn-outline-dark p-2 w-100 ">Port. : 06 07 08 55 56</span>
                 </p>
