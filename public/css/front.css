@@ -10923,6 +10923,7 @@ textarea.form-control-lg {
   --color-5: #9A6196;
   --color-6: #9A8E61;
   --color-7: #000000;
+  --bs-btn-bg:red !important;
   --tablet: 60em;
   --deskyop: 60em;
   --space-unit: 1rem;
@@ -11226,10 +11227,6 @@ h4,
 h5,
 h6 {
   color: #510040;
-}
-
-:root {
-  --bs-btn-bg:red !important;
 }
 
 * {
