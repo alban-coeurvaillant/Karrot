@@ -11553,11 +11553,10 @@ body .o-main-content .main-container .aside-column {
   width: 100%;
   background-color: white;
 }
-body .o-main-content .main-container .aside-column h3 {
-  background: #4a0740;
+body .o-main-content .main-container .aside-column .contact-block .contact-block__head h3 {
+  background: var(--bs-blue);
   width: 100%;
   color: white;
-  font-size: 1.5em;
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
 }
