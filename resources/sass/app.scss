@@ -19,7 +19,7 @@ body{
 
 .o-admin-header {
     background: #7D6990;
-    color: white;
+    color: var(--kr-white);
     padding: 1em;
     height: 8em;
     display: flex;
@@ -40,7 +40,7 @@ table {
 }
 
 .admin-content{
-    background: white;
+    background: red;
     padding: 1em;
 }
 
@@ -65,7 +65,7 @@ table {
         max-width: 1024px;
         margin: 2em auto;
         min-height: 800px   ;
-        background: white;
+        background: var(--kr-white);
         border-radius: 0.4em;
     }
     nav {
