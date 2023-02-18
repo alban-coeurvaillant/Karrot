@@ -1,4 +1,4 @@
-<header class="o-master-headerp-4 d-flex fd--r jc--sb">
+<header class="o-master-headerp-4 d-flex fd--r jc--sb p-4">
 <div class="d-flex w-100 jc--sb">
     <a class="header-logo d-block " href="{{ route('home') }}">
         <picture class="">
