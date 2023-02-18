@@ -11525,13 +11525,7 @@ body .o-main-content .main-container .main-column {
   border-radius: var(--radius);
 }
 body .o-main-content .main-container .main-column h2 {
-  border-bottom: 1px solid;
-  padding-bottom: 0.3em;
-  margin-bottom: 0.4em;
   border-color: #dddddd;
-}
-body .o-main-content .main-container .main-column h2:nth-of-type(n+2) {
-  margin-top: var(--unit);
 }
 body .o-main-content .main-container .main-column h3 em {
   font-style: normal;
@@ -11544,7 +11538,6 @@ body .o-main-content .main-container .main-column p strong {
 }
 @media (min-width: 60em) {
   body .o-main-content .main-container .main-column {
-    width: 80%;
     margin-right: var(--unit);
   }
 }
@@ -11578,10 +11571,6 @@ body .o-main-content .main-container .aside-column button {
 }
 @media (min-width: 60em) {
   body .o-main-content .main-container {
-    align-items: initial;
-    padding: 2em;
-    flex-direction: row;
-    display: flex;
     max-width: initial;
   }
 }

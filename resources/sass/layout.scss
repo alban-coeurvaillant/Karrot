@@ -312,9 +312,10 @@ body {
             }
         }
     }
+
+    
     .o-main-content {
         background-color: #EFEFEF;
-     
         .main-container {
             width: 100%;
             .main-column {
@@ -323,14 +324,9 @@ body {
                 font-size: 16px;
                 border-radius: var(--radius);
                 h2 {
-                    border-bottom: 1px solid;
-                    padding-bottom: 0.3em;
-                    margin-bottom: 0.4em;
                     border-color: #dddddd;
                 }
-                h2:nth-of-type(n+2) {
-                    margin-top: var(--unit)
-                }
+            
                 h3 {
                     em {
                      
@@ -346,7 +342,6 @@ body {
                     }
                 }
                 @media (min-width:60em) {
-                    width: 80%;
                     margin-right: var(--unit);
                 }
             }
@@ -388,10 +383,6 @@ body {
             }
 
             @media (min-width:60em) {
-                align-items: initial;
-                padding: 2em;
-                flex-direction: row;
-                display: flex;
                 max-width: initial;
             }
         }
