@@ -10,7 +10,7 @@
          <div class="o-events">
         @foreach($row as $event)
         <div class="o-card-event">
-            <p>{{ $event->place }}</p>
+                <span class="event-place">{{ $event->place }}</span>
                 <span class="event-image">img</span>
                 <span class="event-description">{{ $event->description }}</span>
                 <span class="day"> {{ ucfirst($event->date->isoFormat('dddd')) }} </span>
