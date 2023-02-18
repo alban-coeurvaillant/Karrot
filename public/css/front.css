@@ -11228,6 +11228,10 @@ h6 {
   color: #510040;
 }
 
+:root {
+  --bs-btn-bg:red !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11391,21 +11395,31 @@ body .header-baseline p {
   }
 }
 body .o-contact-block {
-
-
-
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 body .o-contact-block li {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
   text-align: center;
+  margin-top: 12px;
+  width: 100%;
   font-weight: bold;
 }
 body .o-contact-block li:first-of-type {
   margin-top: initial;
 }
 body .o-contact-block li a {
+  display: flex;
+  width: 80%;
   height: 3em;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--radius);
   background-color: #7d6990;
   text-decoration: none;
@@ -11592,15 +11606,20 @@ body .o-main-content .main-container .aside-column button {
   }
 }
 body .o-disc-info {
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--unit);
+  margin-top: 2em;
 }
 body .o-disc-info .disc-image {
-
+  width: 24em;
   margin-right: var(--unit);
 }
 body .o-disc-info .disc-description {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 body .card-body {
   background: var(--main-bg-color);
@@ -11612,30 +11631,42 @@ body .card-body .btn-primary {
 body .o-calendar-date {
   background: #4a0740;
   width: 100%;
+  padding: 0.5em;
   text-align: left;
   border-radius: var(--radius);
   margin-top: var(--unit);
   color: black;
 }
 body .o-calendar-date p {
+  margin: 0;
+  padding: 0;
   color: white;
   font-size: 1.5em;
 }
 body .o-card-event {
+  background: #ffffff;
+  box-shadow: 0 -1px 18px 8px rgba(66, 66, 66, 0.168627451);
   border-radius: var(--radius);
   overflow: hidden;
- 
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
 }
 body .o-card-event:first-of-type {
-  
+  margin-top: 0;
 }
 body .o-card-event .card-title {
-
- 
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: var(--unit);
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 body .o-card-event .card-title h4 {
-
-
+  font-size: inherit;
+  color: initial;
+  margin: 0;
 }
 @media (min-width: 60em) {
   body .o-card-event .card-title {
@@ -11646,38 +11677,59 @@ body .o-card-event .card-description {
   width: 100%;
   display: flex;
   align-items: center;
-
-  @media (min-width: 60em) {
+}
+@media (min-width: 60em) {
+  body .o-card-event .card-description {
     width: 60%;
+  }
 }
-}
-
 body .event-description {
-
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 2.5em;
   overflow: hidden;
- 
+  display: none;
 }
 body .event-image {
- 
+  display: none;
 }
 body .event-day-date-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   padding: var(--unit);
- 
+  width: 100%;
 }
 body .event-time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: white;
   width: 100%;
+  bottom: 0;
+  position: absolute;
   height: inherit;
+  top: 0em;
+  padding: var(--unit);
   background: #2d2d18;
-  
+  flex-direction: column;
 }
-
+body .event-reservation {
+  width: 30%;
+}
 body .event-reservation a {
+  display: flex;
+  align-items: center;
   background-color: #78658a;
+  text-align: center;
+  justify-content: center;
   text-decoration: none;
   color: white;
+  width: 100%;
   border-radius: 0;
   font-size: 1.2em;
+  height: 100%;
 }
 @media (min-width: 60em) {
   body .event-reservation {
