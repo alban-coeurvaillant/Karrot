@@ -6,11 +6,11 @@
     <section class="k-section">
         <div class="discs-group">
                 @foreach($discs as $disc)
-                <div class="o-disc-info">
-                    <div class="disc-image">
+                <div class="o-disc-info d-flex">
+                    <div class="disc-image p-2">
                     <img class="img-fluid" src="{{ asset($disc->image_path) }}" alt="">
                     </div>
-                    <div class="disc-description">
+                    <div class="disc-description p-2">
                         <div>{{ $disc->title }}</div>
                         <div><strong>{{ $disc->subtitle }}</strong></div>
                         <div>{{ $disc->description }}</div>
