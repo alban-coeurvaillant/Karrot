@@ -27,13 +27,13 @@
           <div class="main-column p-4">
             {{ $slot }}
             </div>
-            <div class="aside-column">
+            <div class="aside-column bg-body">
                 <div id="contact-block-head">
-                    <h3 class="p-3">Réservations</h3>
+                    <h3 class="p-3 text-center">Réservations</h3>
                 </div>
                 <p class="o-contact-block w-100 p-2">
-                    <span> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="d-flex ai--c jc--c w-100">Acheter sur la Fnac</a> </span>
-                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="d-flex ai--c jc--c w-100">Acheter sur FranceBillet</a> </span>
+                    <span> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-outline-dark p-2">Acheter sur la Fnac</a> </span>
+                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="btn btn-outline-dark p-2">Acheter sur FranceBillet</a> </span>
                 </p>
                 <div id="image-block">
                     <picture class="d-flex justify-content-center">
@@ -41,11 +41,11 @@
                     </picture>
                 </div>
                 <p class="d-flex fd--c ai--c">
-                    <span class="tel mt-3">Tél. : 01 43 14 08 10</span>
-                    <span class="port mt-3">Port. : 06 07 08 55 56</span>
+                    <span class="tel mt-3 btn btn-outline-dark p-2">Tél. : 01 43 14 08 10</span>
+                    <span class="port mt-3 btn btn-outline-dark p-2">Port. : 06 07 08 55 56</span>
                 </p>
                 <div id="video-block">
-                    <h3>Presse Pack</h3>
+                    <h3 class="text-center p-3">Presse Pack</h3>
                     <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
                </div>
             </div>
