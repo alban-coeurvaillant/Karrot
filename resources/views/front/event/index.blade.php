@@ -9,7 +9,7 @@
         </div>
          <div class="o-events">
         @foreach($row as $event)
-        <div class="o-card-event">
+        <div class="o-card-event d-flex">
                 <span class="event-place d-flex ai--c p-3">{{ $event->place }}</span>
                 <span class="event-image d-flex ai--c p-3 d-none">img</span>
                 <span class="event-description d-flex ai--c p-3 d-none">{{ $event->description }}</span>
