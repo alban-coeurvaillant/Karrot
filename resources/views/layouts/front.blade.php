@@ -32,7 +32,7 @@
                     <div class="contact-block__head">
                     <h3 class="p-3">Réservations</h3>
                     </div>
-                     
+                 
                     <p class="d-flex fd--c ai--c">
                         <span class="tel mt-3">Tél. :   01 43 14 08 10</span>
                         <span class="port mt-3">Port. : 06 07 08 55 56</span>
@@ -45,10 +45,10 @@
                     </picture>
                 </div>
           
-                 <ul class="o-contact-block w-100 p-2">
-                    <li> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="d-flex ai--c jc--c w-100">Acheter sur la Fnac</a> </li>
-                    <li class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="d-flex ai--c jc--c w-100">Acheter sur FranceBillet</a> </li>
-                </ul>
+                <p class="o-contact-block w-100 p-2">
+                    <span> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="d-flex ai--c jc--c w-100">Acheter sur la Fnac</a> </span>
+                    <span class="mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="d-flex ai--c jc--c w-100">Acheter sur FranceBillet</a> </span>
+                </p>
             
                 <div id="video-block">
                     <h3>Presse Pack</h3>
