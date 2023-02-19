@@ -11342,6 +11342,7 @@ body .o-main-nav .nav-item {
   overflow: hidden;
   border-color: var(--color-1);
   border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--color-1);
 }
 body .o-main-nav .nav-item a {
   font-size: 1.1em;

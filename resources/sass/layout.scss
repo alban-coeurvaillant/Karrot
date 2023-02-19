@@ -133,6 +133,7 @@ body {
             overflow: hidden;
             border-color: var(--color-1);
             border-radius: 0 0 var(--radius) var(--radius);
+            background:var(--color-1);
 
             a {
                 font-size: 1.1em;
@@ -374,7 +375,7 @@ body {
 
             .aside-column {
                 width: 100%;
-                
+
                 #contact-block-head{
                     background: var(--color-1);
                     border-radius: var(--radius) var(--radius) 0 0 ;
