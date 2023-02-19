@@ -17,7 +17,7 @@
     {{ $scripts ?? null }}
 </head>
 <body>
-<div class="main-wrapper mt-4">
+<div class="main-wrapper mt-4 mx-auto">
     @include('front.header-nav')
     <div class="o-section-title dd-flex p-5">
         <h1 class="a-heading a-heading-1">{{ $h1 }}</h1>
