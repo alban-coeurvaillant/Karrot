@@ -11328,10 +11328,7 @@ body #mobile-btn:hover {
 }
 body .o-main-nav {
   display: none;
-  padding: 0;
-  flex-wrap: nowrap;
-  margin: 0;
-  background-color: var(--color-1);
+  background-color: var(--color-0);
 }
 body .o-main-nav.is-display {
   display: flex;

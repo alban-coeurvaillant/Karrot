@@ -118,10 +118,7 @@ body {
 
     .o-main-nav {
         display: none;
-        padding: 0;
-        flex-wrap: nowrap;
-        margin: 0;
-        background-color: var(--color-1);
+        background-color: var(--color-0);
 
         &.is-display {
             display: flex;

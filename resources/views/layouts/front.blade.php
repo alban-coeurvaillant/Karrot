@@ -35,17 +35,17 @@
                     <span class="d-flex w-100 a-heading"> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="border-0 btn btn-outline-dark btn-primary p-2 text-white w-100">Acheter sur la Fnac</a> </span>
                     <span class="d-flex w-100 mt-2"> <a href="http://www.francebillet.com/recherche/rechercheRapide.do?search=GOSPEL+DREAM" class="border-0 btn btn-outline-dark btn-primary p-2 text-white w-100">Acheter sur FranceBillet</a> </span>
                 </p>
-                <div id="image-block">
+                <div id="image-block mb-3">
                     <picture class="d-flex justify-content-center">
                         <img class="w-75" src="{{ asset('img/affiche.jpg') }}">
                     </picture>
                 </div>
                 <p class="d-flex flex-column p-2">
                     <span class="border-0 btn btn-outline-dark btn-primary p-2 text-white w-100 ">Tél. : 01 43 14 08 10</span>
-                    <span class="border-0 btn btn-outline-dark btn-primary p-2 text-white w-100 ">Port. : 06 07 08 55 56</span>
+                    <span class="border-0 btn btn-outline-dark btn-primary p-2 text-white w-100 mt-2">Port. : 06 07 08 55 56</span>
                 </p>
                 <div id="video-block">
-                    <p class="fs-4 p-2 tex text-center text-white">Presse Pack</p>
+                    <p class="fs-4 mb-0 p-2 tex text-center text-white fs-5">Presse Pack</p>
                     <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
                </div>
             </div>
