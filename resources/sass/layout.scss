@@ -1,7 +1,6 @@
 @import "utils";
 @import "typography";
 @import "tools";
-@import "colors";
 
 * {
     box-sizing: border-box;
@@ -81,8 +80,9 @@ body {
         }
     }
     
+
     header {
-        --header-background : red;
+       
         background-color: var(--header-background);
         border-radius: var(--radius) var(--radius) 0 0;
 
@@ -517,9 +517,7 @@ body {
             font-size: 1.2em;
             height: 100%;
         }
-        @media (min-width:60em) {
-            margin-left: auto;
-        }
+     
     }
     
     footer {

@@ -10925,6 +10925,7 @@ textarea.form-control-lg {
   --color-7: #000000;
   --tablet: 60em;
   --deskyop: 60em;
+  --header-background: red;
   --space-unit: 1rem;
   --unit: 1em;
   --kr-white: hsl(0, 0%, 100%);
@@ -11301,7 +11302,6 @@ body .main-wrapper .container main {
   background: white;
 }
 body header {
-  --header-background: red;
   background-color: var(--header-background);
   border-radius: var(--radius) var(--radius) 0 0;
 }
@@ -11681,11 +11681,6 @@ body .event-reservation a {
   border-radius: 0;
   font-size: 1.2em;
   height: 100%;
-}
-@media (min-width: 60em) {
-  body .event-reservation {
-    margin-left: auto;
-  }
 }
 body footer {
   display: flex;
