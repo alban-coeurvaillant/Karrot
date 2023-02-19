@@ -11548,10 +11548,10 @@ body .o-main-content .main-container .main-column p strong {
 body .o-main-content .main-container .aside-column {
   width: 100%;
 }
-body .o-main-content .main-container .aside-column .contact-block .contact-block__head {
+body .o-main-content .main-container .aside-column .contact-block #contact-block__head {
   background: var(--color-1);
 }
-body .o-main-content .main-container .aside-column .contact-block .contact-block__head h3 {
+body .o-main-content .main-container .aside-column .contact-block #contact-block__head h3 {
   width: 100%;
   color: white;
   border-top-left-radius: 0.5em;
