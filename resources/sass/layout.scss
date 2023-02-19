@@ -1,7 +1,8 @@
 @import "utils";
 @import "typography";
 @import "tools";
-
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "customs.scss";
 * {
     box-sizing: border-box;
 }
@@ -479,14 +480,7 @@ body {
         justify-content: space-around;
         padding: var(--unit);
         width: 100%;
-
-        .day {}
-
-
-        .date {}
-
-
-        .time {}
+   
     }
 
     .event-time {

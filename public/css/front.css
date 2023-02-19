@@ -11233,6 +11233,10 @@ h6 {
   color: #510040;
 }
 
+.btn-primary {
+  --bs-btn-bg: red;
+}
+
 * {
   box-sizing: border-box;
 }
