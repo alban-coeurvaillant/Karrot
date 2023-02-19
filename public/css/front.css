@@ -11541,15 +11541,9 @@ body .o-main-content .main-container .main-column p strong {
 body .o-main-content .main-container .aside-column {
   width: 100%;
 }
-body .o-main-content .main-container .aside-column #contact-block-head {
+body .o-main-content .main-container .aside-column #contact-block-head, body .o-main-content .main-container .aside-column #video-block {
   background: var(--color-1);
   border-radius: var(--radius) var(--radius) 0 0;
-}
-body .o-main-content .main-container .aside-column #contact-block-head h3 {
-  width: 100%;
-  color: white;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
 }
 body .o-main-content .main-container .aside-column picture {
   width: 100%;
@@ -11579,10 +11573,6 @@ body .o-disc-info .disc-image {
 }
 body .card-body {
   background: var(--main-bg-color);
-}
-body .card-body .btn-primary {
-  background: blue;
-  border-radius: 0;
 }
 body .o-calendar-date {
   background: #4a0740;

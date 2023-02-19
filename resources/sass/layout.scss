@@ -370,21 +370,13 @@ body {
             .aside-column {
                 width: 100%;
 
-                #contact-block-head{
+                #contact-block-head, #video-block{
                     background: var(--color-1);
                     border-radius: var(--radius) var(--radius) 0 0 ;
-
-                    h3 {
-                        width: 100%;
-                        color: white;
-                        border-top-left-radius: 0.5em;
-                        border-top-right-radius: 0.5em;
-                    }
                 }
 
                 picture {
                     width: 100%;
-
                     img {
                         width: 100%;
                         min-width: 13rem;
@@ -416,16 +408,10 @@ body {
             margin-right: var(--unit);
         }
 
-        .disc-description {}
     }
 
     .card-body {
         background: var(--main-bg-color);
-
-        .btn-primary {
-            background: blue;
-            border-radius: 0;
-        }
     }
 
     .o-calendar-date {
