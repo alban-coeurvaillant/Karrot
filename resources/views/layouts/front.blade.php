@@ -59,7 +59,7 @@
          <div class="footer-mentions text-center">
          <a href="{{ url('mentions-legales') }}">Consultez nos mentions légales</a>
          </div>
-        <div class="footer-socials d-flex align-items-center">
+        <div class="footer-socials d-flex align-items-center flex-column mt-1 flex-lg-row ms-auto">
             <p class="mb-0 text-center">Retrouvez nous sur nos sur :</p>
             <div class="socials-icons text-center">
             <a href="https://www.facebook.com/Gospeldreamfr/" id="facebook">
