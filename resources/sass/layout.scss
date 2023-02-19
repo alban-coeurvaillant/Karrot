@@ -117,14 +117,7 @@ body {
     }
 
     .o-main-nav {
-        display: none;
         background-color: var(--color-0);
-
-        &.is-display {
-            display: flex;
-            flex-direction: column;
-        }
-
         .nav-item {
             list-style-type: none;
             overflow: hidden;
@@ -152,11 +145,6 @@ body {
                     }
                 }
             }
-        }
-
-        @media (min-width: 60em) {
-            display: flex;
-            flex-direction: row;
         }
     }
 

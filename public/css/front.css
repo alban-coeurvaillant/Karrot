@@ -11327,12 +11327,7 @@ body #mobile-btn:hover {
   }
 }
 body .o-main-nav {
-  display: none;
   background-color: var(--color-0);
-}
-body .o-main-nav.is-display {
-  display: flex;
-  flex-direction: column;
 }
 body .o-main-nav .nav-item {
   list-style-type: none;
@@ -11358,12 +11353,6 @@ body .o-main-nav .nav-item a.active {
 }
 body .o-main-nav .nav-item a.active:hover {
   background: var(--color-5);
-}
-@media (min-width: 60em) {
-  body .o-main-nav {
-    display: flex;
-    flex-direction: row;
-  }
 }
 body .header-baseline {
   background: #3D0635;
