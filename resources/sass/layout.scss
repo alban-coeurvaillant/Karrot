@@ -48,7 +48,6 @@ body {
         background-color: white;
         display: flex;
         justify-content: space-between;
-       
         border-radius: var(--radius) var(--radius) 0 0;
 
         .column {
@@ -84,7 +83,8 @@ body {
     }
     
     header {
-        background-color: #EFEFEF;
+        --header-background : red;
+        background-color: var(--header-background);
         border-radius: var(--radius) var(--radius) 0 0;
 
         .header-logo {
