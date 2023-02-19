@@ -11,10 +11,10 @@
                     <img class="img-fluid" src="{{ asset($disc->image_path) }}" alt="">
                     </div>
                     <div class="disc-description p-2">
-                        <div>{{ $disc->title }}</div>
+                        <div class="fs-3">{{ $disc->title }}</div>
                         <div><strong>{{ $disc->subtitle }}</strong></div>
                         <div>{{ $disc->description }}</div>
-                        @if ($disc->url) <div><a href="{{ $disc->url }}" target="_blank">Découvrer l'album</a></div> @endif
+                        @if ($disc->url) <div><a href="{{ $disc->url }}" target="_blank" class="btn btn-primary">Découvrer l'album</a></div> @endif
                     </div>
                 </div>
                 @endforeach

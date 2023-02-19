@@ -8,7 +8,7 @@
             <p>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</p>
         </div>
          <div class="o-events container d-grid gap-3 mt-3">
-         <div class="row">
+         <div class="row gap-3">
 
         @foreach($row as $event)
         <div class="align-items-center d-flex flex-column mt-0 o-card-event p-3 w-5 col">
@@ -21,7 +21,7 @@
                 <span class="time d-flex mx-2">{{ $event->time }}</span>
                 </div>
                 <span class="event-reservation">
-                    <x-button-link  href="{{ route('event.reservation', $event) }}" class="btn btn-primary mt-2">{{ __('Book') }}</x-button-link>
+                    <x-button-link  href="{{ route('event.reservation', $event) }}" class="btn btn-primary mt-2 h-auto">{{ __('Book') }}</x-button-link>
                 </span>
         </div>
         @endforeach

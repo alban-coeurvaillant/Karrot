@@ -11656,54 +11656,12 @@ body .event-reservation a {
   height: 100%;
 }
 body footer {
-  display: flex;
   background-color: #e7e7e7;
-  padding: var(--unit);
   border-radius: 0 0 var(--unit) var(--unit);
-}
-body footer .footer-mentions,
-body footer .footer-copyrights {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-left: var(--unit);
-}
-body footer .footer-mentions p,
-body footer .footer-copyrights p {
-  margin: 0;
 }
 @media (max-width: 60em) {
   body footer .footer-mentions,
 body footer .footer-copyrights {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
     align-self: center;
-  }
-}
-body footer .footer-socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: var(--unit);
-}
-body footer .footer-socials a#facebook {
-  margin-right: -0.5em;
-}
-body footer .footer-socials p {
-  margin: 0;
-}
-@media (min-width: 60em) {
-  body footer .footer-socials {
-    margin-top: initial;
-    flex-direction: row;
-    margin-left: auto;
-  }
-}
-@media (max-width: 60em) {
-  body footer {
-    display: flex;
-    flex-direction: column;
   }
 }
