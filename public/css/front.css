@@ -10925,7 +10925,7 @@ textarea.form-control-lg {
   --color-7: #000000;
   --tablet: 60em;
   --deskyop: 60em;
-  --header-background: red;
+  --header-background: var(--color-0);
   --space-unit: 1rem;
   --unit: 1em;
   --kr-white: hsl(0, 0%, 100%);
@@ -11547,6 +11547,9 @@ body .o-main-content .main-container .main-column p strong {
 }
 body .o-main-content .main-container .aside-column {
   width: 100%;
+}
+body .o-main-content .main-container .aside-column .contact-block .contact-block__head {
+  background: var(--color-1);
 }
 body .o-main-content .main-container .aside-column .contact-block .contact-block__head h3 {
   width: 100%;
