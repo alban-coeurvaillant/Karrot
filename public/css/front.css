@@ -10923,7 +10923,6 @@ textarea.form-control-lg {
   --color-5: #9A6196;
   --color-6: #9A8E61;
   --color-7: #000000;
-  --bs-btn-bg:red !important;
   --tablet: 60em;
   --deskyop: 60em;
   --space-unit: 1rem;
@@ -10953,6 +10952,10 @@ textarea.form-control-lg {
   --space-xxxl: calc(8.5 * var(--space-unit));
   --space-xxxxl: calc(13.75 * var(--space-unit));
   --component-padding: var(--space-md);
+}
+
+.link-primary {
+  color: var(--color-1) !important;
 }
 
 /* Margins & paddings
@@ -11298,7 +11301,8 @@ body .main-wrapper .container main {
   background: white;
 }
 body header {
-  background-color: #EFEFEF;
+  --header-background: red;
+  background-color: var(--header-background);
   border-radius: var(--radius) var(--radius) 0 0;
 }
 body header .header-logo picture {
