@@ -13,7 +13,7 @@
  
 </header>
 
-<ul id="main-nav" class="o-main-nav">
+<ul id="main-nav" class="d-flex flex-column flex-lg-row m-0 o-main-nav p-0">
     <li class="nav-item flex-grow-1 nav-item text-center">
         <a class="@if (request()->routeIs('home')) active @endif d-flex align-items-center justify-content-center p-2" href="/">
         Notre chorales        
