@@ -8,8 +8,6 @@
             <p>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</p>
         </div>
          <div class="o-events container mt-3">
-         <div class="bg-danger">
-
         @foreach($row as $event)
         <div class="align-items-center col d-flex flex-column flex-lg-row mt-0 o-card-event mx-3">
                 <span class="d-flex event-place fs-6">{{ $event->place }}</span>
@@ -25,8 +23,7 @@
                 </span>
         </div>
         @endforeach
-        
-        </div>
+      
   </div>
     @endforeach
   
