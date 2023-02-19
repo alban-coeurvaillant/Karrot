@@ -56,10 +56,10 @@
         <div class="footer-copyrights text-center d-flex align-items-center">
         <p class="mb-0 text-center"> Tous droits réservés www.gospeldream.com ©2022 </p>
         </div>
-         <div class="footer-mentions text-center">
+         <div class="footer-mentions text-center d-flex align-items-center mx-3">
          <a href="{{ url('mentions-legales') }}">Consultez nos mentions légales</a>
          </div>
-        <div class="footer-socials d-flex align-items-center flex-column mt-1 flex-lg-row ms-auto">
+        <div class="footer-socials d-flex align-items-center flex-column mt-1 flex-lg-row ms-lg-auto">
             <p class="mb-0 text-center">Retrouvez nous sur nos sur :</p>
             <div class="socials-icons text-center">
             <a href="https://www.facebook.com/Gospeldreamfr/" id="facebook">
