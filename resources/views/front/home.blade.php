@@ -3,7 +3,7 @@
         Gospel Dream
     @endslot
   
-    <h2>Notre Chorale</h2>
+    <h2 class="mb-3">Notre Chorale</h2>
     <p>
     Créée en 1990 la formation est aujourd’hui la plus active, avec un chant liturgique en plein essor depuis la fin des années 90.
     </p>

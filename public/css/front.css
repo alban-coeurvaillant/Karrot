@@ -11041,19 +11041,13 @@ body {
 }
 body .o-master-header {
   background-color: white;
-  display: flex;
-  justify-content: space-between;
   border-radius: var(--radius) var(--radius) 0 0;
 }
 body .o-master-header .column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 @media (min-width: 960px) {
   body .o-master-header .column {
-    align-items: initial;
     max-width: 22em;
   }
 }
@@ -11065,7 +11059,6 @@ body .o-master-header .column {
 }
 body .main-wrapper {
   max-width: 1226px;
-  margin: auto;
   position: relative;
 }
 body .main-wrapper .container main {
@@ -11345,56 +11338,11 @@ body .o-calendar-date p {
   color: white;
   font-size: 1.5em;
 }
-body .o-card-event {
-  background: #ffffff;
-  box-shadow: 0 -1px 18px 8px rgba(66, 66, 66, 0.168627451);
-  border-radius: var(--radius);
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1em;
-}
 body .o-card-event:first-of-type {
   margin-top: 0;
 }
-body .o-card-event .card-title {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  padding: var(--unit);
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-body .o-card-event .card-title h4 {
-  font-size: inherit;
-  color: initial;
-  margin: 0;
-}
-@media (min-width: 60em) {
-  body .o-card-event .card-title {
-    width: 40%;
-  }
-}
-body .o-card-event .card-description {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-@media (min-width: 60em) {
-  body .o-card-event .card-description {
-    width: 60%;
-  }
-}
 body .event-description {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  padding-bottom: 2.5em;
-  overflow: hidden;
-  display: none;
-}
-body .event-image {
-  display: none;
 }
 body .event-day-date-time {
   display: flex;
