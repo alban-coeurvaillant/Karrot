@@ -19,7 +19,7 @@
 <body>
 <div class="main-wrapper mt-4">
     @include('front.header-nav')
-    <div class="o-section-title">
+    <div class="o-section-title dd-flex p-5">
         <h1 class="a-heading a-heading-1">{{ $h1 }}</h1>
     </div>
     <div id="main" class="o-main-content">
@@ -29,7 +29,7 @@
             </div>
             <div class="aside-column bg-body">
                 <div id="contact-block-head">
-                    <h4 class="p-3 text-center">Réservations</h4>
+                    <p class="fs-4 mb-1 p-2 tex text-center text-white">Réservations</p>
                 </div>
                 <p class="o-contact-block w-100 p-2">
                     <span class="d-flex w-100 a-heading"> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-outline-dark p-2 w-100">Acheter sur la Fnac</a> </span>
@@ -45,7 +45,7 @@
                     <span class="port mt-2 btn btn-outline-dark p-2 w-100 ">Port. : 06 07 08 55 56</span>
                 </p>
                 <div id="video-block">
-                    <h3 class="text-center p-3">Presse Pack</h3>
+                    <p class="fs-4 p-2 tex text-center text-white">Presse Pack</p>
                     <iframe src="//www.youtube.com/embed/C8I3TzXBMA4" allowfullscreen="" frameborder="0" height="143" width="100%"></iframe>
                </div>
             </div>
