@@ -11548,10 +11548,10 @@ body .o-main-content .main-container .main-column p strong {
 body .o-main-content .main-container .aside-column {
   width: 100%;
 }
-body .o-main-content .main-container .aside-column .contact-block #contact-block__head {
+body .o-main-content .main-container .aside-column #contact-block__head {
   background: var(--color-1);
 }
-body .o-main-content .main-container .aside-column .contact-block #contact-block__head h3 {
+body .o-main-content .main-container .aside-column #contact-block__head h3 {
   width: 100%;
   color: white;
   border-top-left-radius: 0.5em;
@@ -11691,17 +11691,20 @@ body footer {
   padding: var(--unit);
   border-radius: 0 0 var(--unit) var(--unit);
 }
-body footer .footer-mentions, body footer .footer-copyrights {
+body footer .footer-mentions,
+body footer .footer-copyrights {
   display: flex;
   align-items: center;
   text-align: center;
   margin-left: var(--unit);
 }
-body footer .footer-mentions p, body footer .footer-copyrights p {
+body footer .footer-mentions p,
+body footer .footer-copyrights p {
   margin: 0;
 }
 @media (max-width: 60em) {
-  body footer .footer-mentions, body footer .footer-copyrights {
+  body footer .footer-mentions,
+body footer .footer-copyrights {
     display: flex;
     flex-direction: column;
     width: 70%;

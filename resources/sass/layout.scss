@@ -7,9 +7,10 @@
 }
 
 .a-heading {
- 
+
     font-size: 2em;
 }
+
 em {
     font-style: normal !important;
 }
@@ -22,11 +23,11 @@ p {
 
 .m-card {
     padding: 2em;
-    border : 1px solid red;
+    border: 1px solid red;
 }
 
 a {
-   
+
     text-decoration: underline;
 }
 
@@ -41,7 +42,7 @@ button {
 
 body {
     background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
-   
+
     .o-master-header {
         background-color: white;
         display: flex;
@@ -67,6 +68,7 @@ body {
         }
 
     }
+
     .main-wrapper {
         max-width: 1226px;
         margin: auto;
@@ -75,14 +77,14 @@ body {
         .container {
             main {
                 background: white;
-              
+
             }
         }
     }
-    
+
 
     header {
-       
+
         background-color: var(--header-background);
         border-radius: var(--radius) var(--radius) 0 0;
 
@@ -97,8 +99,9 @@ body {
             }
         }
     }
+
     #mobile-btn {
-       
+
         color: #3d0635;
         border: 2px solid #3d0635;
         border-radius: var(--radius);
@@ -107,10 +110,12 @@ body {
             color: white;
             background: #3d0635;
         }
+
         @media (min-width: 60em) {
             display: none;
         }
     }
+
     .o-main-nav {
         display: none;
         padding: 0;
@@ -157,6 +162,7 @@ body {
             flex-direction: row;
         }
     }
+
     .header-baseline {
         background: #3D0635;
         border-radius: var(--radius);
@@ -176,12 +182,14 @@ body {
             margin: 0;
             font-size: 3.9vw;
             color: white;
+
             @media (min-width: 425px) {
                 font-size: calc(var(--unit)*1.1);
             }
 
         }
     }
+
     .o-contact-block {
         padding: 0;
         display: flex;
@@ -189,7 +197,7 @@ body {
         align-items: center;
         width: 100%;
 
-     
+
         li {
             display: flex;
             align-items: center;
@@ -217,16 +225,18 @@ body {
 
                 &:hover {
                     background-color: #4a0740;
-                    
+
                 }
             }
         }
     }
+
     #contact-block {
         width: 100%;
+
         p {
             text-align: center;
-               
+
             span {
                 display: block;
                 font-size: 20px;
@@ -239,19 +249,22 @@ body {
             }
         }
     }
-    .o-events{
 
-    }
+    .o-events {}
+
     #image-block {
         margin: auto;
         margin-top: 0;
     }
+
     .socials-icons {
         a {
             text-decoration: none;
+
             i {
                 &::before {
                     font-size: 2em;
+
                     @media (min-width: 60em) {
                         font-size: 1.2em;
                     }
@@ -259,6 +272,7 @@ body {
             }
         }
     }
+
     .o-section-title {
         display: none;
 
@@ -271,8 +285,9 @@ body {
         }
 
         h1 {
-            color:var(--color-0);
+            color: var(--color-0);
             margin: 0 var(--unit) 0;
+
             @media (max-width:60em) {
                 margin: auto;
             }
@@ -284,27 +299,34 @@ body {
             min-height: initial;
         }
     }
+
     .discs-group {
         display: grid;
         grid-template-columns: 1fr;
+
         @media (min-width:60em) {
-            grid-template-columns:1fr;
+            grid-template-columns: 1fr;
         }
     }
+
     .o-photo-gallery {
         .container {
             padding: 0 !important;
+
             .photos {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: var(--unit);
+
                 .photo {
                     border-radius: var(--radius);
                     overflow: hidden;
+
                     &:hover {
                         outline: 2px solid rgb(204, 204, 204) !important;
                     }
                 }
+
                 @media (min-width:60em) {
                     grid-template-columns: 1fr 1fr 1fr 1fr;
                 }
@@ -312,52 +334,59 @@ body {
         }
     }
 
-    
+
     .o-main-content {
         background-color: #EFEFEF;
+
         .main-container {
             width: 100%;
+
             .main-column {
                 background-color: #FFF;
                 width: 100%;
                 font-size: 16px;
                 border-radius: var(--radius);
+
                 h2 {
                     border-color: #dddddd;
                 }
-            
+
                 h3 {
                     em {
-                     
+
                         font-style: normal;
                     }
                 }
+
                 p {
                     font-weight: normal !important;
 
                     strong {
                         font-weight: normal !important;
-                       
+
                     }
                 }
+
                 @media (min-width:60em) {
                     margin-right: var(--unit);
-                 
+
                 }
             }
+
             .aside-column {
                 width: 100%;
-            .contact-block{
-                #contact-block__head{
+
+                #contact-block__head {
+
                     background: var(--color-1);
+
                     h3 {
                         width: 100%;
                         color: white;
                         border-top-left-radius: 0.5em;
                         border-top-right-radius: 0.5em;
                     }
-                }  
-            }
+                }
 
                 picture {
                     width: 100%;
@@ -386,16 +415,16 @@ body {
             }
         }
     }
+
     .o-disc-info {
         .disc-image {
             width: 24em;
             margin-right: var(--unit);
         }
 
-        .disc-description {
-           
-        }
+        .disc-description {}
     }
+
     .card-body {
         background: var(--main-bg-color);
 
@@ -404,6 +433,7 @@ body {
             border-radius: 0;
         }
     }
+
     .o-calendar-date {
         background: #4a0740;
         width: 100%;
@@ -420,6 +450,7 @@ body {
             font-size: 1.5em;
         }
     }
+
     .o-card-event {
         background: #ffffff;
         box-shadow: 0 -1px 18px 8px #4242422b;
@@ -428,12 +459,13 @@ body {
         display: flex;
         flex-wrap: wrap;
         margin-top: 1em;
-        
+
         &:first-of-type {
-            margin-top:0;
+            margin-top: 0;
         }
+
         .card-title {
-            
+
             display: flex;
             align-items: center;
             text-align: left;
@@ -462,6 +494,7 @@ body {
             }
         }
     }
+
     .event-description {
         display: flex;
         flex-direction: column;
@@ -470,30 +503,27 @@ body {
         overflow: hidden;
         display: none;
     }
+
     .event-image {
         display: none;
     }
-    .event-day-date-time{
+
+    .event-day-date-time {
         display: flex;
         align-items: center;
         justify-content: space-around;
         padding: var(--unit);
         width: 100%;
 
-        .day{
-
-        }
+        .day {}
 
 
-        .date{
-
-        }
+        .date {}
 
 
-        .time{
-
-        }
+        .time {}
     }
+
     .event-time {
         display: flex;
         justify-content: flex-start;
@@ -508,8 +538,9 @@ body {
         background: #2d2d18;
         flex-direction: column;
     }
+
     .event-reservation {
-       
+
         a {
             text-decoration: none;
             color: white;
@@ -518,16 +549,17 @@ body {
             font-size: 1.2em;
             height: 100%;
         }
-     
+
     }
-    
+
     footer {
         display: flex;
         background-color: #e7e7e7;
         padding: var(--unit);
         border-radius: 0 0 var(--unit) var(--unit);
 
-        .footer-mentions, .footer-copyrights {
+        .footer-mentions,
+        .footer-copyrights {
             display: flex;
             align-items: center;
             text-align: center;
@@ -573,5 +605,5 @@ body {
             flex-direction: column;
         }
     }
-  
+
 }
