@@ -52,18 +52,16 @@
         </div>
     </div>
     
-    <footer>
-    <div class="footer-container">
-    </div>
-        <div class="footer-copyrights">
+    <footer class="p-3">
+        <div class="footer-copyrights text-center">
             <p> Tous droits réservés www.gospeldream.com ©2022 </p>
         </div>
-         <div class="footer-mentions">
+         <div class="footer-mentions text-center">
          <a href="{{ url('mentions-legales') }}">Consultez nos mentions légales</a>
          </div>
         <div class="footer-socials">
-            <p>Retrouvez nous sur nos sur :</p>
-            <div class="socials-icons">
+            <p class="mb-0">Retrouvez nous sur nos sur :</p>
+            <div class="socials-icons text-center">
             <a href="https://www.facebook.com/Gospeldreamfr/" id="facebook">
                 <i class="fab fa-facebook m-2">
                 </i>
