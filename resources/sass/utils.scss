@@ -12,6 +12,7 @@
     --color-6: #9A8E61;
     --color-7: #000000;
     --bs-btn-bg:red !important;
+  
 
 
     --tablet: 60em;
@@ -50,7 +51,9 @@
     --component-padding: var(--space-md);
 }
 
-
+.link-primary {
+    color: var(--color-1) !important;
+  }
 
 
 $border-radius : 5em;
