@@ -7,9 +7,11 @@
         <div class="o-calendar-date ">
             <p>{{ ucfirst($row->first()->date->isoFormat('MMMM YYYY')) }}</p>
         </div>
-         <div class="o-events mt-3">
+         <div class="o-events container d-grid gap-3 mt-3">
+         <div class="row">
+
         @foreach($row as $event)
-        <div class="align-items-center d-flex flex-column mt-0 o-card-event p-3 w-50">
+        <div class="align-items-center d-flex flex-column mt-0 o-card-event p-3 w-5 col">
                 <span class="ai--c d-flex event-place h5">{{ $event->place }}</span>
                 <div class="event__content d-flex">
                 <span class="event-image d-flex ai--c d-none mx-2">img</span>
@@ -23,6 +25,8 @@
                 </span>
         </div>
         @endforeach
+        
+        </div>
   </div>
     @endforeach
   
