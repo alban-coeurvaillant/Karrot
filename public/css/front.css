@@ -11234,7 +11234,7 @@ h6 {
 }
 
 .btn-primary {
-  --bs-btn-bg: red;
+  --bs-btn-bg: var(--color-3);
 }
 
 * {
