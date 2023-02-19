@@ -10916,7 +10916,7 @@ textarea.form-control-lg {
 :root {
   /* colors */
   --color-0: #fff;
-  --color-1: #3d0635;
+  --color-1: rgb(51, 31, 48);
   --color-2: #cdcfc9;
   --color-3: #7D6990;
   --color-4: #e7e7e7;
@@ -11331,7 +11331,7 @@ body .o-main-nav {
   padding: 0;
   flex-wrap: nowrap;
   margin: 0;
-  background-color: #4A0740;
+  background-color: var(--color-1);
 }
 body .o-main-nav.is-display {
   display: flex;
@@ -11340,27 +11340,26 @@ body .o-main-nav.is-display {
 body .o-main-nav .nav-item {
   list-style-type: none;
   overflow: hidden;
-  flex-grow: 1;
-  border-color: hsl(309deg, 25%, 16%);
+  border-color: var(--color-1);
   border-radius: 0 0 var(--radius) var(--radius);
 }
 body .o-main-nav .nav-item a {
-  display: flex;
-  text-align: center;
   font-size: 1.1em;
-  color: #cdcfc9;
+  color: var(--color-0);
   height: 3em;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
 }
+body .o-main-nav .nav-item a:hover {
+  color: var(--color-0);
+  background: var(--color-3);
+}
 body .o-main-nav .nav-item a.active {
-  color: #fff;
-  background: #7D6990;
+  color: var(--color-0);
+  background: var(--color-3);
   font-weight: 700;
 }
-body .o-main-nav .nav-item a:hover {
-  color: #fff;
+body .o-main-nav .nav-item a.active:hover {
+  background: var(--color-5);
 }
 @media (min-width: 60em) {
   body .o-main-nav {
@@ -11550,6 +11549,7 @@ body .o-main-content .main-container .aside-column {
 }
 body .o-main-content .main-container .aside-column #contact-block-head {
   background: var(--color-1);
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 body .o-main-content .main-container .aside-column #contact-block-head h3 {
   width: 100%;

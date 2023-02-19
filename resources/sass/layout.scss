@@ -121,7 +121,7 @@ body {
         padding: 0;
         flex-wrap: nowrap;
         margin: 0;
-        background-color: #4A0740;
+        background-color: var(--color-1);
 
         &.is-display {
             display: flex;
@@ -131,28 +131,27 @@ body {
         .nav-item {
             list-style-type: none;
             overflow: hidden;
-            flex-grow: 1;
-            border-color: hsl(309deg 25% 16%);
+            border-color: var(--color-1);
             border-radius: 0 0 var(--radius) var(--radius);
 
             a {
-                display: flex;
-                text-align: center;
                 font-size: 1.1em;
-                color: #cdcfc9;
+                color: var(--color-0);
                 height: 3em;
-                align-items: center;
-                justify-content: center;
                 text-decoration: none;
 
-                &.active {
-                    color: #fff;
-                    background: #7D6990;
-                    font-weight: 700;
+                &:hover {
+                    color: var(--color-0);
+                    background: var(--color-3);
                 }
 
-                &:hover {
-                    color: #fff;
+                &.active {
+                    color: var(--color-0);
+                    background: var(--color-3);
+                    font-weight: 700;
+                    &:hover{
+                        background: var(--color-5); 
+                    }
                 }
             }
         }
@@ -375,8 +374,11 @@ body {
 
             .aside-column {
                 width: 100%;
+                
                 #contact-block-head{
                     background: var(--color-1);
+                    border-radius: var(--radius) var(--radius) 0 0 ;
+
                     h3 {
                         width: 100%;
                         color: white;
