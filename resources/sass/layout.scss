@@ -277,20 +277,14 @@ body {
         display: none;
 
         @media (min-width:60em) {
-            display: flex;
             align-items: center;
             font-family: Adamina, serif;
-            background: hsl(309deg 31% 16%);
+            background: var(--color-6);
             height: 8em;
         }
 
         h1 {
             color: var(--color-0);
-            margin: 0 var(--unit) 0;
-
-            @media (max-width:60em) {
-                margin: auto;
-            }
         }
 
         @media (max-width:60em) {

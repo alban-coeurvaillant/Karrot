@@ -29,7 +29,7 @@
             </div>
             <div class="aside-column bg-body">
                 <div id="contact-block-head">
-                    <h3 class="p-3 text-center">Réservations</h3>
+                    <h4 class="p-3 text-center">Réservations</h4>
                 </div>
                 <p class="o-contact-block w-100 p-2">
                     <span class="d-flex w-100 a-heading"> <a href="http://www.fnactickets.com/recherche/rechercheRapide.do?search=gospel+dream" class="btn btn-outline-dark p-2 w-100">Acheter sur la Fnac</a> </span>
