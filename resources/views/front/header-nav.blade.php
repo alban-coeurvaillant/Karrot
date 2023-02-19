@@ -14,34 +14,34 @@
 </header>
 
 <ul id="main-nav" class="o-main-nav">
-    <li class="nav-item">
+    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
         <a class="@if (request()->routeIs('home')) active @endif" href="/">
         Notre chorales        
         </a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
         <a class="@if (url()->current() == url('histoire-du-gospel')) active @endif" href="{{ url('histoire-du-gospel') }}">L'histoire du gospel</a>
     </li>
     @if (config('karrot.event'))
-    <li class="nav-item">
+    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
             <a class="@if (request()->routeIs('event.*')) active @endif " href="{{ route('event.index') }}" >Concerts et reservations</a>
         </li>
     @endif
 
     @if (config('karrot.gallery'))
-    <li class="nav-item">
+    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
         <a class=" @if (request()->routeIs('gallery.index')) active @endif" href="{{ route('gallery.index') }}">Galerie photo</a>
     </li>
     @endif
 
-    <li class="nav-item">
+    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
         <a class="@if (url()->current() == url('presse')) active @endif" href="{{ url('presse') }}">Presse</a>
     </li>
-    <li class=" nav-item">
+    <li class=" nav-item flex-grow-1 nav-item p-2 text-center">
         <a class="@if (url()->current() == url('discographie')) active @endif" href="{{ route('disc.index') }}">Discographie</a>
     </li>
     @if (config('karrot.contact'))
-    <li class="nav-item">
+    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
             <a class="@if (request()->routeIs('contact.index')) active @endif" href="{{ route('contact.index') }}">Contactez-nous</a></li>
     @endif
 </ul>
