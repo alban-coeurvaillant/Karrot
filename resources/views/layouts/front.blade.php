@@ -60,7 +60,7 @@
          <a href="{{ url('mentions-legales') }}">Consultez nos mentions légales</a>
          </div>
         <div class="footer-socials">
-            <p class="mb-0">Retrouvez nous sur nos sur :</p>
+            <p class="mb-0 text-center">Retrouvez nous sur nos sur :</p>
             <div class="socials-icons text-center">
             <a href="https://www.facebook.com/Gospeldreamfr/" id="facebook">
                 <i class="fab fa-facebook m-2">
