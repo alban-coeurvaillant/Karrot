@@ -14,34 +14,34 @@
 </header>
 
 <ul id="main-nav" class="o-main-nav">
-    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
-        <a class="@if (request()->routeIs('home')) active @endif d-flex align-items-center justify-content-center" href="/">
+    <li class="nav-item flex-grow-1 nav-item text-center">
+        <a class="@if (request()->routeIs('home')) active @endif d-flex align-items-center justify-content-center p-2" href="/">
         Notre chorales        
         </a>
     </li>
-    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
-        <a class="@if (url()->current() == url('histoire-du-gospel')) active @endif d-flex align-items-center justify-content-center" href="{{ url('histoire-du-gospel') }}">L'histoire du gospel</a>
+    <li class="nav-item flex-grow-1 nav-item text-center">
+        <a class="@if (url()->current() == url('histoire-du-gospel')) active @endif d-flex align-items-center justify-content-center p-2 " href="{{ url('histoire-du-gospel') }}">L'histoire du gospel</a>
     </li>
     @if (config('karrot.event'))
-    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
-            <a class="@if (request()->routeIs('event.*')) active @endif d-flex align-items-center justify-content-center" href="{{ route('event.index') }}" >Concerts et reservations</a>
+    <li class="nav-item flex-grow-1 nav-item text-center">
+            <a class="@if (request()->routeIs('event.*')) active @endif d-flex align-items-center justify-content-center p-2 " href="{{ route('event.index') }}" >Concerts et reservations</a>
         </li>
     @endif
 
     @if (config('karrot.gallery'))
-    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
-        <a class=" @if (request()->routeIs('gallery.index')) active @endif d-flex align-items-center justify-content-center" href="{{ route('gallery.index') }}">Galerie photo</a>
+    <li class="nav-item flex-grow-1 nav-item text-center">
+        <a class=" @if (request()->routeIs('gallery.index')) active @endif d-flex align-items-center justify-content-center p-2" href="{{ route('gallery.index') }}">Galerie photo</a>
     </li>
     @endif
 
-    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
-        <a class="@if (url()->current() == url('presse')) active @endif d-flex align-items-center justify-content-center" href="{{ url('presse') }}">Presse</a>
+    <li class="nav-item flex-grow-1 nav-item text-center">
+        <a class="@if (url()->current() == url('presse')) active @endif d-flex align-items-center justify-content-center p-2" href="{{ url('presse') }}">Presse</a>
     </li>
-    <li class=" nav-item flex-grow-1 nav-item p-2 text-center">
-        <a class="@if (url()->current() == url('discographie')) active @endif d-flex align-items-center justify-content-center" href="{{ route('disc.index') }}">Discographie</a>
+    <li class=" nav-item flex-grow-1 nav-item text-center">
+        <a class="@if (url()->current() == url('discographie')) active @endif d-flex align-items-center justify-content-center p-2" href="{{ route('disc.index') }}">Discographie</a>
     </li>
     @if (config('karrot.contact'))
-    <li class="nav-item flex-grow-1 nav-item p-2 text-center">
-            <a class="@if (request()->routeIs('contact.index')) active @endif d-flex align-items-center justify-content-center" href="{{ route('contact.index') }}">Contactez-nous</a></li>
+    <li class="nav-item flex-grow-1 nav-item text-center">
+            <a class="@if (request()->routeIs('contact.index')) active @endif d-flex align-items-center justify-content-center p-2" href="{{ route('contact.index') }}">Contactez-nous</a></li>
     @endif
 </ul>
