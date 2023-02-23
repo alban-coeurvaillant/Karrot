@@ -15,7 +15,7 @@
                 <span class="event-image d-flex d-none mx-2">img</span>
                 <span class="event-description d-flex d-none mx-2">{{ $event->description }}</span>
                 <span class="day d-flex  mx-2"> {{ ucfirst($event->date->isoFormat('dddd')) }} </span>
-                <span class="date d-flex mx-2">{{ $event->date->format('d/m/y') }}  </span>
+                <span class="date d-flex mx-2 order-first">{{ $event->date->format('d/m/y') }}  </span>
                 <span class="time d-flex mx-2">{{ $event->time }}</span>
                 </div>
                 <span class="d-flex flex-grow-1 justify-content-center">
