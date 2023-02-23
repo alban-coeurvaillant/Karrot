@@ -7,11 +7,10 @@
         {{ __('Reservation') }}
     @endslot
 
-    <div>
         <div class="border p-3">{{ $event->place }}</div>
         <div class="border p-3"{{ $event->date_fr }}</div>
         <div class="border p-3">{{ $event->time }}</div>
-    </div>
+    
 
     @if ($errors->any())
         <x-alert class="alert-danger">
