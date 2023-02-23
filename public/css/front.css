@@ -11007,6 +11007,10 @@ h6 {
   --bs-btn-bg: var(--color-3);
 }
 
+.btn {
+  --bs-btn-border-radius: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11295,7 +11299,7 @@ body .o-main-content .main-container .aside-column {
   width: 100%;
 }
 body .o-main-content .main-container .aside-column #contact-block-head, body .o-main-content .main-container .aside-column #video-block {
-  background: var(--color-1);
+  background: var(--color-3);
   border-radius: var(--radius) var(--radius) 0 0;
 }
 body .o-main-content .main-container .aside-column picture {
