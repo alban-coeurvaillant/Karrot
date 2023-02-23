@@ -8,9 +8,9 @@
     @endslot
 
     <div>
-        <div>{{ $event->place }}</div>
-        <div>{{ $event->date_fr }}</div>
-        <div>{{ $event->time }}</div>
+        <div class="border p-3">{{ $event->place }}</div>
+        <div class="border p-3"{{ $event->date_fr }}</div>
+        <div class="border p-3">{{ $event->time }}</div>
     </div>
 
     @if ($errors->any())
@@ -33,25 +33,25 @@
     <form action="{{ route('event.sendReservation', $event) }}" method="post" enctype="application/x-www-form-urlencoded">
         @csrf
 
-        <div class="row mb-3">
+        <div class="mb-3 row w-100">
             <label for="lastname" class="col-sm-4 col-md-3 col-form-label">{{ __('Lastname') }} *</label>
             <div class="col-sm-8 col-md-6">
                 <input type="text" name="lastname" id="lastname" class="form-control" value="{{ old('lastname') }}">
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="mb-3 row w-100">
             <label for="firstname" class="col-sm-4 col-md-3 col-form-label">{{ __('Firstname') }} *</label>
             <div class="col-sm-8 col-md-6">
                 <input type="text" name="firstname" id="firstname" class="form-control" value="{{ old('firstname') }}">
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="mb-3 row w-100">
             <label for="email" class="col-sm-4 col-md-3 col-form-label">{{ __('Email') }} *</label>
             <div class="col-sm-8 col-md-6">
                 <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}">
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="mb-3 row w-100">
             <label for="nb_seats" class="col-sm-5 col-md-3 col-form-label">{{ __('Nb seats') }} *</label>
             <div class="col-auto">
                 <select name="nb_seats" id="nb_seats" class="form-control">
