@@ -11005,6 +11005,7 @@ h6 {
 
 .btn-secondary {
   --bs-btn-bg: var(--color-3);
+  --bs-btn-border-color: var(--color-1);
 }
 
 .btn {
