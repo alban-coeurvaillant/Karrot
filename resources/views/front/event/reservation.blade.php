@@ -32,25 +32,25 @@
     <form action="{{ route('event.sendReservation', $event) }}" method="post" enctype="application/x-www-form-urlencoded">
         @csrf
 
-        <div class="mb-3 row w-100">
+        <div class="mb-3 row w-100 m-0">
             <label for="lastname" class="col-form-label">{{ __('Lastname') }} *</label>
             <div class="">
                 <input type="text" name="lastname" id="lastname" class="form-control" value="{{ old('lastname') }}">
             </div>
         </div>
-        <div class="mb-3 row w-100">
+        <div class="mb-3 row w-100 m-0">
             <label for="firstname" class="col-form-label">{{ __('Firstname') }} *</label>
             <div class="">
                 <input type="text" name="firstname" id="firstname" class="form-control" value="{{ old('firstname') }}">
             </div>
         </div>
-        <div class="mb-3 row w-100">
+        <div class="mb-3 row w-100 m-0">
             <label for="email" class="col-form-label">{{ __('Email') }} *</label>
             <div class="">
                 <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}">
             </div>
         </div>
-        <div class="mb-3 row w-100">
+        <div class="mb-3 row w-100 m-0">
             <label for="nb_seats" class="col-form-label">{{ __('Nb seats') }} *</label>
             <div class="col-auto">
                 <select name="nb_seats" id="nb_seats" class="form-control">
