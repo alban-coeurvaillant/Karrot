@@ -9,25 +9,10 @@ body{
     height: 100%;
     
 }
-.ql-editor {
-    min-height: 30vh;
-}
 
-.col-action {
-    width:110px;
-}
 
-.o-admin-header {
-    background: #7D6990;
-    color: var(--kr-white);
-    padding: 1em;
-    height: 8em;
-    display: flex;
-    align-items: center;
-    .btn{
-     margin-left: auto;   
-    }
-}
+
+
 
 table {
     th{
@@ -35,22 +20,9 @@ table {
     }
 }
 
-.main-container{
-    padding: 1em;
-}
-
-.admin-content{
-    background: red;
-    padding: 1em;
-}
 
 .o-guest-card{
-    outline: solid;
-    max-width: 373px;
-    background: rgb(255, 255, 255);
-    margin-top: 10em;
-    padding: 2em;
-    border-radius: 0.2em;
+    
 }
 
 
@@ -60,18 +32,7 @@ table {
     grid-column-gap: 1em;
 }
 
-.o-admin-page{
-    .main-wrapper{
-        max-width: 1024px;
-        margin: 2em auto;
-        min-height: 800px   ;
-        background: var(--kr-white);
-        border-radius: 0.4em;
-    }
-    nav {
-        padding: 1em;
-    }
-}
+
 .card-image{
     margin-bottom: 2em;
 }
