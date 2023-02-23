@@ -19,7 +19,7 @@
                 <span class="time d-flex mx-2">{{ $event->time }}</span>
                 </div>
                 <span class="d-flex flex-grow-1 justify-content-center">
-                    <x-button-link  href="{{ route('event.reservation', $event) }}" class="btn btn-primary h-auto border-0 w-100">{{ __('Book') }}</x-button-link>
+                    <x-button-link  href="{{ route('event.reservation', $event) }}" class="btn btn-secondary h-auto border-0 w-100">{{ __('Book') }}</x-button-link>
                 </span>
         </div>
         @endforeach
