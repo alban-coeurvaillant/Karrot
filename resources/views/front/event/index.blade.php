@@ -9,7 +9,7 @@
         </div>
          <div class="o-events container mt-3">
         @foreach($row as $event)
-        <div class="align-items-center border col d-flex flex-column flex-lg-row mt-0 o-card-event p-2">
+        <div class="align-items-center border col d-flex flex-column flex-lg-row o-card-event p-2 mt-2">
                 <span class="d-flex w-50 text-uppercase">{{ $event->place }}</span>
                 <div class="d-flex m-2 order-first">
                 <span class="event-image d-flex d-none mx-2">img</span>

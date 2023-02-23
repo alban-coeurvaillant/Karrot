@@ -14,7 +14,7 @@
                         <div><strong>{{ $disc->subtitle }}</strong></div>
                         <div>{{ $disc->description }}</div>
                         @if ($disc->url) <div class="mt-2">
-                            <a href="{{ $disc->url }}" target="_blank" class="btn btn-primary">Découvrer l'album</a>
+                            <a href="{{ $disc->url }}" target="_blank" class="btn btn-secondary border-0">Découvrer l'album</a>
                         </div> @endif
                     </div>
                 </div>
