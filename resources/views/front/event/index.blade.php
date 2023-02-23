@@ -11,7 +11,7 @@
         @foreach($row as $event)
         <div class="align-items-center border col d-flex flex-column flex-lg-row mt-0 o-card-event p-2">
                 <span class="bg-danger d-flex w-50">{{ $event->place }}</span>
-                <div class="bg-danger d-flex m-2 order-firsts">
+                <div class="bg-danger d-flex m-2 order-first">
                 <span class="event-image d-flex d-none mx-2">img</span>
                 <span class="event-description d-flex d-none mx-2">{{ $event->description }}</span>
                 <span class="day d-flex  mx-2"> {{ ucfirst($event->date->isoFormat('dddd')) }} </span>
