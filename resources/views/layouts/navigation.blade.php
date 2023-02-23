@@ -1,6 +1,5 @@
 <nav x-data="{ open: false }" class="navbar navbar-expand-lg bg-white">
-    <div class="container-fluid">
-        <!-- Logo -->
+    <div class="container-fluid p-0">
         <a href="{{ route('admin.dashboard') }}" class="navbar-brand">
             <x-application-logo width="200" />
         </a>

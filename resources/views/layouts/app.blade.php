@@ -10,7 +10,7 @@
         
     </head>
     <body class="o-admin-page">
-        <div class="main-wrapper">
+        <div class="bg-light p-5 m-5">
             @include('layouts.navigation')
             <header class="o-admin-header">
                     {{ $header }}
