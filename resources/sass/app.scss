@@ -1,44 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~quill/dist/quill.snow.css";
 
-html {
-    height: 100%;
-}
 body{
     background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
-    height: 100%;
-    
-}
-
-
-
-
-
-table {
-    th{
-        white-space: nowrap;
-    }
-}
-
-
-.o-guest-card{
-    
-}
-
-
-.o-gallery-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1em;
-}
-
-
-.card-image{
-    margin-bottom: 2em;
-}
-
-form{
-    .text-box{
-        margin-bottom: 1em;
-    }
 }

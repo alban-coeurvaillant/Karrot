@@ -9,7 +9,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         
     </head>
-    <body class="o-admin-page">
+    <body class="bg-danger m-5 o-admin-header p-4">
         <div class="bg-light p-5 m-5">
             @include('layouts.navigation')
             <header class="o-admin-header">

@@ -5,7 +5,7 @@
     </x-slot>
 
      <div class="admin-content">
-        <div class="o-gallery-container">
+        <div class=" d-flex p-5 flex-wrap">
             @forelse ($images as $image)
                 <div class="card">
                     <div class="card-body">

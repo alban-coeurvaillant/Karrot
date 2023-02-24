@@ -9,7 +9,7 @@
         <x-card>
             <x-slot name="header">
                 <div>
-                    <x-button-link :href="route('admin.content.index')">{{ __('Back') }}</x-button-link>
+                    <x-button-link :href="route('admin.content.index')" class="d-flex justify-content-end pe-5">{{ __('Back') }}</x-button-link>
                 </div>
             </x-slot>
 
