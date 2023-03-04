@@ -4,7 +4,7 @@
     @endslot
     <section class="o-photo-gallery ">
         <div class="container">
-        <h3>Découvrez la chorale</h3>
+        <h3>Galerie photo</h3>
             <div class="photos" data-bss-baguettebox="">
                 @foreach($images as $image)
                 <div class="photo">
