@@ -11049,7 +11049,6 @@ body {
   background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
 }
 body .o-master-header {
-  background-color: white;
   border-radius: var(--radius) var(--radius) 0 0;
 }
 body .o-master-header .column {
@@ -11067,11 +11066,8 @@ body .o-master-header .column {
   }
 }
 body .main-wrapper {
-  max-width: 1226px;
+  max-width: 1230px;
   position: relative;
-}
-body .main-wrapper .container main {
-  background: white;
 }
 body header {
   background-color: var(--header-background);
@@ -11127,19 +11123,7 @@ body .o-main-nav .nav-item a.active:hover {
   background: var(--color-5);
 }
 body .header-baseline {
-  background: #3D0635;
   border-radius: var(--radius);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  max-height: 2.4em;
-  align-self: center;
-  width: 100%;
-  padding: 1.2em 0;
   max-width: 22em;
 }
 body .header-baseline p {

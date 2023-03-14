@@ -6,7 +6,7 @@
         </picture>
     </a>
     <div class="header-baseline mt-2">
-    <p class="text-capitalize">Titre</p>
+    <p class="text-capitalize">Un graphisme simplement différent</p>
     </div>
 </div>
     <div id="mobile-btn " class="btn btn-primary d-lg-none mt-3 text-light"> voir le menu</div>

@@ -11857,29 +11857,6 @@ textarea.form-control-lg {
   border: 1px solid #ccc;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
-  height: 100%;
-}
-
-table th {
-  white-space: nowrap;
-}
-
-.o-gallery-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 1em;
-}
-
-.card-image {
-  margin-bottom: 2em;
-}
-
-form .text-box {
-  margin-bottom: 1em;
 }

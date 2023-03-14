@@ -32,7 +32,7 @@
     
     <footer class="d-flex flex-column flex-lg-row p-3">
         <div class="footer-copyrights text-center d-flex align-items-center">
-        <p class="mb-0 text-center"> Tous droits réservés placeholder ©2022 </p>
+        <p class="mb-0 text-center"> Tous droits réservés Karrot ©2022 </p>
         </div>
     </footer>
 </div>
