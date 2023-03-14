@@ -27,11 +27,6 @@
           <div class="main-column p-4">
             {{ $slot }}
             </div>
-            <div class="aside-column bg-body">
-                <div id="contact-block-head">
-                    <p class="fs-4 mb-1 p-2 tex text-center text-white">Texte</p>
-                </div>
-            </div>
         </div>
     </div>
     
