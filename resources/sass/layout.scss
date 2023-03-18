@@ -2,48 +2,14 @@
 @import "typography";
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "customs.scss";
+
 * {
     box-sizing: border-box;
 }
 
-.a-heading {
-
-    font-size: 2em;
-}
-
-em {
-    font-style: normal !important;
-}
-
-p {
-    br {
-        display: none;
-    }
-}
-
-.m-card {
-    padding: 2em;
-    border: 1px solid red;
-}
-
-a {
-
-    text-decoration: underline;
-}
-
-h2 {
-    color: #510040;
-}
-
-button {
-    margin: 0;
-}
-
-
 body {
     background-image: url("https://zupimages.net/up/23/11/tddk.jpg");
     background-size: 22%;
-
 
     .o-master-header {
         border-radius: var(--radius) var(--radius) 0 0;
