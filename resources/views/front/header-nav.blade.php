@@ -5,7 +5,7 @@
             <p class="text-capitalize fs-3 text-capitalize">Un graphisme simplement différent</p>
         </div>
     </div>
-    <div id="mobile-btn" class="btn btn-primary d-lg-none mt-3 text-light">voir le menu</div>
+    <div id="mobile-btn" class="btn btn-primary d-lg-none mt-3">voir le menu</div>
 </header>
 
 <ul id="main-nav" class="d-flex flex-column flex-lg-row m-0 o-main-nav p-0">
