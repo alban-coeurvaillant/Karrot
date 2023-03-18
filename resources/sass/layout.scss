@@ -41,7 +41,9 @@ button {
 
 
 body {
-    background-image: url("https://www.gospeldream.fr/css/img/wood.jpg");
+    background-image: url("https://zupimages.net/up/23/11/tddk.jpg");
+    background-size: 22%;
+
 
     .o-master-header {
         border-radius: var(--radius) var(--radius) 0 0;
@@ -431,7 +433,7 @@ body {
 
     footer {
         background-color: #e7e7e7;
-        border-radius: 0 0 var(--unit) var(--unit);
+        border-radius: 0;
 
         .footer-mentions,
         .footer-copyrights {
