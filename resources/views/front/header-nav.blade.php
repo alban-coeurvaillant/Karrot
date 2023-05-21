@@ -1,12 +1,15 @@
-<header class="d-flex flex-column o-master-headerp-4 p-4">
-    <div class="col-form-label-lg d-flex flex-column flex-lg-row justify-content-lg-between">
-        <a class="ddisplay-6 text-body text-decoration-none" href="{{ route('home') }}">Karrington Creation</a>
+<header class="d-flex flex-column p-4">
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+        <a class="text-decoration-none" href="{{ route('home') }}">Karrington Creation</a>
         <div class="header-baseline mt-2">
-            <p class="fs-3 text-body text-capitalize text-nowrap">Un graphisme simplement différent</p>
+            <p class="fs-3 text-body">Un graphisme simplement différent</p>
         </div>
     </div>
     <div id="mobile-btn" class="btn btn-primary d-lg-none mt-3">voir le menu</div>
 </header>
+<div id="ticker" class="o-ticker" >
+   <p>This is a ticker</p>
+</div>
 <ul id="main-nav" class="d-flex flex-column flex-lg-row m-0 o-main-nav p-0">
     @if (config('karrot.gallery'))
     <li class="nav-item flex-grow-1 nav-item text-center">
