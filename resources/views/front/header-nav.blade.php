@@ -2,12 +2,13 @@
     <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
         <h1><a class="text-decoration-none" href="{{ route('home') }}">Karrington Creation</a></h1>
         <h2>Un graphisme simplement différent</h2>
+        <div id="mobile-btn" class="btn btn-primary d-lg-none mt-3">voir le menu</div>
+        <div id="ticker" class="o-ticker">
+            <p>This is a ticker</p>
+        </div>
     </div>
-    <div id="mobile-btn" class="btn btn-primary d-lg-none mt-3">voir le menu</div>
 </header>
-<div id="ticker" class="o-ticker" >
-   <p>This is a ticker</p>
-</div>
+
 <ul id="main-nav" class="d-flex flex-column flex-lg-row m-0 o-main-nav p-0">
     @if (config('karrot.gallery'))
     <li class="nav-item flex-grow-1 nav-item text-center">
