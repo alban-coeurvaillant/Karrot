@@ -1,9 +1,7 @@
 <header class="d-flex flex-column p-4">
     <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
-        <a class="text-decoration-none" href="{{ route('home') }}">Karrington Creation</a>
-        <div class="header-baseline mt-2">
-            <p class="fs-3 text-body">Un graphisme simplement différent</p>
-        </div>
+        <h1><a class="text-decoration-none" href="{{ route('home') }}">Karrington Creation</a></h1>
+        <h2>Un graphisme simplement différent</h2>
     </div>
     <div id="mobile-btn" class="btn btn-primary d-lg-none mt-3">voir le menu</div>
 </header>
