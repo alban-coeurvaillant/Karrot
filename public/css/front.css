@@ -11171,14 +11171,10 @@ body .o-photo-gallery .container .photos .photo:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-body .o-main-content {
-  background-color: #EFEFEF;
-}
 body .o-main-content .main-container {
   width: 100%;
 }
 body .o-main-content .main-container .main-column {
-  background-color: #FFF;
   width: 100%;
   font-size: 16px;
   border-radius: var(--radius);

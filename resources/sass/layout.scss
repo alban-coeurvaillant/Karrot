@@ -255,37 +255,26 @@ body {
 
 
     .o-main-content {
-        background-color: #EFEFEF;
-
         .main-container {
             width: 100%;
-
             .main-column {
-                background-color: #FFF;
                 width: 100%;
                 font-size: 16px;
                 border-radius: var(--radius);
-
                 h2 {
                     border-color: #dddddd;
                 }
-
                 h3 {
                     em {
-
                         font-style: normal;
                     }
                 }
-
                 p {
                     font-weight: normal !important;
-
                     strong {
                         font-weight: normal !important;
-
                     }
                 }
-
                 @media (min-width:60em) {
                     margin-right: var(--unit);
 
