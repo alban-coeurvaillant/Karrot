@@ -11168,7 +11168,7 @@ body .o-photo-gallery .container .photos .photo:hover {
 }
 @media (min-width: 60em) {
   body .o-photo-gallery .container .photos {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 body .o-main-content {
