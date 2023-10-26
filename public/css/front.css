@@ -10967,6 +10967,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-size: 22%;
+  background-color: #0c0c0c;
 }
 body .o-master-header {
   border-radius: var(--radius) var(--radius) 0 0;
