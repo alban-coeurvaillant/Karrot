@@ -1,4 +1,4 @@
-<header class="d-flex flex-column p-4">
+<!-- <header class="d-flex flex-column p-4">
         <h1>
             <a class="text-decoration-none" href="{{ route('home') }}">Karrington Creation</a>
         </h1>
@@ -7,7 +7,7 @@
         <div id="ticker" class="o-ticker">
             <p>This is a ticker</p>
         </div>
-</header>
+</header> -->
 
 <ul id="main-nav" class="d-flex flex-column flex-lg-row m-0 o-main-nav p-0">
     @if (config('karrot.gallery'))
